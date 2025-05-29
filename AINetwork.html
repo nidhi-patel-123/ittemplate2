@@ -17,7 +17,161 @@
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+<style>
+   .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a3c5e;
+    }
+    .section-title p {
+      color: #6c757d;
+      font-style: italic;
+    }
+    .news-card {
+      position: relative;
+      overflow: hidden;
+      border: none;
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .news-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .news-card:hover img {
+      transform: scale(1.1);
+    }
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    .card-body {
+      padding: 15px 0;
+    }
+    .card-meta {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-bottom: 5px;
+    }
+    .card-meta span {
+      color: #1a3c5e;
+      font-weight: bold;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1a3c5e;
+      margin-bottom: 0;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      height: 310px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 768px) {
+      .news-card img {
+        height: 200px;
+      }
+      .section-title h2 {
+        font-size: 2rem;
+      }
+    }
+    /* -------------------------------------------------- */
+    .hero {
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+      position: relative;
+    }
 
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: #111111;
+    }
+
+    .hero .btn-primary {
+      /* background-color: #2b68f8; */
+      border: none;
+      padding: 12px 28px;
+      font-weight: 500;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .profile-card img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #3b3b3b;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .floating-icon {
+      position: absolute;
+      /* background: #2b68f8; */
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .floating-icon.chart {
+      bottom: 0;
+      right: 0;
+    }
+
+    .floating-icon.message {
+      top: 0;
+      right: 0;
+      background: #7a7a7a;
+    }
+
+    .scribble {
+      position: absolute;
+      left: -40px;
+      bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .floating-icon, .scribble {
+        display: none;
+      }
+    }
+</style>
 </head>
 <body>
 <!-- -----------------------navbar----------------------------------------- -->
@@ -127,7 +281,8 @@
       </p>
     </div>
   </section>
-<!-- ---------------------------------------- -->
+
+<!-- --------------------------------------------------------- -->
 <section class="py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -199,38 +354,6 @@
     </div>
 
     <div class="row">
-      <!-- Blog 1 -->
-      <div class="col-md-6" data-aos="fade-up">
-        <div class="blog-card">
-          <div class="blog-img">
-            <span class="date-badge">June 22, 2023</span>
-            <img src="https://img.freepik.com/free-photo/robot-handshake-human-background-artificial-intelligence-digital-transformation_53876-129769.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 1">
-          </div>
-          <div class="blog-content">
-            <small>1 Comment</small>
-            <h5>Latest Emerging Artificial Intelligence Technology</h5>
-            <p>Velit ut tortor pretium viverra suspendisse potenti nullam ac. Sit amet venenatis lectus. Nibh...</p>
-            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog 2 -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-card">
-          <div class="blog-img">
-            <span class="date-badge">June 22, 2023</span>
-            <img src="https://img.freepik.com/free-photo/technology-human-touch-background-modern-remake-creation-adam_53876-129794.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 2">
-          </div>
-          <div class="blog-content">
-            <small>1 Comment</small>
-            <h5>Make Your Ocean Journey Easier With Artificial</h5>
-            <p>Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...</p>
-            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
       <!-- Blog 3 -->
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="blog-card">
@@ -262,37 +385,174 @@
           </div>
         </div>
       </div>
+
+         <div class="col-md-6" data-aos="fade-up">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 22, 2023</span>
+            <img src="https://athech-info.netlify.app/images/painting-2.jpg" alt="Blog 1">
+          </div>
+          <div class="blog-content">
+            <small>1 Comment</small>
+            <h5>Latest Emerging Artificial Intelligence Technology</h5>
+            <p>Velit ut tortor pretium viverra suspendisse potenti nullam ac. Sit amet venenatis lectus. Nibh pellentesque Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas.........</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 22, 2023</span>
+            <img src="https://athech-info.netlify.app/images/painting-1.jpg" alt="Blog 2">
+          </div>
+          <div class="blog-content">
+            <small>1 Comment</small>
+            <h5>Make Your Ocean Journey Easier With Artificial</h5>
+            <p>Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas pellentesque Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas........</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- ----------------------------------------------------- -->
-  <section class="partners-section text-center" id="partners">
-    <div class="container partners-content" data-aos="fade-up">
-   
-      <div class="row justify-content-center align-items-center g-4">
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net1.webp" alt="Intel" class="img-fluid partner-logo" />
+
+
+<!-- ---------------------------------------- -->
+
+<section class="hero container">
+  <div class="row align-items-center">
+    <div class="col-md-6" data-aos="fade-right">
+      <h1>Unleash The Power Of Conversational</h1>
+      <p class="my-4">We are a full-service creative agency that helps businesses build brands, tell stories, and engage audiences through bold and strategic design agency that helps businesses build brands, tell stories, and engage </p>
+      <a href="#" class="btn btn-primary">
+        Explore More
+        <span>&rarr;</span>
+      </a>
+    </div>
+    <div class="col-md-6 position-relative text-center mt-5 mt-md-0" data-aos="fade-left">
+      <div class="profile-card mx-auto">
+        <img src="https://aizan.vercel.app/assets/images/slider/user1.png" alt="Profile" />
+      </div>
+      <div class="floating-badge shadow">Maverick Nguyen<br><small>UI/UX Designer, Avitex Inc</small></div>
+
+      <div class="floating-icon chart shadow" style="width: 120px; height: 80px;">
+        <img src="https://aizan.vercel.app/assets/images/slider/frame-below.png" alt="Chart" style="width: 100%;">
+      </div>
+      <div class="floating-icon message shadow" style="width: 100px; height: 100px;">
+        <img src="https://aizan.vercel.app/assets/images/slider/frame-above.png" alt="Message" style="width: 100%;">
+      </div>
+      <img src="https://img.freepik.com/3d-models/v2/X/M/0/N/K/D/B/XM0NKDB2/robot-icon-poster-1.png?t=st=1748518063~exp=1748521663~hmac=65aa849329e331f81fc857da2fd192324c89bd0a06f0f3c7894dd9dde6100755" alt="Scribble" class="scribble" width="100">
+    </div>
+  </div>
+</section>
+<section class="py-5">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title" data-aos="fade-up">
+        <h2 style="color: #f29111;">News and tips</h2>
+        <p>Curabitur tellus leo, euismod sit amet gravida at, egestas sed.</p>
+      </div>
+
+      <!-- Carousel -->
+      <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Card 1 -->
+                     <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                  <img src="https://demo.cmssuperheroes.com/themeforest/sparkai/wp-content/uploads/elementor/thumbs/gallery-6-scaled-r4v8c1elpp5ntu49kejcns91rnihaulm0tu7131kn4.webp" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • September 29, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">Why AI is critical for the future of business </h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                  <img src="https://datix.ancorathemes.com/wp-content/uploads/2024/10/post18-copyright-840x697.jpg" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • September 28, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">AI-powered analytics: the next frontier</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+                  <img src="https://datix.ancorathemes.com/wp-content/uploads/2024/10/post5-copyright.jpg" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • October 1, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">Top AI & machine learning trends for 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Slide (Duplicate for Demo) -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                  <img src="https://demo.casethemes.net/aimo/wp-content/uploads/2024/09/gallery-page-img-6-356x396.webp" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • September 29, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">Why AI is critical for the future of business</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                  <img src="https://demo.cmssuperheroes.com/themeforest/sparkai/wp-content/uploads/elementor/thumbs/gallery-8-scaled-r4v8c0griv4x5csy2x9hhbaeccycielez8v13g5cao.webp" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • September 28, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">AI-powered analytics: the next frontier</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+                  <img src="https://ann.axiomthemes.com/wp-content/uploads/2023/05/img_131-370x370.jpg" alt="Card Image">
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>DIGEST</span> • October 1, 2024 • 0 Comments
+                    </div>
+                    <h5 class="card-title">Top AI & machine learning trends for 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net2.webp" alt="Netflix" class="img-fluid partner-logo" />
-        </div>
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net3.webp" alt="Skrill" class="img-fluid partner-logo" />
-        </div>
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net4.webp" alt="Unsplash" class="img-fluid partner-logo" />
-        </div>
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net1.webp" alt="Fila" class="img-fluid partner-logo" />
-        </div>
-        <div class="col-4 col-sm-3 col-md-2">
-          <img src="images/net3.webp" alt="Amazon" class="img-fluid partner-logo" />
-        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
-
-
 
 
 
