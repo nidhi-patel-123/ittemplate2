@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solution Navbar</title>
+  <link rel="stylesheet" href="css/Digital.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/navbarfooter.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+  <!-- -----------------------navbar----------------------------------------- -->
+  <nav class="navbar navbar-expand-lg px-4 py-2">
+    <a class="navbar-brand" href="#">
+      <div class="logo-dot"></div>
+      SOLUTIONS
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        <!-- Home -->
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+            <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+            <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+            <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+            <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+            <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+            <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+            <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+          </ul>
+        </li>
+
+        <!-- Pages -->
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="Pages.html">Pages</a>
+            <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+            <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+            <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+            <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+            <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+            <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+            <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+            <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+            <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+            <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+            <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+            <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+            <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+          </ul>
+        </li>
+
+        <!-- Portfolio -->
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+            <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+            <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+          </ul>
+        </li>
+
+        <!-- Blog -->
+        <li class="nav-item dropdown">
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="Blog.html">Blog</a>
+            <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+            <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+            <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+            <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <!-- Button -->
+        <li class="nav-item ms-lg-3">
+          <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- --------------------------------------------hero-------------------------- -->
+  <section class="hero-section d-flex align-items-center justify-content-center">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-5 fw-bold">DIGITAL AGENCY</h1>
+      <p class="fs-5">Home / Digital Agency</p>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------servce--------------------------------- -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h6>Our Growth Business</h6>
+        <h2>We need to stop interrupting what<br> people are interested</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-box h-100 position-relative">
+            <div class="icon-box">
+              <img src="https://img.icons8.com/ios/50/diamond--v1.png" alt="Smart Popups">
+            </div>
+            <h5>Smart popups</h5>
+            <p>Create customized popups and show the right message at the right time. lorem dummy.</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            <div class="highlight-animated"></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-box h-100 position-relative">
+            <div class="icon-box">
+              <img src="https://img.icons8.com/ios/50/prize.png" alt="Competitor Analysis">
+            </div>
+            <h5>Competitor Analysis</h5>
+            <p>We always focus on technical excellence partnership, while remaining the platform.</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            <div class="highlight-animated"></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-box h-100 position-relative">
+            <div class="icon-box">
+              <img src="https://img.icons8.com/ios/50/speaker.png" alt="Social Marketing">
+            </div>
+            <h5>Social Marketing</h5>
+            <p>We love to work with clients all over the world to develop unique and modern websites.</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            <div class="highlight-animated"></div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-box h-100 position-relative">
+            <div class="icon-box">
+              <img src="https://img.icons8.com/ios/50/light-on--v2.png" alt="Reporting & Analysis">
+            </div>
+            <h5>Reporting & Analysis</h5>
+            <p>We always focus on technical excellence partnership, while remaining the platform.</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+            <div class="highlight-animated"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------------about jesa----------------------------------- -->
+  <section class="digital-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://img.freepik.com/premium-vector/mind-map-concept-illustration_270158-467.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Agency Illustration" class="img-fluid digital-image "
+            style="width: 100%;object-fit: cover;">
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-6">
+          <div class="digital-content">
+            <div class="digital-subtitle">Our Services</div>
+            <h2 class="digital-heading">We are a new digital product development agency</h2>
+            <p class="digital-description">
+              Our vertical solutions expertise allows your business to streamline workflow, and increase productivity.
+              No matter the business, Zad has you covered with industry compliant solutions, customized to your
+              company’s specific needs.
+            </p>
+
+            <div class="digital-feature">
+              <i class="bi bi-lock-fill digital-icon"></i>
+              <div>
+                <div class="digital-feature-title">New great products coming soon</div>
+                <div class="digital-feature-text">We’re full service which means we’ve got you covered on design and
+                  content right.</div>
+              </div>
+            </div>
+
+            <div class="digital-feature">
+              <i class="bi bi-megaphone-fill digital-icon"></i>
+              <div>
+                <div class="digital-feature-title">Having fun with zad theme</div>
+                <div class="digital-feature-text">We’re full service which means we’ve got you covered on design and
+                  content right.</div>
+              </div>
+            </div>
+
+            <button class="btn-primary mt-3">Let’s Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------------top bottom cart--------------------------------------- -->
+ <section class="team-section position-relative">
+  <!-- Decorative squares -->
+  <div class="decor-square square1"></div>
+  <div class="decor-square square2"></div>
+  <div class="decor-square square3"></div>
+  <div class="decor-square square4"></div>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text Section -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="badge">MEET THE TEAM</span>
+        <h2 class="mt-3 mb-4">Our Expert Team Members Can Do Anything For You</h2>
+
+        <div class="feature">
+          <i class="bi bi-check-circle-fill"></i>
+          <div>
+            <h5>Cloud based services & 40 GB free space</h5>
+            <p>We’re full service which means we’ve got you covered on design and content right.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="bi bi-check-circle-fill"></i>
+          <div>
+            <h5>Responsive & Mobile friendly design</h5>
+            <p>We’re full service which means we’ve got you covered on design and content right.</p>
+          </div>
+        </div>
+  <div class="feature">
+          <i class="bi bi-check-circle-fill"></i>
+          <div>
+            <h5>Responsive & Mobile friendly design</h5>
+            <p>We’re full service which means we’ve got you covered on design and content right.</p>
+          </div>
+        </div>  <div class="feature">
+          <i class="bi bi-check-circle-fill"></i>
+          <div>
+            <h5>Responsive & Mobile friendly design</h5>
+            <p>We’re full service which means we’ve got you covered on design and content right.</p>
+          </div>
+        </div>
+        <button class="btn btn-custom btn-primary">Let's Get Started</button>
+      </div>
+
+      <!-- Team Cards -->
+      <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="team-card">
+              <img src="https://motivoweb.com/zad/wp-content/uploads/2022/01/team10.jpg" alt="team1" />
+              <div class="overlay">
+                <div class="social-icons">
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="info-box">
+                  <h6>Mostafa Ali</h6>
+                  <small>Product Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-6">
+            <div class="team-card">
+              <img src="https://motivoweb.com/zad/wp-content/uploads/2022/01/team11.jpg" alt="team1" />
+              <div class="overlay">
+                <div class="social-icons">
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="info-box">
+                  <h6>Mostafa Ali</h6>
+                  <small>Product Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="team-card">
+              <img src="https://motivoweb.com/zad/wp-content/uploads/2022/01/team12.jpg" alt="team1" />
+              <div class="overlay">
+                <div class="social-icons">
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="info-box">
+                  <h6>Mostafa Ali</h6>
+                  <small>Product Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-6">
+            <div class="team-card">
+              <img src="https://motivoweb.com/zad/wp-content/uploads/2022/01/team13.jpg" alt="team1" />
+              <div class="overlay">
+                <div class="social-icons">
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="info-box">
+                  <h6>Mostafa Ali</h6>
+                  <small>Product Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- -------------------------number-------------------------------- -->
+  <section class="stats-section">
+    <div class="badge">WE ARE SKILLED</div>
+    <h2 class="section-title">Planning & creating awesome <br> websites is our hobby</h2>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-number count" data-target="229">0+</div>
+        <div class="stat-label">Projects Completed</div>
+        <div class="stat-desc">People who are committed to their management tasks.</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number count" data-target="789">0+</div>
+        <div class="stat-label">Customer Satisfaction</div>
+        <div class="stat-desc">People who are committed to their management tasks.</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number count" data-target="98">0+</div>
+        <div class="stat-label">International Awards</div>
+        <div class="stat-desc">People who are committed to their management tasks.</div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------blog---------------------------------------------- -->
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/db1.jpg" alt="Blog Image 1">
+          </div>
+          <div class="blog-category">Digital Marketing</div>
+          <div class="blog-title">Innovative technology trends shaping the digital agency landscape</div>
+          <div class="blog-meta">Apr 27, 2025 • No Comments</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/db2.jpg" alt="Blog Image 2">
+          </div>
+          <div class="blog-category">Digital Marketing</div>
+          <div class="blog-title">Creating effective marketing campaigns with digital agencies</div>
+          <div class="blog-meta">Apr 24, 2025 • No Comments</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/db3.jpg" alt="Blog Image 3">
+          </div>
+          <div class="blog-category">Digital Marketing</div>
+          <div class="blog-title">Navigating the future of IT services and digital transformations</div>
+          <div class="blog-meta">Apr 27, 2025 • 2 Comments</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/db4.jpg" alt="Blog Image 4">
+          </div>
+          <div class="blog-category">Digital Marketing</div>
+          <div class="blog-title">Crafting a winning digital strategy for your business</div>
+          <div class="blog-meta">Apr 24, 2025 • No Comments</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ------------------------last------------------------------------- -->
+
+  <div class="h-container">
+    <!-- Your image inside the div -->
+    <img src="https://demo.casethemes.net/grupi/wp-content/uploads/2021/06/bg-top-footer2.jpg" alt="Hero Image"
+      class="bg-image" style="height: 80vh;">
+
+    <!-- Overlay -->
+    <div class="overlayy"></div>
+
+    <!-- Ribbon -->
+    <div class="ribbon" data-aos="fade-down">BEST AWARD WINNER</div>
+
+    <!-- Content -->
+    <div class="container h-content">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <h1 class="display-4 fw-bold">DON’T LATE, JOIN<br>WITH US TODAY!</h1>
+          <a href="#" class="btn-primary" style="text-decoration: none;">CONTACT US NOW ➜</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- SECTION END -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Count-up Animation Script -->
+
+
+
+  <!-- GSAP CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+
+  <script>
+    // GSAP Animations
+    gsap.from(".digital-image", {
+      x: -100,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power2.out"
+    });
+
+    gsap.from(".digital-content", {
+      x: 100,
+      opacity: 0,
+      duration: 1.2,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+  </script>
+
+  <footer class="footer text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4" data-aos="fade-up">
+          <div class="brand">SOLUTIONS</div>
+          <p class="mt-3">
+            We are the best world Information Technology Company. Providing the highest quality in hardware, Software &
+            Network solutions.
+          </p>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <h5>IT Services</h5>
+          <a href="#">IT Services</a>
+          <a href="#">Cyber Security</a>
+          <a href="#">Cloud Computing</a>
+          <a href="#">Managed IT</a>
+          <a href="#">IT Support</a>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <h5>Important Links</h5>
+          <a href="#">About Us</a>
+          <a href="#">Meet Our Team</a>
+          <a href="#">News & Media</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Locations</a>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <h5>Get In Touch</h5>
+          <p><strong>Phone:</strong> (01) 123-321-456</p>
+          <p><strong>Email:</strong> Info@Solution.com</p>
+          <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+          <div class="social-icons mt-3">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+        <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">solution.com</a></p>
+      </div>
+    </div>
+    <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+      <i class="bi bi-chevron-up"></i>
+    </div>
+  </footer>
+
+  <!-- JS for dropdown icon toggle (mobile only) -->
+  <script>
+    function toggleDropdown(icon) {
+      if (window.innerWidth < 992) {
+        const parentLi = icon.closest('.dropdown');
+        const allDropdowns = document.querySelectorAll('.dropdown');
+
+        allDropdowns.forEach(li => {
+          if (li !== parentLi) {
+            li.classList.remove('open');
+            const i = li.querySelector('.dropdown-icon');
+            if (i) i.classList.remove('rotate');
+          }
+        });
+
+        parentLi.classList.toggle('open');
+        icon.classList.toggle('rotate');
+      }
+    }
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentIndex = 0;
+    let slideWidth = slides[0].offsetWidth;
+
+    // Recalculate on resize
+    window.addEventListener('resize', () => {
+      slideWidth = slides[0].offsetWidth;
+      wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    });
+
+    // Auto-slide every 3 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }, 3000);
+  </script>
+
+  <script>
+    const currentPage = location.pathname.split("/").pop();
+    const allLinks = document.querySelectorAll(".navbar a");
+
+    allLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+  <!-- -------------------------number---------------------------------------- -->
+  <script>
+    const counters = document.querySelectorAll('.count');
+    const speed = 150;
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText.replace('+', '');
+
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = `${count + increment}+`;
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = `${target}+`;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+  </script>
+</body>
+
+</html>

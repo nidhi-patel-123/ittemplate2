@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solution Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/navbarfooter.css">
+  <link rel="stylesheet" href="css/pricing1.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+<!-- -----------------------navbar----------------------------------------- -->
+<nav class="navbar navbar-expand-lg px-4 py-2">
+  <a class="navbar-brand" href="#">
+    <div class="logo-dot"></div>
+   SOLUTIONS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      
+      <!-- Home -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+          <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+          <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+          <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+          <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+          <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+          <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+          <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+        </ul>
+      </li>
+
+      <!-- Pages -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Pages.html">Pages</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+          <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+          <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+          <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+          <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+          <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+          <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+          <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+          <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+          <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+          <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+          <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Blog.html">Blog</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+          <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+          <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+          <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+        </ul>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Button -->
+      <li class="nav-item ms-lg-3">
+        <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ------------------------------------------- -->
+ 
+  <!-- Hero Section -->
+  <section class="about-hero d-flex align-items-center text-center text-white">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">PRICING-1</h1>
+      <p class="breadcrumb-text mt-2">
+        <a href="home.html" class="text-white text-decoration-none">Home</a> /
+        <span class="text-white-50">PRICING-1</span>
+      </p>
+    </div>
+  </section>
+
+<!-- --------------------------------------------------------- -->
+
+<section class="pricing-section">
+  <div class="container">
+    <div class="mb-2 text-muted" data-aos="fade-up">Our Pricing</div>
+    <h2 class="mb-5" data-aos="fade-up" data-aos-delay="100">Affordable Pricing Options</h2>
+
+    <div class="row justify-content-center align-items-center">
+      <!-- Basic Plan -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100">
+          <div class="card-header bg-white">Basic Plan</div>
+          <div class="card-body">
+            <div class="price">$400 <small>/Package</small></div>
+            <p class="text-muted">Automatically connect with prospective clients</p>
+            <h6 class="mt-4 mb-3">Including:</h6>
+            <ul>
+              <li>✔ Free Listing</li>
+              <li>✔ 15 Featured Listing</li>
+              <li>✔ Contact with agent</li>
+              <li>✔ 6 Month validity</li>
+              <li class="inactive">✘ 24/7 Support center</li>
+              <li class="inactive">✘ 100% money back guarantee</li>
+              <li class="inactive">✘ Auto refresh ads</li>
+            </ul>
+            <button class="btn btn-dark w-100">Select Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Plan -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card featured h-100 card-wrapper">
+          <div class="card-header">Advanced Plan</div>
+          <div class="popular-badge">Popular</div>
+          <div class="card-body">
+            <div class="price text-black">$500 <small>/Package</small></div>
+            <p class="text-white-500">Automatically connect with prospective clients</p>
+            <h6 class="mt-4 mb-3 text-black">Including:</h6>
+            <ul class="text-black">
+              <li >✔ Free Listing</li>
+              <li>✔ 15 Featured Listing</li>
+              <li>✔ Contact with agent</li>
+              <li>✔ 6 Month validity</li>
+              <li>✔ 24/7 Support center</li>
+              <li class="inactive">✘ 100% money back guarantee</li>
+              <li class="inactive">✘ Auto refresh ads</li>
+            </ul>
+            <button class="btn btn-primary w-100" style="background-color: #f29111;border: 0%;;">Select Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100">
+          <div class="card-header bg-white">Premium Plan</div>
+          <div class="card-body">
+            <div class="price">$600 <small>/Package</small></div>
+            <p class="text-muted">Automatically connect with prospective clients</p>
+            <h6 class="mt-4 mb-3">Including:</h6>
+            <ul>
+              <li>✔ Free Listing</li>
+              <li>✔ 15 Featured Listing</li>
+              <li>✔ Contact with agent</li>
+              <li>✔ 6 Month validity</li>
+              <li>✔ 24/7 Support center</li>
+              <li>✔ 100% money back guarantee</li>
+              <li>✔ Auto refresh ads</li>
+            </ul>
+            <button class="btn btn-dark w-100">Select Plan</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- -------------------cerousal---------------------------- -->
+   <section class="testimonial-section">
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <!-- Text -->
+            <div class="col-md-7">
+              <h6>Testimonials</h6>
+              <h2>Hear From Our Clients</h2>
+              <p class="testimonial-text">
+                "Their knowledge of the local market helped us price our property
+                right and attract serious buyers. We were impressed with their
+                communication and honesty throughout the process."
+              </p>
+              <div class="star-rating">★★★★★</div>
+              <div class="client-info">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                <div>
+                  <div class="client-name">— Sarah M</div>
+                  <div class="client-role">Property Developer</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-md-5 mt-4 mt-md-0">
+              <img src="https://img.freepik.com/free-vector/organic-flat-feedback-concept-illustrated_23-2148951369.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-image" alt="House">
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional slides can be added here -->
+      </div>
+
+      <!-- Controls -->
+     
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up">
+        <div class="brand">SOLUTIONS</div>
+        <p class="mt-3">
+          We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.
+        </p>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>IT Services</h5>
+        <a href="#">IT Services</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Managed IT</a>
+        <a href="#">IT Support</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>Important Links</h5>
+        <a href="#">About Us</a>
+        <a href="#">Meet Our Team</a>
+        <a href="#">News & Media</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Locations</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>Get In Touch</h5>
+        <p><strong>Phone:</strong> (01) 123-321-456</p>
+        <p><strong>Email:</strong> Info@Solution.com</p>
+        <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+        <div class="social-icons mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+      <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">solution.com</a></p>
+    </div>
+  </div>
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+</footer>
+
+<!-- JS for dropdown icon toggle (mobile only) -->
+<script>
+  function toggleDropdown(icon) {
+    if (window.innerWidth < 992) {
+      const parentLi = icon.closest('.dropdown');
+      const allDropdowns = document.querySelectorAll('.dropdown');
+
+      allDropdowns.forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+          const i = li.querySelector('.dropdown-icon');
+          if (i) i.classList.remove('rotate');
+        }
+      });
+
+      parentLi.classList.toggle('open');
+      icon.classList.toggle('rotate');
+    }
+  }
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const wrapper = document.querySelector('.testimonial-wrapper');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+  let slideWidth = slides[0].offsetWidth;
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }, 3000);
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+  const allLinks = document.querySelectorAll(".navbar a");
+
+  allLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>

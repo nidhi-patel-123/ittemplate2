@@ -1,0 +1,358 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041853.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* --------------------------service--------------------------------- */
+ .service-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .icon-circle {
+      width: 90px;
+      height: 90px;
+      background-color: #f1f3ff;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-title {
+      font-weight: bold;
+      color: #0c0c24;
+    }
+    .service-desc {
+      color: #5b6987;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .arrow-link {
+      font-size: 24px;
+      color: #000;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .arrow-link:hover {
+      transform: translateX(5px);
+    }
+    .arrow-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.arrow-link::after {
+  content: "Read more";
+  color: #000;
+  margin-left: 8px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.arrow-link:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ------------------------------------------------------------------------------------ */
+ .seo-section {
+  padding: 80px 0;
+}
+
+.seo-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1c1c1c;
+  transition: text-shadow 0.3s ease;
+}
+
+.seo-heading:hover {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.seo-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.seo-subtitle:hover {
+  letter-spacing: 2px;
+  /* color: #f29111; */
+  text-decoration: underline;
+}
+
+.seo-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.seo-card {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.seo-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.seo-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6) url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041863.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740') center/cover no-repeat;
+  transition: top 0.4s ease;
+  z-index: 1;
+}
+
+.seo-card:hover::before {
+  top: 0;
+}
+
+.seo-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.seo-icon {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.seo-icon:hover {
+  transform: scale(1.2);
+}
+
+.seo-icon svg {
+  height: 100% !important;
+  width: 100% !important;
+  display: block;
+}
+
+.seo-icon svg path {
+  fill: #f29111;
+  stroke: #f29111;
+  stroke-width: 1.5;
+}
+
+.seo-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1c;
+  transition: color 0.3s ease;
+}
+
+.seo-title:hover {
+  /* color: #f29111; */
+}
+
+.seo-text {
+  font-size: 15px;
+  color: #6c6c6c;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.seo-text:hover {
+  color: #1c1c1c;
+  transform: translateX(5px);
+}
+/* -------------------------cart-------------------------------- */
+ .digital-wrapper {
+      padding: 80px 0;
+      background: #faf9f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    .digital-wrapper h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #222;
+    }
+
+    .custom-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      background-color: #f7f5f2;
+      padding: 20px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      transition: box-shadow 0.4s ease;
+      height: 100%;
+      cursor: pointer;
+    }
+
+   .custom-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+/* Hover effect: turn image black and white */
+.custom-card:hover img {
+  filter: grayscale(100%);
+}
+
+
+
+  
+
+    .custom-card .content {
+      position: relative;
+      z-index: 3;
+    }
+
+    .custom-card h5 {
+      margin: 15px 0 5px;
+      color: #333;
+    }
+
+    .custom-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .learn-more {
+      font-weight: bold;
+      color: #ff5722;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* =====================last======================================= */
+     .business-consulting-section {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .business-consulting-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('https://motivoweb.com/teba/wp-content/uploads/2020/08/service6.jpg') center center/cover no-repeat;
+      filter: brightness(0.5);
+      /* transform: skewY(-2deg); */
+      /* transform-origin: top left; */
+      margin-bottom: 30px;
+      z-index: 1;
+    }
+
+    .business-consulting-content {
+      position: relative;
+      z-index: 2;
+      padding: 6rem 2rem;
+      color: white;
+    }
+
+    .business-consulting-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .highlight-underline {
+      display: inline-block;
+      position: relative;
+    }
+
+    .highlight-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 8px;
+      background-color: rgba(255, 213, 122, 0.6);
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+
+    @media (max-width: 768px) {
+      .business-consulting-content {
+        padding: 4rem 1rem;
+      }
+
+      .business-consulting-content h1 {
+        font-size: 2rem;
+      }
+    }

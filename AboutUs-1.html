@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solution Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/navbarfooter.css">
+<link rel="stylesheet" href="css/Aboutus1.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+<!-- -----------------------navbar----------------------------------------- -->
+<nav class="navbar navbar-expand-lg px-4 py-2">
+  <a class="navbar-brand" href="#">
+    <div class="logo-dot"></div>
+   SOLUTIONS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      
+      <!-- Home -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+          <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+          <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+          <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+          <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+          <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+          <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+          <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+        </ul>
+      </li>
+
+      <!-- Pages -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Pages.html">Pages</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+          <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+          <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+          <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+          <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+          <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+          <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+          <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+          <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+          <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+          <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+          <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Blog.html">Blog</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+          <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+          <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+          <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+        </ul>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Button -->
+      <li class="nav-item ms-lg-3">
+        <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="about-hero d-flex align-items-center text-center text-white">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">About Us-1</h1>
+      <p class="breadcrumb-text mt-2">
+        <a href="home.html" class="text-white text-decoration-none">Home</a> /
+        <span class="text-white-50">About Us</span>
+      </p>
+    </div>
+  </section>
+  <!-- ------------------about us-----------/-- -->
+<section class="section-wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Images -->
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="img-stack-container">
+          <!-- Background Image -->
+          <img src="images/aboutsecondimg.png" alt="Shape Background" class="bg-img img-fluid" data-aos="fade-up">
+
+
+          <!-- Foreground Image -->
+          <img src="images/about1.png" alt="Team Working" class="fg-img img-fluid">
+
+          <!-- Badge -->
+          <div class="project-badge">
+            <i class="bi bi-person-check"></i>
+            283K+<br><small>Complete <br>Project</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <p class=" fw-bold" style="color: #f29111;">IT Support for Business</p>
+        <h2 class="fw-bold">About is Over 291+ Company <br> Business Solution.</h2>
+        <p class="text-muted">
+          Monotonectally synergize granular markets and front markets. Collaboratively visualize strategic infomediaries after multimedia based models. Synergistically task state of the art infrastructures.
+        </p>
+
+        <ul class="list-unstyled feature-list">
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill"></i> Company and Research
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill"></i> Business and Research
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center mb-4">
+          <div class="rounded-circle px-3 py-2 fw-bold me-3" style="border: 1px solid #f29111;">
+            45%
+          </div>
+          <div>
+            <strong>Solution Business</strong><br>
+            <small class="text-muted">Level is high</small>
+          </div>
+        </div>
+
+        <div class="testimonial mb-4">
+          “If you are accused of committing a crime, you will the very best criminal defense attorneys.”
+        </div>
+
+        <a href="#" class="btn btn-primary px-4">More About →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------teams------------------------------------------ -->
+ <div class="container py-5">
+  <div class="row justify-content-center" data-aos="fade-up">
+    <div class="col-md-4 col-lg-3">
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/ateam1.png" alt="John D. Alexon">
+        </div>
+        <div class="team-info">
+          <h5>John D. Alexon</h5>
+          <small>UI Designer</small>
+
+          <!-- Share Icon -->
+          <div class="share-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+
+          <!-- SVG Bottom Curve -->
+          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
+            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
+            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
+            <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 col-lg-3">
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/ateam2.png" alt="John D. Alexon">
+        </div>
+        <div class="team-info">
+          <h5>John D. Alexon</h5>
+          <small>UI Designer</small>
+
+          <!-- Share Icon -->
+          <div class="share-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+
+          <!-- SVG Bottom Curve -->
+          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
+            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
+            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
+     <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 col-lg-3">
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/ateam3.png" alt="John D. Alexon">
+        </div>
+        <div class="team-info">
+          <h5>John D. Alexon</h5>
+          <small>UI Designer</small>
+
+          <!-- Share Icon -->
+          <div class="share-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+
+          <!-- SVG Bottom Curve -->
+          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
+            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
+            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
+             <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 col-lg-3">
+      <div class="team-card">
+        <div class="team-img">
+          <img src="images/ateam4.png" alt="John D. Alexon">
+        </div>
+        <div class="team-info">
+          <h5>John D. Alexon</h5>
+          <small>UI Designer</small>
+
+          <!-- Share Icon -->
+          <div class="share-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+
+          <!-- SVG Bottom Curve -->
+          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
+            <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#f29111"/>
+            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
+            <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --------------------------start number-------------------------------- -->
+ <section class="stats-section">
+  <div class="container stats-container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="stat-block">
+          <h2>10K+</h2>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-block">
+          <h2>20K+</h2>
+          <p>Works Completed</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-block">
+          <h2>99+</h2>
+          <p>Expert Members</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-block">
+          <h2>100%</h2>
+          <p>Satisfaction Rates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ------------------------experience--------------------------- -->
+ <div class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Column -->
+    <div class="col-lg-6 mb-4" data-aos="fade-right">
+      <h2 class="fw-bold mb-3">Preparing for your success,<br> we provide truly prominent IT solutions</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="experience-box">
+            <h1>25</h1>
+            <p class="mb-0">Years of<br>experience</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p class="info-text">
+            Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent for all your software development needs.
+          </p>
+          <a href="#" class="learn-more-link">Learn More About Us →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-6" data-aos="fade-left">
+      <div class="mb-4">
+        <div class="progress-label">IT Management</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;"></div>
+          <div class="progress-tooltip" style="right: 20%;">80%</div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="progress-label">Data Security</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 95%;"></div>
+          <div class="progress-tooltip" style="right: 5%;">95%</div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="progress-label">Information Technology</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;"></div>
+          <div class="progress-tooltip" style="right: 20%;">80%</div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="progress-label">Technology Consultant</div>
+        <div class="progress">
+          <div class="progress-bar" style="width: 90%;"></div>
+          <div class="progress-tooltip" style="right: 10%;">90%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------------testimonial------------------------ -->
+<section class="testimonial-section" id="testimonial">
+  <div class="container">
+    <p class="testimonial-title" data-aos="fade-up">Testimonial</p>
+    <h2 class="testimonial-heading" data-aos="fade-up" data-aos-delay="100">20k+ satisfied clients worldwide</h2>
+
+    <div class="row justify-content-center g-5">
+      <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+        <div class="testimonial-card position-relative">
+          <img src="images/aboutlest1.jpg" alt="Client 1" class="avatar">
+          <div class="quote-icon">💬</div>
+          <p class="testimonial-text">Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
+          <p class="testimonial-name">Mike Holder <span class="testimonial-role">/ CEO, Harlond inc</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="testimonial-card position-relative">
+          <img src="https://theme-land.com/digimx/demo/assets/img/about/about_thumb_1.jpg" alt="Client 2" class="avatar">
+          <div class="quote-icon">💬</div>
+          <p class="testimonial-text">Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
+          <p class="testimonial-name">Mike Fermalin <span class="testimonial-role">/ CEO, Harlond inc</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel indicators -->
+    <div class="carousel-indicators justify-content-center" data-aos="fade-up" data-aos-delay="400">
+      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+  </div>
+</section>
+ <!-- Section Title -->
+  <div class="section-title" data-aos="fade-up">
+    <small>From Our Case Studies</small>
+    <h2>We delivered best solution</h2>
+  </div>
+
+  <!-- Carousel -->
+  <div id="caseCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="1"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-4">
+            <img src="images/ac1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="col-md-4">
+            <img src="images/ac2.jpg" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="col-md-4">
+            <img src="images/ac3.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-4">
+            <img src="images/ac1.jpg" class="d-block w-100" alt="Image 4">
+          </div>
+          <div class="col-md-4">
+            <img src="images/ac2.jpg" class="d-block w-100" alt="Image 5">
+          </div>
+          <div class="col-md-4">
+            <img src="images/ac3.jpg" class="d-block w-100" alt="Image 6">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#caseCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caseCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); "></span>
+
+    </button>
+  </div>
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up">
+        <div class="brand">SOLUTIONS</div>
+        <p class="mt-3">
+          We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.
+        </p>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>IT Services</h5>
+        <a href="#">IT Services</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Managed IT</a>
+        <a href="#">IT Support</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>Important Links</h5>
+        <a href="#">About Us</a>
+        <a href="#">Meet Our Team</a>
+        <a href="#">News & Media</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Locations</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>Get In Touch</h5>
+        <p><strong>Phone:</strong> (01) 123-321-456</p>
+        <p><strong>Email:</strong> Info@Solution.com</p>
+        <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+        <div class="social-icons mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+      <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">solution.com</a></p>
+    </div>
+  </div>
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+</footer>
+
+<!-- JS for dropdown icon toggle (mobile only) -->
+<script>
+  function toggleDropdown(icon) {
+    if (window.innerWidth < 992) {
+      const parentLi = icon.closest('.dropdown');
+      const allDropdowns = document.querySelectorAll('.dropdown');
+
+      allDropdowns.forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+          const i = li.querySelector('.dropdown-icon');
+          if (i) i.classList.remove('rotate');
+        }
+      });
+
+      parentLi.classList.toggle('open');
+      icon.classList.toggle('rotate');
+    }
+  }
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const wrapper = document.querySelector('.testimonial-wrapper');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+  let slideWidth = slides[0].offsetWidth;
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }, 3000);
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+  const allLinks = document.querySelectorAll(".navbar a");
+
+  allLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>

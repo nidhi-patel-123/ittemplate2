@@ -1,0 +1,337 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/premium-photo/financial-advisor-explaining-portfolio-breakdown-client-pointing-charts-graphs-laptop-screen-modern-office-setting_1354798-15795.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* ------------------------------------------------'' */
+  .project-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-item:hover .project-img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.589);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .project-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .project-tag {
+      background-color: #67768d;
+      color: #fff;
+      padding: 4px 12px;
+      font-size: 12px;
+      border-radius: 30px;
+      margin-bottom: 10px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .plus-sign {
+      font-size: 28px;
+      line-height: 1;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    @media (max-width: 767px) {
+      .project-title {
+        font-size: 14px;
+      }
+    }
+    /* ------------------------------------ */
+     .services-row {
+      border-bottom: 1px solid #eee;
+    }
+
+    .service-col {
+      padding: 40px 20px;
+      text-align: left;
+      transition: all 0.3s;
+    }
+
+    .service-col:hover {
+      background-color: #f8f9fa;
+      cursor: pointer;
+    }
+
+    .service-icon {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .read-more {
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-top: 10px;
+      display: inline-block;
+      color: #000;
+    }
+
+    .creative-box {
+      background-color: #f1f7fd;
+      padding: 40px;
+    }
+
+    .creative-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .accordion-button {
+      background-color: transparent;
+      font-weight: 600;
+      padding-left: 0;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    .accordion-item {
+      border: none;
+      background-color: transparent;
+    }
+
+    .accordion-body {
+      padding-left: 0;
+      padding-top: 10px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .btn-readmore {
+      margin-top: 25px;
+      border: 1px solid #000;
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn-readmore:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .img-side {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .image-wrapper {
+      position: relative;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .play-btn i {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .creative-box {
+        padding: 20px;
+      }
+
+      .creative-title {
+        font-size: 1.5rem;
+      }
+
+      .play-btn {
+        width: 50px;
+        height: 50px;
+      }
+
+      .play-btn i {
+        font-size: 20px;
+      }
+    }
+    /* ----------------------------------------------------------- */
+     .news-section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: #8e9aad;
+    }
+
+    .news-card {
+      background-color: #fff;
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    .news-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+    }
+
+    .news-img img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .news-img:hover img {
+      transform: scale(1.1);
+    }
+
+    .label-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #f29111;
+      color: #fff;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      text-transform: uppercase;
+    }
+
+    .hover-icon {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      color: #999;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .news-img:hover .hover-icon {
+      opacity: 1;
+    }
+
+    .news-content {
+      padding: 20px 0;
+    }
+
+    .news-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #2f3c4c;
+    }
+
+    .news-text {
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    .news-meta {
+      font-size: 12px;
+      color: #8e9aad;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }

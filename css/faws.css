@@ -1,0 +1,165 @@
+   .about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041853.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+ /* -------------------------------------- */
+ 
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .faq-title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .accordion.custom-accordion .accordion-item {
+      border: 1px solid #f29111 !important;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .accordion.custom-accordion .accordion-button {
+      font-weight: 600;
+      font-size: 16px;
+      color: #000;
+      background-color: #fff !important;
+      border-color: #f29111 !important;
+    }
+
+    .accordion.custom-accordion .accordion-button:not(.collapsed) {
+      background-color: #fff !important;
+      color: #000;
+      box-shadow: none !important;
+      border-color: #f29111 !important;
+    }
+
+    .accordion.custom-accordion .accordion-button:focus {
+      box-shadow: none !important;
+      border-color: #f29111 !important;
+    }
+
+    .accordion.custom-accordion .accordion-button::after {
+      display: none !important;
+    }
+
+    .accordion-button .icon {
+      margin-left: auto;
+      font-size: 20px;
+      color: #f29111;
+    }
+
+    .accordion-button.collapsed .icon::before {
+      content: '\f055'; /* fa-circle-plus */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+
+    .accordion-button:not(.collapsed) .icon::before {
+      content: '\f056'; /* fa-circle-minus */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+
+    .search-box {
+      background: #f7f7f7;
+      padding: 10px 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+    }
+
+    .faq-contact-section {
+      background: #101010;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .faq-contact-section .info-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .faq-contact-section .info-box i {
+      font-size: 24px;
+      background: #f29111;
+      color: #000;
+      padding: 12px;
+      border-radius: 50%;
+    }
+
+    .faq-contact-section a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .logo-footer {
+      padding: 20px 0;
+      text-align: center;
+      background: #0c0c0c;
+    }
+
+    .logo-footer .social-icons i {
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    /* ------------------------------ */

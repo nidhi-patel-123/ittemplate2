@@ -1,0 +1,282 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/premium-vector/artificial-intelligence-chipset-circuit-board-futuristic-concept-technology-artwork_41981-3670.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.767); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* --------------------------------------- */
+.popup-box {
+      position: relative;
+      width: 100%;
+     
+      margin: 0 auto;
+    }
+
+    .popup-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .popup-box .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease-out;
+    }
+
+    .popup-box .play-button:hover {
+      background-color: #f29111;
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+    /* ==================== */
+    
+    .badge-tag {
+      background-color: #1a1a1a;
+      border: 1px solid #f29111;
+      color: #f29111;
+      font-size: 0.75rem;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+
+
+    .section-title .highlight {
+      background: linear-gradient(90deg, #f29111, #b54708);
+      color: white;
+      padding: 0 8px;
+      display: inline-block;
+      border-radius: 2px;
+    }
+
+    .feature-box {
+      position: relative;
+      padding: 20px 10px 30px 0;
+    }
+     .feature-box svg{
+    fill: rgb(231 81 4);
+     width: 50%;
+          font-size: 40px;
+      margin-bottom: 15px;
+      margin: 0px 20px 0px 20px;
+     }
+
+  
+
+    .feature-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .feature-box p {
+      font-size: 0.875rem;
+      color: #000000;
+    }
+
+    .step-number {
+      position: absolute;
+      font-size: 5rem;
+      color: #ccc;
+      font-weight: 600;
+      right: 20px;
+      bottom: 10px;
+      z-index: -1;
+    }
+
+    .right-image {
+      position: relative;
+      text-align: center;
+    }
+
+    .mockup-img {
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Chat bubbles (for visual enhancement only, optional) */
+    .chat-bubble {
+      position: absolute;
+   
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+   
+    
+    }
+
+    .chat-1 {
+      top: 20%;
+      right: 0%;
+      z-index: 1;
+    }
+
+    .chat-2 {
+      bottom: 10%;
+      left: 0%;
+      z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.75rem;
+      }
+      .step-number {
+        font-size: 2.5rem;
+      }
+    }
+    /* -------------------------============================= */
+    .badge-tag {
+      background-color: #1f1f1f;
+      color: #f29111;
+      font-size: 0.75rem;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .blog-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+    }
+
+.blog-img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden; /* Ensures the image doesn't overflow its container */
+  position: relative;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.blog-img:hover img {
+  transform: translateX(-10px); /* Slide slightly to the right on hover */
+}
+
+    .date-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #f29111;
+      color: white;
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    .blog-content {
+      padding: 25px;
+      width: 50%;
+      color: aliceblue;
+    }
+
+    .blog-content h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .blog-content p {
+      color: #fffafa !important;
+      font-size: 0.875rem;
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .read-more i {
+      margin-left: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-card {
+        flex-direction: column;
+      }
+
+      .blog-img,
+      .blog-content {
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+    /* ------------------------------------------------------- */

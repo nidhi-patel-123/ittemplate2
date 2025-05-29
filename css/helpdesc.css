@@ -1,0 +1,291 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/premium-photo/handsome-young-male-call-centre-operator-colleague-wearing-headsets-working-computer-talking-with-customer-with-service-mind_33413-366.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* ------------------------------------- */
+  .can-we-help-you {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .can-we-help-you .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .can-we-help-you .section-title span {
+    color: #f29111;
+  }
+
+  .can-we-help-you .section-desc {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .service-box {
+    background: #fff;
+    padding: 30px 20px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    height: 100%;
+    border-top: 5px solid #f29111;
+  }
+
+  .service-box:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+  }
+
+  .service-box .icon {
+    margin-bottom: 20px;
+  }
+
+  .service-title a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .service-title a:hover {
+    color: #f29111;
+  }
+
+  .service-desc {
+    font-size: 15px;
+    color: #666;
+    margin: 15px 0;
+  }
+
+  .read-more {
+    color: #f29111;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  /* ----------------------------- */
+    .custom-image {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .text-heading {
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    .text-sub {
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: #555;
+    }
+    .description {
+      font-size: 1rem;
+      color: #444;
+      max-width: 500px;
+    }
+    /* ---------------------------- */
+    
+    .support-section {
+ background-image: url("https://janstudio.net/helpdesk/wp-content/uploads/2016/07/page-title-bg.jpg?id=348");
+      background-position: center center !important;
+      padding: 60px 0;
+      color: #fff;
+      text-align: center;
+    }
+    .support-section h2 {
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+    .support-section h3 {
+      font-size: 16px;
+      line-height: 16px;
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-weight: 400;
+      margin-top: 15px;
+    }
+    .btn-support {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #fff;
+      color: #333;
+      padding: 10px 25px;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+    .btn-support:hover {
+      background-color: #f1f1f1;
+      color: #000;
+    }
+     /* --------------team-------------------- */
+      .expertise-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .expertise-title small {
+      color: #f29111;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .expertise-title h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #0d1b44;
+    }
+
+    .expertise-card {
+     
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .expertise-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .expertise-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .expertise-title-card {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .expertise-text {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .expertise-arrow {
+      font-size: 1.25rem;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .expertise-card:hover .expertise-arrow {
+      transform: translateX(6px);
+    }
+      .blog-box {
+      margin-bottom: 40px;
+    }
+
+ .blog-img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.blog-img img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.blog-img:hover img {
+  transform: scale(1.05);
+}
+
+
+    .blog-category {
+      font-size: 14px;
+      font-weight: 500;
+      color: #666;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    .blog-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 10px;
+      color: #222;
+    }
+
+    .blog-meta {
+      font-size: 14px;
+      color: #999;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .blog-title {
+        font-size: 20px;
+      }
+    }

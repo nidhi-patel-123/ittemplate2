@@ -1,0 +1,353 @@
+ .about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041853.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* ----------------------------serivcdsdc---------------------------- */
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-subtitle {
+      color: #ff6b6b;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 0.875rem;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    .service-card {
+      background: #fff;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      height: 100%;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .read-more {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      font-weight: 600;
+      color: #f29111;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    .service-card:hover .read-more {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bottom-text {
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+
+    .bottom-text span {
+      color: #f29111;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @media (min-width: 992px) {
+      .section-heading {
+        font-size: 2.5rem;
+      }
+    }
+     .icon-circle {
+      background-color: #f1d3aa79;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-circle img {
+      width: 40px;
+      height: 40px;
+    }
+  /* -------------------------------------------- */
+  
+    .consulting-section {
+      padding: 80px 0;
+      background-color: #fff;
+    }
+    .consulting-text h6 {
+      color: #3f3d56;
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .consulting-text h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1b1a36;
+    }
+    .consulting-text p {
+      color: #6c757d;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    .consulting-text ul {
+      padding: 0;
+      list-style: none;
+      margin-top: 30px;
+    }
+    .consulting-text ul li {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 25px;
+      color: #1b1a36;
+    }
+    .consulting-text ul li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: #3e2dd1;
+      font-weight: bold;
+    }
+    .consulting-images {
+      position: relative;
+    }
+    .consulting-images img {
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .img-front {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 60%;
+    }
+    .img-back-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 50%;
+    }
+    .img-back-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 45%;
+    }
+
+    @media (max-width: 768px) {
+      .consulting-images {
+        margin-top: 50px;
+      }
+      .img-front,
+      .img-back-left,
+      .img-back-right {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  .digital-wrapper {
+      padding: 80px 0;
+      background: #faf9f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    .digital-wrapper h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #222;
+    }
+
+    .custom-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      background-color: #f7f5f2;
+      padding: 20px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      transition: box-shadow 0.4s ease;
+      height: 100%;
+      cursor: pointer;
+    }
+
+   .custom-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+/* Hover effect: turn image black and white */
+.custom-card:hover img {
+  filter: grayscale(100%);
+}
+
+
+
+  
+
+    .custom-card .content {
+      position: relative;
+      z-index: 3;
+    }
+
+    .custom-card h5 {
+      margin: 15px 0 5px;
+      color: #333;
+    }
+
+    .custom-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .learn-more {
+      font-weight: bold;
+      color: #ff5722;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* =====================last======================================= */
+     .business-consulting-section {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .business-consulting-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('https://motivoweb.com/teba/wp-content/uploads/2020/08/service6.jpg') center center/cover no-repeat;
+      filter: brightness(0.5);
+      /* transform: skewY(-2deg); */
+      /* transform-origin: top left; */
+      margin-bottom: 30px;
+      z-index: 1;
+    }
+
+    .business-consulting-content {
+      position: relative;
+      z-index: 2;
+      padding: 6rem 2rem;
+      color: white;
+    }
+
+    .business-consulting-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .highlight-underline {
+      display: inline-block;
+      position: relative;
+    }
+
+    .highlight-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 8px;
+      background-color: rgba(255, 213, 122, 0.6);
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+
+    @media (max-width: 768px) {
+      .business-consulting-content {
+        padding: 4rem 1rem;
+      }
+
+      .business-consulting-content h1 {
+        font-size: 2rem;
+      }
+    }

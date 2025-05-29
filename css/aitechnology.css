@@ -1,0 +1,379 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url("../images/aitechnologyhero.avif") center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.822); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* -------------------------------------- */
+   .future-robotics {
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .future-robotics h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .future-robotics h1 .highlight {
+      color: #f29111;
+    }
+
+    .future-robotics p {
+      color: #555;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .btn-discover {
+      padding: 12px 30px;
+      border-radius: 50px;
+      background: linear-gradient(to right, #f29111, #dbbe97);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: none;
+    }
+
+    /* Floating animation */
+    @keyframes float-up-down {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes float-left-right {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(15px); }
+    }
+
+    .float-up-down {
+      animation: float-up-down 3s ease-in-out infinite;
+    }
+
+    .float-left-right {
+      animation: float-left-right 3s ease-in-out infinite;
+    }
+
+    .robot-img {
+      max-width: 100%;
+    }
+
+    /* Responsive text */
+    @media (max-width: 768px) {
+      .future-robotics h1 {
+        font-size: 2.2rem;
+      }
+      .robot-img {
+        margin-top: 40px;
+      }
+    }
+    @keyframes rotate-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotate-circle {
+  animation: rotate-slow 6s linear infinite;
+}
+
+    /* --------------------------service------------------------------------ */
+  /* Card Hover Effect */
+.custom-card {
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  background: #fff;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #ffc37563, #f6fff8);
+}
+
+/* Floating Animations */
+@keyframes float-up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-left-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(15px); }
+}
+
+.float-up-down {
+  animation: float-up-down 4s ease-in-out infinite;
+}
+
+.float-left-right {
+  animation: float-left-right 4s ease-in-out infinite;
+}
+
+/* ---------------------------- */
+.solution-card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.solution-card img {
+  transition: transform 0.5s ease;
+}
+
+.solution-card:hover img {
+  transform: scale(1.1);
+}
+
+.solution-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.4s ease;
+}
+
+.solution-card:hover .solution-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover .play-btn {
+  transform: scale(1.1);
+}
+
+/* --------------------blog-cart------------------- */
+ .blog-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: all 0.4s ease;
+      margin-bottom: 30px;
+    }
+
+    .blog-card img {
+      transition: transform 0.5s ease;
+    }
+
+    .blog-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 140, 0, 0.7); /* orange overlay */
+      z-index: 1;
+      transition: all 0.5s ease;
+    }
+
+    .blog-card:hover .overlay {
+      width: 100%;
+      left: 0;
+      opacity: 0;
+    }
+
+    .blog-content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 40px);
+      background: white;
+      z-index: 2;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transition: padding-bottom 0.4s ease;
+    }
+
+    .blog-card:hover .blog-content {
+      padding-bottom: 60px;
+    }
+
+    .read-more {
+      position: absolute;
+      bottom: -40px;
+      left: 20px;
+      opacity: 0;
+      transition: all 0.4s ease;
+      z-index: 2;
+    }
+
+    .blog-card:hover .read-more {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .read-more button {
+      border: none;
+      background: none;
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .read-more button:hover {
+      color: orange;
+    }
+
+
+    /* ---------------------------------- */
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+    /* Custom font */
+    .font-Rajdhani {
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    /* Text color - replace with your color */
+    .text-HeadingColor-0 {
+      color: #1a1a1a; /* example dark color */
+    }
+
+    /* Rotating animation */
+    @keyframes rotational {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .animate-rotational {
+      animation: rotational 5s linear infinite;
+    }
+
+    /* Marquee animation */
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marquee-paused {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      position: relative;
+      background: transparent;
+      user-select: none;
+    }
+
+    .marquee-content {
+      display: inline-flex;
+      animation: marquee 20s linear infinite;
+      will-change: transform;
+    }
+
+    .marquee-wrapper:hover .marquee-content {
+      animation-play-state: paused;
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 1rem;
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    /* Responsive text sizes */
+    .marquee-text {
+      font-weight: 700;
+      text-transform: uppercase;
+    
+  background: linear-gradient(45deg, #f29111, rgb(197, 197, 240), #f29111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+    
+
+    .marquee-text-sm {
+      font-size: 1.75rem; /* ~3xl */
+    }
+    .marquee-text-md {
+      font-size: 3.75rem; /* ~6xl */
+    }
+
+    /* Image sizes */
+    .star-img {
+      width: 20px;
+      padding-top: 4px;
+    }
+
+    @media (min-width: 768px) {
+      .star-img {
+        width: 48px;
+        padding-top: 0;
+      }
+    }

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solution Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<!-- Font Awesome (for stars) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    .hover-box {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hover-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.8s ease;
+    }
+
+    .hover-overlay {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(242, 144, 17, 0.39);
+      transition: transform 0.6s ease;
+      z-index: 2;
+    }
+
+    .hover-left .hover-overlay {
+      left: 0;
+      transform: translateX(-100%);
+    }
+
+    .hover-left:hover .hover-overlay {
+      transform: translateX(0);
+    }
+
+    .hover-right .hover-overlay {
+      right: 0;
+      transform: translateX(100%);
+    }
+
+    .hover-right:hover .hover-overlay {
+      transform: translateX(0);
+    }
+
+    .hover-box:hover img {
+      transform: scale(1.05);
+    }
+    /* Custom Image Hover */
+.img-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.img-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Section spacing */
+section {
+  background: #fff;
+}
+
+/* Typography tweaks */
+h2 {
+  font-size: 1.9rem;
+  line-height: 1.4;
+}
+
+.btn-success {
+  background-color: #f29111;
+  border-color: #f29111;
+}
+.btn-success:hover {
+  background-color: #f29111;
+  border-color: #f29111;
+}
+
+  </style>
+  <style>
+.testimonial-section {
+  background-color: #fff;
+}
+
+.testimonial-card {
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.testimonial-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.testimonial-text {
+  color: #555;
+  font-size: 15px;
+  padding: 0 10px;
+  min-height: 120px;
+}
+
+.quote-icon {
+  font-size: 60px;
+  color: #f8f9fa;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.swiper {
+  padding: 30px 0;
+}
+
+.custom-swiper-btn {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+}
+</style>
+
+</head>
+<body>
+<!-- -----------------------navbar----------------------------------------- -->
+<nav class="navbar navbar-expand-lg px-4 py-2">
+  <a class="navbar-brand" href="#">
+    <div class="logo-dot"></div>
+   SOLUTIONS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+      
+      <!-- Home -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+          <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+          <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+          <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+          <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+          <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+          <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+          <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+        </ul>
+      </li>
+
+      <!-- Pages -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Pages.html">Pages</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+          <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+          <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+          <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+          <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+          <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+          <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+          <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+          <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+          <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+          <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+          <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Blog.html">Blog</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+          <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+          <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+          <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+        </ul>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Button -->
+      <li class="nav-item ms-lg-3">
+        <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- ---------------------------hero----------------------------- -->
+
+ <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content" data-aos="fade-up">
+      <h5>Now is the time to take control.</h5>
+      <h1 class="display-5 fw-bold">Modern IT & Tech Services<br>& digital experiences</h1>
+      <div class="mt-4">
+        <a href="#contact" class="btn btn-primary px-4 py-2">Get In Touch</a>
+        <span class="d-inline-block ms-4">
+          <i class="bi bi-telephone phone-icon"></i> (+01) 0100 333 66
+        </span>
+      </div>
+    </div>
+  </section>
+<!-- -----------------------home about------------------------------ -->
+<div class="container py-5">
+  <div class="row">
+    <!-- Left Column: Images -->
+    <div class="col-lg-6 col-md-6 d-none d-md-block">
+      <div class="row">
+        <!-- Image 1 -->
+        <div class="col-6 p-2">
+          <div class="hover-box hover-left">
+            <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service12.jpg" alt="Image 1">
+            <div class="hover-overlay"></div>
+          </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="col-6 p-2">
+          <div class="hover-box hover-right">
+            <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service13.jpg" alt="Image 2">
+            <div class="hover-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Text -->
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="mb-3">
+        <h5 style="color: #f29111; font-size: 14px; font-weight: 600; text-transform: uppercase;">OUR SERVICES</h5>
+        <h3 style="font-size: 28px; font-weight: 700;">Provide awesome customer service with our tools.</h3>
+      </div>
+      <p style="font-size: 16px; color: #333;">
+        We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly.
+      </p>
+
+      <ul style="list-style: none; padding-left: 0; margin-top: 25px;">
+        <li style="margin-bottom: 20px;">
+          <h4 style="font-size: 18px; font-weight: 600;">User Friendly dashboard &amp; Cool Interface.</h4>
+          <p style="margin-bottom: 0; font-size: 15px;">We’re full service which means we’ve got you covered on design and content right.</p>
+        </li>
+        <li>
+          <h4 style="font-size: 18px; font-weight: 600;">Strong Management &amp; Security.</h4>
+          <p style="margin-bottom: 0; font-size: 15px;">We’re full service which means we’ve got you covered on design and content right.</p>
+          <p style="margin-bottom: 0; font-size: 15px;">We’re full service which means we’ve got you covered on design and content right.</p>
+          <h4 style="font-size: 18px; font-weight: 600;">Strong Management &amp; Security.</h4>
+          <p style="margin-bottom: 0; font-size: 15px;">We’re full service which means we’ve got you covered on design and content right.</p>
+
+          <p style="margin-bottom: 0; font-size: 15px;">We’re full service which means we’ve got you covered on design and content right.</p>
+
+
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- --------------------home servie---------------------------- -->
+<section class="py-5">
+  <div class="container">
+    <!-- First Row -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <span class=" fw-semibold small" style="color: #f29111;">KNOW OUR BUSINESS</span>
+        <h2 class="fw-bold text-dark mt-2">Take care of the people who take<br>care of your business</h2>
+        <p class="text-muted mt-3">With over 25 years of experience, we have crafted thousands of strategic discovery process that enables us to peel back the layers which enable us to understand, connect, represent and dominate your market.</p>
+        <a href="#" class="btn btn-success  btn-primary  mt-3">More About Us</a>
+      </div>
+      <div class="col-lg-6 position-relative d-flex justify-content-center flex-wrap gap-3">
+        <!-- <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service03.jpg" class="img-fluid img-hover rounded shadow-sm z-1" style="transform: translateY(40px);" alt="Image 1" /> -->
+           <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service03.jpg" class="img-fluid rounded shadow img-hover" alt="Triangle Model" style="width: 100%;height: 450px;" />
+        <!-- <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service02.jpg" class="img-fluid img-hover rounded shadow-sm z-1" style="transform: translateY(-40px);" alt="Image 3" /> -->
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://motivoweb.com/zad/wp-content/uploads/2022/02/service05.jpg" class="img-fluid rounded shadow img-hover" alt="Triangle Model" />
+      </div>
+      <div class="col-lg-6">
+        <span class="fw-semibold small" style="color: #f29111;">KNOW OUR BUSINESS</span>
+        <h2 class="fw-bold text-dark mt-2">The most exquisite agency for<br>provide branding services.</h2>
+        <p class="text-muted mt-3">With over 25 years of experience, we have crafted thousands of strategic discovery process that enables us to peel back the layers which enable us to understand, connect, represent and dominate your market.</p>
+        <ul class="list-unstyled text-dark mt-4">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill me-2" style="color: #f29111;"></i>
+            Simple Registration System
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill me-2" style="color: #f29111;"></i>
+            Request API Integration
+          </li>
+        </ul>
+        <a href="#" class="btn btn-success btn-primary px-4 mt-3">Get Start Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- -----------------------------out latest project------------------------ -->
+ <section class="py-5 bg-light">
+  <div class="container text-center">
+    <p class=" text-uppercase mb-1" data-aos="fade-up" style="color: #f29111;">Latest Project</p>
+    <h2 class="fw-bold mb-5" data-aos="fade-up" data-aos-delay="100">
+      Our Recently Completed<br>Latest Projects
+    </h2>
+
+    <div class="row g-4">
+      <!-- Repeat this card structure -->
+      <div class="col-md- col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject4.avif" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+               
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject1.avif" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+                
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject2.avif" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+                    <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+          
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject3.png" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+               <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject3.png" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+               <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="images/hproject3.png" class="img-fluid" alt="Project Image">
+          <div class="overlay black-overlay"></div>
+          <div class="orange-strip">
+            <div class="text-white px-3 py-2 d-flex justify-content-between align-items-center">
+              <div>
+               <h6 class="mb-0" style="font-weight: bold;">Product Development Technology</h6>
+              </div>
+              <div class="plus-icon">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- You can clone the above card for more items -->
+      <!-- Change data-aos-delay="300", "400", "500" etc. -->
+    </div>
+  </div>
+</section>
+<!-- ------------------------why us---------------------------- -->
+ <!-- <section class="why-choose-full">
+  <div class="row no-gutters align-items-center">
+   
+    <div class="col-md-6 p-0">
+      <div class="left-image" data-aos="fade-right">
+        <img src="images/homewhyus.png" alt="Team working" />
+      </div>
+    </div>
+
+  
+    <div class="col-md-6 why-choose-section" data-aos="fade-left" style="padding-left: 20px;">
+      <small class="text-warning">WHY CHOOSE US</small>
+      <h2 class="fw-bold mt-2">Why You should Choose Our <br> Technology Company?</h2>
+      <p class="mt-3">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+      </p>
+
+      <div class="row mt-4">
+        <div class="col-12 col-sm-6">
+          <div class="feature-box">
+            <i class="fas fa-cogs"></i>
+            <div>
+              <h6>Tech Solution</h6>
+              <small>There are many variations of passages of Lorem</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+          <div class="feature-box">
+            <i class="fas fa-headset"></i>
+            <div>
+              <h6>Quick Support</h6>
+              <small>There are many variations of passages of Lorem</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave-shape"></div>
+    </div>
+  </div>
+</section> -->
+<!-- -------------------------------------------------------------what saying----------------------- -->
+
+<section class="testimonial-section py-5">
+  <div class="container position-relative">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial Item -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+
+        <!-- Repeat other testimonial cards here with different content -->
+        <!-- ... -->
+             <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_231208-10760.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+            <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://img.freepik.com/free-photo/business-concept-smiling-thoughtful-handsome-man-standing-white-isolated-background-touching-his-chin-with-hand_1258-80750.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+            <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://img.freepik.com/free-photo/portrait-happy-smiling-young-businessman-blue-suit-isolated-white-wall_231208-9208.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+            <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://img.freepik.com/free-photo/confident-latin-business-leader-portrait-young-businesswoman-suit-glasses-posing-with-arms-folded-looking-camera-smiling-female-leadership-concept_74855-14232.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+            <div class="swiper-slide">
+          <div class="testimonial-card p-4 text-center shadow-sm">
+            <img src="https://img.freepik.com/free-photo/young-joyful-student-man-holding-thumb-up-isolated_171337-14947.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="testimonial-img mb-3" alt="User">
+            <div class="star-rating mb-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">``If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file``</p>
+            <h5 class="fw-bold mt-3">Mai Kamal</h5>
+            <small class="text-muted">CEO Founder</small>
+            <i class="fas fa-quote-right quote-icon"></i>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Arrows -->
+      <div class="swiper-button-prev custom-swiper-btn  text-white rounded-circle" style="background-color: #f29111; width: 40px;height: 40px;"></div>
+      <div class="swiper-button-next custom-swiper-btn  text-white rounded-circle" style="background-color: #f29111; width: 40px;height: 40px;"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA Section -->
+<!-- <div class="expert-cta container">
+  <div class="d-flex align-items-center mb-3 mb-md-0">
+    <div class="expert-icon me-3">
+      <i class="bi bi-people-fill"></i>
+    </div>
+    <h5 class="mb-0" style="color: white;">Expert IT Specialists Available</h5>
+  </div>
+  <a href="#" class="btn btn-primary" style="border-radius: 0%;">Discover More</a>
+</div>  -->
+<!-- -------------------contactus---============ -->
+
+
+<section class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side -->
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+          <h6 class="text-uppercase text-muted" style="color: #f29111;">Contact Us</h6>
+          <h2 class="fw-bold">Request A Quote</h2>
+          <p class="mb-4">
+            At Teba Technology Solutions, we leverage IT security and automation to help you:
+            If you have any questions or need help, feel free to contact our team, or call
+            <span class="highlight-phone">(002) 010349845</span>
+          </p>
+          <img src="https://img.freepik.com/free-vector/call-center-concept-illustration_114360-3430.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Contact illustration" class="contact-image">
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name (required)</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address (required)</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone (optional)</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="col-md-6">
+                <label for="subject" class="form-label">Select Subject (required)</label>
+                <select class="form-select" id="subject" required>
+                  <option value="">Select your subject</option>
+                  <option>General Inquiry</option>
+                  <option>Technical Support</option>
+                  <option>Request a Quote</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="6"></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary mt-3" style="border-radius: 0%;">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Partner Logos
+<div class=" mt-" data-aos="fade-up">
+  <div class=" flex text-center partner-logos">
+    <div class=""><img src="images/logo1.png" alt="Logo"></div>
+    <div class=""><img src="images/logo2.png" alt="Logo"></div>
+    <div class=""><img src="images/logo3.png" alt="Logo"></div>
+    <div class=""><img src="images/logo4.png" alt="Logo"></div>
+    <div class=""><img src="images/logo5.png" alt="Logo"></div>
+    <div class=""><img src="images/logo1.png" alt="Logo"></div>
+
+  </div>
+</div> -->
+<!-- -------------------------footer--------------------------------- -->
+
+<section 
+  data-aos="fade-up"
+  style="
+    background: url('https://img.freepik.com/free-photo/diverse-people-using-digital-devices_53876-101881.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') no-repeat center center; 
+    background-size: cover; 
+    min-height: 400px; 
+    position: relative; 
+    display: flex; 
+    align-items: center;
+  "
+>
+  <div 
+    style="
+      position: absolute; 
+      inset: 0; 
+      background-color: rgba(0, 0, 0, 0.5);
+    "
+  ></div>
+  
+  <div class="container text-white text-center" style="position: relative; z-index: 2;">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h1 class="fw-bold" style="font-size: 2.5rem;">LET’S WORK TOGETHER</h1>
+        <p class="lead mb-4">
+          Like Nothing You've Seen. Purchase Today &amp; Experience Teba
+        </p>
+        <div 
+          class="d-flex justify-content-center flex-column flex-md-row align-items-center gap-3"
+        >
+          <a 
+            href="#" 
+            class="btn btn-light px-4 py-2 fw-semibold" 
+            style="border-radius: 10px;"
+          >
+            Learn More
+          </a>
+          <span class="small">Try Teba today! Download Now.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up">
+        <div class="brand">SOLUTIONS</div>
+        <p class="mt-3">
+          We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.
+        </p>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>IT Services</h5>
+        <a href="#">IT Services</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Managed IT</a>
+        <a href="#">IT Support</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>Important Links</h5>
+        <a href="#">About Us</a>
+        <a href="#">Meet Our Team</a>
+        <a href="#">News & Media</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Locations</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>Get In Touch</h5>
+        <p><strong>Phone:</strong> (057) 253-321-456</p>
+        <p><strong>Email:</strong> Info@Solution.com</p>
+        <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+        <div class="social-icons mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+      <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">MotivoWeb.com</a></p>
+    </div>
+  </div>
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+</footer>
+
+<!-- JS for dropdown icon toggle (mobile only) -->
+<script>
+  function toggleDropdown(icon) {
+    if (window.innerWidth < 992) {
+      const parentLi = icon.closest('.dropdown');
+      const allDropdowns = document.querySelectorAll('.dropdown');
+
+      allDropdowns.forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+          const i = li.querySelector('.dropdown-icon');
+          if (i) i.classList.remove('rotate');
+        }
+      });
+
+      parentLi.classList.toggle('open');
+      icon.classList.toggle('rotate');
+    }
+  }
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const wrapper = document.querySelector('.testimonial-wrapper');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+  let slideWidth = slides[0].offsetWidth;
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }, 3000);
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+  const allLinks = document.querySelectorAll(".navbar a");
+
+  allLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+</body>
+</html>

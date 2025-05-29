@@ -1,0 +1,219 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('../images/pricing1.avif') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.829); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+
+/* ------------------------------ */
+.pricing-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .pricing-section h2 {
+      font-weight: 800;
+      font-size: 3rem;
+    }
+
+    .pricing-section small {
+      color: #f29111;
+      font-weight: 600;
+    }
+
+    .card-custom {
+      border: 1px solid transparent;
+      border-radius: 30px;
+      padding: 50px 30px 30px;
+      position: relative;
+      background: #f9f9f9;
+      transition: 0.3s ease;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-10px);
+      border-color: #f29111;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .price-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      z-index: 0;
+    }
+
+    .price-icon img {
+      transform: rotate(-45deg);
+      width: 32px;
+      height: 32px;
+    }
+
+    .price {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .price small {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .feature-list li {
+      color: #555;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .select-btn {
+      margin-top: 30px;
+      padding: 10px 30px;
+      border: 1px solid #f29111;
+      background: transparent;
+      color: #f29111;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .select-btn:hover {
+      background-color: #f29111;
+      color: #fff;
+    }
+
+    @media (max-width: 767px) {
+      .card-custom {
+        margin-bottom: 40px;
+      }
+    }
+     /* ---------------------------------------- */
+      .testimonial-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    .testimonial-section h6 {
+      font-size: 14px;
+      color: #6c757d;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-section h2 {
+      font-size: 40px;
+      font-weight: 600;
+      color: #0c1d2c;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-text {
+      font-size: 24px;
+      line-height: 1.6;
+      color: #0c1d2c;
+    }
+
+    .star-rating {
+      color: #000;
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .client-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .client-name {
+      font-weight: 600;
+      color: #0c1d2c;
+      margin-bottom: 2px;
+    }
+
+    .client-role {
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      filter: invert(0.3);
+      width: 40px;
+    }
+
+    .testimonial-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }

@@ -1,0 +1,229 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url("https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150061967.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740") center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.637); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+
+/* ------------------------------ */
+   .service-card {
+      transition: all 0.3s ease;
+      background: linear-gradient(to top, #f8f9fa, transparent);
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: left;
+    }
+
+    .service-card:hover {
+      background: linear-gradient(to top, #e7c291, transparent);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-icon {
+      width: 60px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .section-title img {
+      width: 25px;
+      height: auto;
+    }
+    /* ------------------------------------------ */
+      .blog-card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      margin-bottom: 30px;
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 500px;
+      border-radius: 0%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 140, 0, 0.7);
+      z-index: 1;
+      transition: all 0.5s ease;
+    }
+
+    .blog-card:hover .overlay {
+      width: 100%;
+      left: 0;
+      opacity: 0;
+    }
+
+    .blog-content {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 40px);
+      background: white;
+      z-index: 2;
+      padding: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transition: padding-bottom 0.4s ease;
+    }
+
+    .blog-card:hover .blog-content {
+      padding-bottom: 60px;
+    }
+
+    .read-more {
+      position: absolute;
+      bottom: -40px;
+      left: 20px;
+      opacity: 0;
+      transition: all 0.4s ease;
+      z-index: 2;
+    }
+
+    .blog-card:hover .read-more {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .read-more button {
+      border: none;
+      background: none;
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .read-more button:hover {
+      color: orange;
+    }
+
+    /* ------------------------------------------------------------------------------------ */
+    .single-counter {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.single-counter .count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a0a0a;
+  position: relative;
+  z-index: 2;
+}
+
+.single-counter h6 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-hover {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: -100%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(255, 165, 0, 0.75); /* orange */
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.single-counter:hover .overlay-hover {
+  top: 0;
+  right: 0;
+}
+
+/* .single-counter:hover .count,
+.single-counter:hover h6 {
+  color: #f29111;
+} */
+/* -----------------cerousal------------------------------ */
+  .brand-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      /* background: #fff; */
+      background: rgb(44, 39, 30);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .brand-item:hover {
+      transform: scale(1.05);
+    }
+    .brand-item img {
+      max-height: 60px;
+      max-width: 100%;
+      object-fit: contain;
+    }

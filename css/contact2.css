@@ -1,0 +1,184 @@
+.about-hero {
+  position: relative;
+  min-height: 50vh;
+  background: url('https://img.freepik.com/premium-photo/hand-woman-holding-mobile-smartphone-with-contact-us_52701-804.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') center center/cover no-repeat;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.829); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.overlay-left,
+.overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.overlay-left {
+  left: -150px;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+.overlay-right {
+  right: -150px;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+.about-hero .container {
+  z-index: 3;
+  position: relative;
+}
+
+.breadcrumb-text a {
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .overlay-left, .overlay-right {
+    width: 200px;
+    transform: rotate(45deg);
+  }
+}
+/* ---------------------------------------------- */
+
+    .world-map-container {
+      position: relative;
+      text-align: center;
+      padding: 60px 15px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    .map-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .location-pin {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #f29111;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #f29111;
+      animation: pulse 2s infinite;
+    }
+
+    .pin1 { top: 40%; left: 25%; }
+    .pin2 { top: 35%; left: 45%; }
+    .pin3 { top: 40%; left: 60%; }
+    .pin4 { top: 50%; left: 52%; }
+    .pin5 { top: 60%; left: 75%; }
+    .pin6 { top: 65%; left: 85%; }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(236, 135, 76, 0.5); }
+      70% { box-shadow: 0 0 0 10px rgba(59,130,246, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(59,130,246, 0); }
+    }
+
+    .connect-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 18px;
+      background-color: #f1f5ff;
+      color: #f29111;
+      font-weight: 500;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .contact-cards {
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+      text-align: center;
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      background: #f1f5ff;
+      color: #f29111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      font-size: 24px;
+    }
+
+    .contact-title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info a {
+      color: #f29111;
+      text-decoration: none;
+    }
+    /* =----------------------------------------- */
+    .contact-section {
+      padding: 80px 0;
+    }
+    .contact-left h6 {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #333;
+    }
+    .contact-left h2 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    .contact-left p {
+      font-size: 16px;
+      color: #555;
+    }
+    .contact-info i {
+      color: #f29111;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .form-control {
+      border-radius: 8px;
+      height: 50px;
+    }
+    textarea.form-control {
+      height: 120px;
+    }
+    .form-check-label {
+      font-size: 14px;
+    }
+    .btn-orange {
+      background-color: #f29111;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 30px;
+      border: none;
+    }
+    .btn-orange:hover {
+      background-color: #f29111;
+    }

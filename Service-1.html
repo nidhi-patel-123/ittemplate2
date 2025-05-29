@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solution Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/navbarfooter.css">
+<link rel="stylesheet" href="css/service1.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+<!-- -----------------------navbar----------------------------------------- -->
+<nav class="navbar navbar-expand-lg px-4 py-2">
+  <a class="navbar-brand" href="#">
+    <div class="logo-dot"></div>
+   SOLUTIONS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      
+      <!-- Home -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+          <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+          <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+          <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+          <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+          <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+          <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+          <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+        </ul>
+      </li>
+
+      <!-- Pages -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Pages.html">Pages</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+          <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+          <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+          <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+          <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+          <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+          <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+          <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+          <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+          <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+          <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+          <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Blog.html">Blog</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+          <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+          <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+          <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+        </ul>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Button -->
+      <li class="nav-item ms-lg-3">
+        <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <section class="about-hero d-flex align-items-center text-center text-white">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Service-1</h1>
+      <p class="breadcrumb-text mt-2">
+        <a href="images/serv1hero.jpg" class="text-white text-decoration-none">Home</a> /
+        <span class="text-white-50">Service-1</span>
+      </p>
+    </div>
+  </section>
+
+
+<!-- --------------------------service---------------------------------- -->
+ <section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-box">
+          <div class="icon-circle">
+            <!-- <img src="your-icon1.svg" alt="Icon" width="30"> -->
+            <div class="icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"><style type="text/css">	.st0{fill:none;stroke:#afb0b9;stroke-width:2;stroke-miterlimit:10;}	.st1{fill:none;stroke:#afb0b9;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}	.st2{fill:none;stroke:#494c63;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}</style>  <g transform="translate(-849 -877)">	<g transform="translate(848 876)">		<line class="st0" x1="31" y1="2.4" x2="31" y2="10.6"></line>    <line class="st0" x1="53.6" y1="25" x2="45.4" y2="25"></line>    <line class="st0" x1="8.4" y1="25" x2="16.6" y2="25"></line>    <path class="st1" d="M22.8,12.7L31,25h8.2"></path>	</g>    <path class="st2" d="M893.9,918c9.4-8.2,10.4-22.5,2.2-31.9c-8.2-9.4-22.5-10.4-31.9-2.2c-4.9,4.3-7.7,10.5-7.7,17  "></path>    <g transform="translate(851 907.579)">		<path class="st2" d="M23.9,26.8v-8.2c-8.2,0-17.5-3.1-17.5-17.4c3.3,5.3,8.2,8.2,17.5,8.2V1.2l12.3,13.3   L23.9,26.8z"></path>	</g></g></svg></div>
+          </div>
+          <h5 class="service-title">Organizational Development</h5>
+          <p class="service-desc">Experienced professionals in across all marketing</p>
+          <a href="#" class="arrow-link">&rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box">
+          <div class="icon-circle">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="48" width="48" x="0px" y="0px" viewBox="0 0 98.3 122.2" style="enable-background:new 0 0 98.3 122.2;" xml:space="preserve"><style type="text/css">	.st0{fill:none;stroke:#494c63;stroke-width:4;stroke-miterlimit:10;}	.st1{fill:none;stroke:#afb0b9;stroke-miterlimit:10;}	.st2{fill:none;stroke:#494c63;stroke-miterlimit:10;}</style><g>	<g>		<g>			<path class="st0" d="M93.5,54l-6-1.1c-1.1-4.5-2.8-9-5.4-12.7l3.4-5c1.3-1.7,1.1-4.1-0.4-5.6l-1.9-1.9l-1.9-1.9    c-1.5-1.5-3.9-1.7-5.6-0.4l-5,3.4c-3.9-2.6-8.2-4.3-12.7-5.4l-1.1-6c-0.4-2.2-2.2-3.4-4.3-3.4h-3h-2.8c-2.2,0-3.9,1.5-4.3,3.4    l-1.1,6c-4.7,0.9-9,2.6-12.7,5.2l-5-3.4c-1.7-1.3-4.1-1.1-5.6,0.4L16,27.5L14,29.6c-1.5,1.5-1.7,3.9-0.4,5.6l3.4,5    c-2.6,3.9-4.3,8.2-5.4,12.7l-6,1.1c-2.2,0.4-3.4,2.2-3.4,4.3v2.8v2.8c0,2.2,1.5,3.9,3.4,4.3l6,1.1c1.1,4.7,2.8,9,5.4,12.7l-3.4,5    c-1.3,1.7-1.1,4.1,0.4,5.6l1.9,1.9l1.9,1.9c1.5,1.5,3.9,1.7,5.6,0.4l5-3.4c3.9,2.6,8.2,4.3,12.7,5.4l1.1,6    c0.4,2.2,2.2,3.4,4.3,3.4h3h2.8c2.2,0,3.9-1.5,4.3-3.4l1.1-6c4.5-1.1,9-2.8,12.7-5.4l5,3.4c1.7,1.3,4.1,1.1,5.6-0.4l1.9-1.9    l1.9-1.9c1.5-1.5,1.7-3.9,0.4-5.6l-3.4-5c2.6-3.9,4.3-8.2,5.4-12.7l6-1.1c2.2-0.4,3.4-2.2,3.4-4.3v-2.8v-2.8    C97,56.1,95.4,54.4,93.5,54z"></path>		</g>	</g>	<circle class="st1" cx="49.5" cy="61.1" r="17.1"></circle>	<circle class="st2" cx="49.5" cy="61.1" r="27.2"></circle></g></svg>
+          </div>
+          <h5 class="service-title">Company & Business Setup</h5>
+          <p class="service-desc">Strategy experience and analytical expertise combine to decision.</p>
+          <a href="#" class="arrow-link">&rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box">
+          <div class="icon-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" x="0px" y="0px" viewBox="0 0 60 60" xml:space="preserve">	<g transform="translate(1.024 1)">		<circle fill="none" stroke="#afb0b9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="29" cy="54.1" r="3.9"></circle>		<circle fill="none" stroke="#afb0b9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="14.5" cy="50.3" r="3.9"></circle>		<circle fill="none" stroke="#afb0b9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="29" cy="37.7" r="3.9"></circle>		<path fill="none" stroke="#494c63" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="  M17.4,34.8C8.8,28.4,7.1,16.3,13.5,7.7S32-2.5,40.6,3.9s10.3,18.5,3.9,27.1c-1.1,1.5-2.4,2.8-3.9,3.9"></path>		<circle fill="none" stroke="#494c63" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="29" cy="19.3" r="8.7"></circle>		<line fill="none" stroke="#afb0b9" stroke-width="2" stroke-miterlimit="10" x1="29" y1="50.3" x2="29" y2="41.6"></line>		<path fill="none" stroke="#afb0b9" stroke-width="2" stroke-miterlimit="10" d="M14.5,46.4v-3.9l10.6-4.8"></path>		<circle fill="none" stroke="#afb0b9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="43.5" cy="50.3" r="3.9"></circle>		<path fill="none" stroke="#afb0b9" stroke-width="2" stroke-miterlimit="10" d="M43.5,46.4v-3.9l-10.6-4.8"></path></g></svg>
+          </div>
+          <h5 class="service-title">Project Scoping and Planning</h5>
+          <p class="service-desc">We are providing the best and suitable financial consultation.</p>
+          <a href="#" class="arrow-link" style="justify-content: start;text-align: start;align-items: start;">&rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- -------------------------------------------------------------------------------- -->
+ <section class="seo-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="seo-subtitle" data-aos="fade-up">OUR SEO SERVICES</p>
+      <h2 class="seo-heading" data-aos="fade-up" data-aos-delay="100">Your ticket to the top</h2>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="images/dcart4.avif" alt="SEO Image" class="seo-image">
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-sm-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="seo-card">
+              <div class="seo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 52"><path d="M18.0547 9.33333C18.0547 4.1787 22.2332 0 27.388 0C27.9403 0 28.388 0.447715 28.388 1C28.388 1.55228 27.9403 2 27.388 2C23.3378 2 20.0547 5.28325 20.0547 9.33333C20.0547 13.3834 23.3378 16.6667 27.388 16.6667C31.4382 16.6667 34.7214 13.3834 34.7214 9.33333C34.7214 8.78105 35.1691 8.33333 35.7214 8.33333C36.2736 8.33333 36.7214 8.78105 36.7214 9.33333C36.7214 14.488 32.5428 18.6667 27.388 18.6667C22.2332 18.6667 18.0547 14.488 18.0547 9.33333Z"></path><path d="M0 42.6663C0 37.5115 4.1787 33.333 9.33333 33.333C9.88562 33.333 10.3333 33.7807 10.3333 34.333C10.3333 34.8853 9.88562 35.333 9.33333 35.333C5.28325 35.333 2 38.6161 2 42.6663C2 46.7165 5.28325 49.9997 9.33333 49.9997C13.3834 49.9997 16.6667 46.7165 16.6667 42.6663C16.6667 42.1141 17.1144 41.6663 17.6667 41.6663C18.219 41.6663 18.6667 42.1141 18.6667 42.6663C18.6667 47.8211 14.488 51.9997 9.33333 51.9997C4.1787 51.9997 0 47.8211 0 42.6663Z"></path><path d="M45.4427 35.333C41.3925 35.333 38.1094 38.6161 38.1094 42.6663C38.1094 46.7166 41.3925 49.9997 45.4427 49.9997C45.995 49.9997 46.4427 50.4474 46.4427 50.9997C46.4427 51.552 45.995 51.9997 45.4427 51.9997C40.2879 51.9997 36.1094 47.8211 36.1094 42.6663C36.1094 37.5116 40.2879 33.333 45.4427 33.333C50.5975 33.333 54.776 37.5116 54.776 42.6663C54.776 43.2186 54.3283 43.6663 53.776 43.6663C53.2238 43.6663 52.776 43.2186 52.776 42.6663C52.776 38.6161 49.4929 35.333 45.4427 35.333Z"></path><path d="M13.441 11.4486C13.8065 11.8627 13.767 12.4946 13.353 12.8601C8.94542 16.7503 6.16797 22.4386 6.16797 28.777C6.16797 29.3293 5.72025 29.777 5.16797 29.777C4.61568 29.777 4.16797 29.3293 4.16797 28.777C4.16797 21.841 7.21007 15.6143 12.0295 11.3606C12.4436 10.9952 13.0755 11.0346 13.441 11.4486ZM41.3393 11.4486C41.7048 11.0346 42.3367 10.9952 42.7508 11.3606C47.5704 15.6143 50.6124 21.841 50.6124 28.777C50.6124 29.3293 50.1647 29.777 49.6124 29.777C49.0601 29.777 48.6124 29.3293 48.6124 28.777C48.6124 22.4386 45.835 16.7503 41.4274 12.8601C41.0133 12.4947 40.9739 11.8627 41.3393 11.4486ZM20.8662 50.05C21.0038 49.5152 21.549 49.1932 22.0839 49.3308C23.7787 49.767 25.5566 49.9993 27.3902 49.9993C29.2237 49.9993 31.0017 49.767 32.6965 49.3308C33.2314 49.1932 33.7765 49.5152 33.9142 50.05C34.0518 50.5849 33.7298 51.13 33.195 51.2677C31.3387 51.7454 29.3933 51.9993 27.3902 51.9993C25.3871 51.9993 23.4417 51.7454 21.5854 51.2677C21.0505 51.13 20.7285 50.5849 20.8662 50.05Z"></path></svg></div>
+              <div class="seo-title">Link building</div>
+              <div class="seo-text">We are a creative agency that transforms brands.</div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-sm-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="seo-card">
+              <div class="seo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path d="M1 32.5C1.55229 32.5 2 32.9477 2 33.5C2 38.2587 2.00384 41.0601 2.35124 43.0509C2.67872 44.9277 3.30312 46.0312 4.63604 47.364L4.63608 47.3641C6.02673 48.7548 7.93534 49.4401 11.098 49.7512C11.6476 49.8053 12.0494 50.2947 11.9953 50.8443C11.9412 51.394 11.4518 51.7957 10.9022 51.7416C7.56426 51.4133 5.09713 50.6536 3.22184 48.7783C1.62583 47.1823 0.785763 45.7143 0.381006 43.3947C-6.07669e-05 41.2109 -3.65779e-05 38.2287 7.34584e-07 33.6371C1.09221e-06 33.5916 1.44984e-06 33.5459 1.44984e-06 33.5C1.44984e-06 32.9477 0.447717 32.5 1 32.5ZM17.5002 50.9951C17.5018 50.4428 17.9507 49.9964 18.503 49.9979C19.2958 50.0002 20.1269 50.0002 21.0002 50.0002C21.5525 50.0002 22.0002 50.4479 22.0002 51.0002C22.0002 51.5525 21.5525 52.0002 21.0002 52.0002C20.1275 52.0002 19.2935 52.0002 18.4974 51.9979C17.9451 51.9964 17.4986 51.5474 17.5002 50.9951Z"></path><path d="M51.0002 32.5C51.5525 32.5 52.0002 32.9477 52.0002 33.5V33.6371C52.0003 38.2287 52.0003 41.2109 51.6192 43.3947C51.2144 45.7143 50.3743 47.1824 48.7783 48.7783C47.0971 50.4596 44.9401 51.2441 42.1061 51.6252C39.3164 52.0002 35.7261 52.0002 31.0783 52.0002H31C30.4477 52.0002 30 51.5525 30 51.0002C30 50.4479 30.4477 50.0002 31 50.0002C35.7423 50.0002 39.1985 49.9981 41.8396 49.643C44.4519 49.2918 46.1164 48.6118 47.3641 47.3641L47.3641 47.364C48.6971 46.0312 49.3215 44.9277 49.649 43.0509C49.9964 41.0601 50.0002 38.2587 50.0002 33.5C50.0002 32.9477 50.4479 32.5 51.0002 32.5Z"></path><path d="M30 1C30 0.447715 30.4477 0 31 0H31.0007C31.8731 0 32.7069 0 33.503 0.00232947C34.0552 0.00394565 34.5016 0.452969 34.5 1.00525C34.4984 1.55753 34.0494 2.00394 33.4971 2.00232C32.7043 2 31.8733 2 31 2C30.4477 2 30 1.55228 30 1ZM40.0049 1.15584C40.059 0.606206 40.5484 0.204468 41.098 0.258531C44.436 0.586859 46.903 1.34658 48.7783 3.22184L48.1419 3.85825L48.7783 3.22185C50.3743 4.81787 51.2144 6.28586 51.6192 8.60547C52.0003 10.7893 52.0003 13.7715 52.0002 18.363V18.5002C52.0002 19.0525 51.5525 19.5002 51.0002 19.5002C50.4479 19.5002 50.0002 19.0525 50.0002 18.5002C50.0002 13.7415 49.9964 10.9401 49.649 8.94927C49.3215 7.07256 48.6971 5.96903 47.3641 4.63608C45.9734 3.2454 44.0648 2.56 40.9022 2.24893C40.3526 2.19486 39.9509 1.70547 40.0049 1.15584Z"></path><path d="M20.922 1.2819e-07L21.0002 3.66609e-07C21.5525 3.66609e-07 22.0002 0.447716 22.0002 1C22.0002 1.55229 21.5525 2 21.0002 2C16.2579 2 12.8017 2.00212 10.1606 2.3572C7.54836 2.70841 5.88379 3.38835 4.63607 4.63606C4.63607 4.63606 4.63607 4.63607 4.63606 4.63607M4.63606 4.63607C3.30312 5.96902 2.67872 7.07255 2.35124 8.94927C2.00384 10.9401 2 13.7415 2 18.5002C2 19.0525 1.55229 19.5002 1 19.5002C0.447717 19.5002 1.44984e-06 19.0525 1.44984e-06 18.5002L7.34583e-07 18.3631C-3.65779e-05 13.7715 -6.07669e-05 10.7893 0.381007 8.60547C0.785766 6.28587 1.62584 4.81788 3.22185 3.22185L3.22186 3.22185C4.90311 1.5406 7.06008 0.756066 9.89414 0.375037C12.6838 -2.06232e-05 16.2741 -1.14351e-05 20.922 1.2819e-07"></path><path d="M0 26C0 25.4477 0.447715 25 1 25H16.0002C16.5525 25 17.0002 25.4477 17.0002 26C17.0002 26.5523 16.5525 27 16.0002 27H1C0.447715 27 0 26.5523 0 26ZM25.0003 26C25.0003 25.4477 25.448 25 26.0003 25H51.0006C51.5528 25 52.0006 25.4477 52.0006 26C52.0006 26.5523 51.5528 27 51.0006 27H26.0003C25.448 27 25.0003 26.5523 25.0003 26Z"></path></svg></div>
+              <div class="seo-title">Local SEO</div>
+              <div class="seo-text">Our mission is to empower your businesses.</div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-sm-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="seo-card">
+              <div class="seo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 52"><path d="M30.416 20.2531C30.828 20.6209 30.8638 21.2531 30.4959 21.665L21.5675 31.665C21.3777 31.8775 21.1064 31.999 20.8215 31.999C20.5367 31.999 20.2653 31.8775 20.0756 31.6651L16.5041 27.6651C16.1362 27.2531 16.172 26.6209 16.584 26.2531C16.996 25.8853 17.6281 25.921 17.9959 26.333L20.8215 29.4976L29.0041 20.333C29.3719 19.921 30.0041 19.8853 30.416 20.2531Z"></path><path d="M23.5 2C21.6764 2 19.8994 2.59513 15.9182 3.95791L14.4861 4.44808C10.7155 5.73879 7.9293 6.69293 5.96465 7.49106C4.98321 7.88977 4.23961 8.23664 3.69629 8.55217C3.13865 8.87603 2.87451 9.12066 2.76232 9.28051C2.64723 9.44447 2.50345 9.78201 2.3801 10.4221C2.25993 11.0457 2.17451 11.8693 2.1165 12.9347C2.00037 15.0674 2 18.032 2 22.0418C2 22.594 1.55228 23.0418 1 23.0418C0.447715 23.0418 6.42741e-09 22.594 6.42741e-09 22.0418V22.0053C-1.06646e-06 18.0389 -2.01911e-06 15.0198 0.119454 12.826C0.179416 11.7248 0.270958 10.7975 0.416232 10.0436C0.55833 9.30625 0.768475 8.6399 1.12528 8.13154C1.48498 7.61906 2.04453 7.19863 2.69188 6.82268C3.35356 6.43841 4.19625 6.05073 5.2119 5.63813C7.23497 4.81626 10.0745 3.84429 13.8027 2.5681L13.8384 2.55587L15.2704 2.06569C15.3353 2.04351 15.3996 2.02149 15.4634 1.99963C19.1976 0.721201 21.3042 0 23.5 0C25.6958 0 27.8023 0.721183 31.5365 1.99959L31.7296 2.06569L33.1616 2.55587L33.1975 2.56815C36.9257 3.84432 39.7651 4.81627 41.7882 5.63813C42.8038 6.05073 43.6465 6.43841 44.3082 6.82268C44.9555 7.19863 45.5151 7.61906 45.8748 8.13155C46.2316 8.63992 46.4417 9.30627 46.5838 10.0436C46.7291 10.7975 46.8206 11.7248 46.8806 12.826C47 15.0198 47 18.039 47 22.0054V25.9785C47 32.4837 44.8206 37.5286 41.7854 41.3793C41.4435 41.813 40.8147 41.8875 40.381 41.5456C39.9472 41.2037 39.8728 40.5749 40.2146 40.1412C42.9954 36.6134 45 31.9979 45 25.9785V22.0418C45 18.032 44.9996 15.0674 44.8835 12.9347C44.8255 11.8693 44.7401 11.0457 44.6199 10.4221C44.4966 9.782 44.3528 9.44447 44.2377 9.2805C44.1255 9.12065 43.8614 8.87603 43.3038 8.55217C42.7605 8.23664 42.0169 7.88977 41.0354 7.49106C39.0708 6.69293 36.2846 5.73879 32.5139 4.44808L31.0819 3.95791C27.1006 2.59513 25.3236 2 23.5 2ZM1.28648 30.0193C1.82809 29.9113 2.35474 30.2628 2.46278 30.8044C4.50853 41.0601 12.9366 46.4075 18.6467 48.9018C19.5628 49.302 20.1645 49.5623 20.842 49.7358C21.5051 49.9055 22.2787 50 23.5 50C24.7213 50 25.4949 49.9055 26.158 49.7358C26.8355 49.5623 27.4371 49.302 28.3532 48.9019C29.7625 48.2862 31.3506 47.4906 32.9721 46.4827C33.4411 46.1911 34.0577 46.335 34.3493 46.8041C34.6409 47.2731 34.497 47.8897 34.0279 48.1813C32.3114 49.2483 30.6356 50.0873 29.1538 50.7346L29.1123 50.7528C28.2429 51.1325 27.5019 51.4562 26.654 51.6733C25.7784 51.8975 24.827 52 23.5 52C22.173 52 21.2216 51.8975 20.346 51.6733C19.4981 51.4562 18.7571 51.1326 17.8877 50.7528L17.8461 50.7347C11.9455 48.157 2.74276 42.4319 0.501421 31.1956C0.393382 30.654 0.744866 30.1274 1.28648 30.0193Z"></path></svg></div>
+              <div class="seo-title">E-commerce SEO</div>
+              <div class="seo-text">We specialize in brand strategy and web design.</div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-sm-6" data-aos="fade-left" data-aos-delay="400">
+            <div class="seo-card">
+              <div class="seo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 46"><path d="M25.9975 2C21.5288 2 17.9062 5.62259 17.9062 10.0913C17.9062 14.56 21.5288 18.1826 25.9975 18.1826C30.4662 18.1826 34.0888 14.56 34.0888 10.0913C34.0888 5.62259 30.4662 2 25.9975 2ZM15.9062 10.0913C15.9062 4.51802 20.4243 0 25.9975 0C31.5708 0 36.0888 4.51802 36.0888 10.0913C36.0888 15.6645 31.5708 20.1826 25.9975 20.1826C20.4243 20.1826 15.9062 15.6645 15.9062 10.0913Z"></path><path d="M38.6367 5.54395C38.6367 4.99166 39.0844 4.54395 39.6367 4.54395C43.7764 4.54395 47.4552 7.37264 47.4552 11.226C47.4552 15.0793 43.7764 17.908 39.6367 17.908C39.0844 17.908 38.6367 17.4603 38.6367 16.908C38.6367 16.3558 39.0844 15.908 39.6367 15.908C43.0287 15.908 45.4552 13.6489 45.4552 11.226C45.4552 8.80314 43.0287 6.54395 39.6367 6.54395C39.0844 6.54395 38.6367 6.09623 38.6367 5.54395Z"></path><path d="M12.3614 6.54395C8.96953 6.54395 6.54297 8.80315 6.54297 11.226C6.54297 13.6488 8.96953 15.908 12.3614 15.908C12.9137 15.908 13.3614 16.3558 13.3614 16.908C13.3614 17.4603 12.9137 17.908 12.3614 17.908C8.22188 17.908 4.54297 15.0794 4.54297 11.226C4.54297 7.37263 8.22188 4.54395 12.3614 4.54395C12.9137 4.54395 13.3614 4.99166 13.3614 5.54395C13.3614 6.09623 12.9137 6.54395 12.3614 6.54395Z"></path><path d="M16.9121 29.4949C14.6231 31.0209 13.3633 33.0192 13.3633 35.0913C13.3633 37.1633 14.6231 39.1617 16.9121 40.6877C19.1942 42.2091 22.4044 43.1826 26.0002 43.1826C29.596 43.1826 32.8062 42.2091 35.0882 40.6877C37.3773 39.1617 38.6371 37.1633 38.6371 35.0913C38.6371 33.7172 38.0891 32.3899 37.0574 31.201C36.6955 30.7839 36.7402 30.1523 37.1573 29.7904C37.5745 29.4284 38.206 29.4731 38.568 29.8902C39.8569 31.3756 40.6371 33.1534 40.6371 35.0913C40.6371 38.0401 38.8442 40.5874 36.1977 42.3518C33.5441 44.1209 29.9358 45.1826 26.0002 45.1826C22.0646 45.1826 18.4563 44.1209 15.8027 42.3518C13.1562 40.5874 11.3633 38.0401 11.3633 35.0913C11.3633 32.1424 13.1562 29.5952 15.8027 27.8308C18.4563 26.0617 22.0646 25 26.0002 25C26.8115 25 27.608 25.045 28.3843 25.1319C28.9331 25.1933 29.3282 25.6881 29.2668 26.2369C29.2054 26.7858 28.7106 27.1809 28.1618 27.1195C27.4598 27.0409 26.7376 27 26.0002 27C22.4044 27 19.1942 27.9735 16.9121 29.4949Z"></path><path d="M43.207 28.0604C43.3253 27.5209 43.8586 27.1795 44.398 27.2978C46.5045 27.7598 48.3648 28.587 49.7214 29.697C51.0773 30.8065 52.0023 32.2676 52.0023 33.9567C52.0023 35.6457 51.0773 37.1068 49.7214 38.2163C48.3648 39.3264 46.5045 40.1536 44.398 40.6155C43.8586 40.7338 43.3253 40.3924 43.207 39.8529C43.0887 39.3135 43.4301 38.7802 43.9696 38.6619C45.8501 38.2495 47.399 37.5324 48.4549 36.6685C49.5115 35.8039 50.0023 34.8611 50.0023 33.9567C50.0023 33.0522 49.5115 32.1095 48.4549 31.2449C47.399 30.3809 45.8501 29.6638 43.9696 29.2514C43.4301 29.1331 43.0887 28.5999 43.207 28.0604Z"></path><path d="M8.79525 28.0604C8.91355 28.5999 8.57213 29.1331 8.03266 29.2514C6.15212 29.6638 4.60319 30.3809 3.54735 31.2449C2.49077 32.1095 2 33.0522 2 33.9567C2 34.8611 2.49077 35.8039 3.54735 36.6685C4.60319 37.5324 6.15212 38.2495 8.03266 38.6619C8.57213 38.7802 8.91355 39.3135 8.79525 39.8529C8.67694 40.3924 8.14372 40.7338 7.60425 40.6155C5.4977 40.1536 3.6374 39.3264 2.28079 38.2163C0.924916 37.1068 0 35.6457 0 33.9567C0 32.2676 0.924916 30.8065 2.28079 29.697C3.6374 28.587 5.4977 27.7598 7.60425 27.2978C8.14372 27.1795 8.67694 27.521 8.79525 28.0604Z"></path></svg></div>
+              <div class="seo-title">Flexible services</div>
+              <div class="seo-text">We empower brands through innovative digital solutions.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------------carts----------------------------- -->
+ <section class="digital-wrapper">
+  <div class="container">
+    <h2 data-aos="fade-up">Building and crafting <br> your digital future</h2>
+    <div class="row mt-5 g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="custom-card h-100">
+          <h5>WEB DEVELOPMENT</h5>
+          <p>We turn ideas into reality.</p>
+          <img src="https://img.freepik.com/premium-photo/composition-with-html-system-websites_23-2150866277.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740" alt="Endless Possibilities" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="custom-card h-100">
+          <h5>APP DEVELOPMENT</h5>
+          <p>We provide cutting-edge services.</p>
+          <img src="https://img.freepik.com/premium-photo/secret-getting-ahead-is-getting-starting-cropped-shot-unrecognizable-man-using-cellphone-modern-office_590464-45430.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740" alt="Innovative Solutions" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="custom-card h-100">
+          <h5>UI/UX DESIGNER</h5>
+          <p>Explore our digital solutions.</p>
+          <img src="https://img.freepik.com/free-photo/side-view-man-working-with-white-board_23-2149930949.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740" alt="Tailored Services" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="custom-card h-100">
+          <h5>DIGITAL MARKETING</h5>
+          <p>Explore our digital solutions.</p>
+          <img src="https://img.freepik.com/free-photo/hands-holding-smartphone-social-media-concept_23-2150208238.jpg?t=st=1747910916~exp=1747914516~hmac=d1fed134470fe5c7b3ec067feed5d38e54c9ea0b55e8958a11edc6b5f06d67eb&w=1380" alt="Tailored Services" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="custom-card h-100">
+          <h5>DATA ANAYLYSIS</h5>
+          <p>Explore our digital solutions.</p>
+          <img src="https://img.freepik.com/free-photo/futuristic-technology-concept_23-2151908060.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740" alt="Tailored Services" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="custom-card h-100">
+          <h5>CYBER SECURITY</h5>
+          <p>Explore our digital solutions.</p>
+          <img src="https://img.freepik.com/free-photo/gradient-technology-background_23-2151895856.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740" alt="Tailored Services" />
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------last--------------------------------- -->
+ <section class="business-consulting-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-6 business-consulting-content" data-aos="fade-up">
+        <h1>
+          Business consulting <br>
+          <span class="highlight-underline">and digital advisory</span>
+        </h1>
+        <p class="mt-3">
+          We provide digital experience services to startups and small businesses to looking for a partner of their digital media. We provide digital experience services.
+        </p>
+        <a href="#" class="btn btn-primary mt-4">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up">
+        <div class="brand">SOLUTIONS</div>
+        <p class="mt-3">
+          We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.
+        </p>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>IT Services</h5>
+        <a href="#">IT Services</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Managed IT</a>
+        <a href="#">IT Support</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>Important Links</h5>
+        <a href="#">About Us</a>
+        <a href="#">Meet Our Team</a>
+        <a href="#">News & Media</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Locations</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>Get In Touch</h5>
+        <p><strong>Phone:</strong> (01) 123-321-456</p>
+        <p><strong>Email:</strong> Info@Solution.com</p>
+        <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+        <div class="social-icons mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+      <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">solution.com</a></p>
+    </div>
+  </div>
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+</footer>
+
+<!-- JS for dropdown icon toggle (mobile only) -->
+<script>
+  function toggleDropdown(icon) {
+    if (window.innerWidth < 992) {
+      const parentLi = icon.closest('.dropdown');
+      const allDropdowns = document.querySelectorAll('.dropdown');
+
+      allDropdowns.forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+          const i = li.querySelector('.dropdown-icon');
+          if (i) i.classList.remove('rotate');
+        }
+      });
+
+      parentLi.classList.toggle('open');
+      icon.classList.toggle('rotate');
+    }
+  }
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const wrapper = document.querySelector('.testimonial-wrapper');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+  let slideWidth = slides[0].offsetWidth;
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }, 3000);
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+  const allLinks = document.querySelectorAll(".navbar a");
+
+  allLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>

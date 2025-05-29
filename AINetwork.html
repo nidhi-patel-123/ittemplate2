@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solution Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/navbarfooter.css">
+  <link rel="stylesheet" href="css/ainetwork.css">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+<!-- -----------------------navbar----------------------------------------- -->
+<nav class="navbar navbar-expand-lg px-4 py-2">
+  <a class="navbar-brand" href="#">
+    <div class="logo-dot"></div>
+   SOLUTIONS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+      
+      <!-- Home -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="digital.html">Digital Agency</a></li>
+          <li><a class="dropdown-item" href="hTechnologies.html">AI Technologies</a></li>
+          <li><a class="dropdown-item" href="SoftwareSolution.html">Software Solution</a></li>
+          <li><a class="dropdown-item" href="SEOService.html">SEO Service</a></li>
+          <li><a class="dropdown-item" href="Startup.html">Startup</a></li>
+          <li><a class="dropdown-item" href="MarketingAgency.html">Marketing Agency</a></li>
+          <li><a class="dropdown-item" href="Helpdesk.html">Helpdesk</a></li>
+          <li><a class="dropdown-item" href="AINetwork.html">AI Network</a></li>
+        </ul>
+      </li>
+
+      <!-- Pages -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Pages.html">Pages</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="AboutUs-1.html">About Us-1</a></li>
+          <li><a class="dropdown-item" href="AboutUs-2.html">About Us-2</a></li>
+          <li><a class="dropdown-item" href="Service-1.html">Service-1</a></li>
+          <li><a class="dropdown-item" href="Service-2.html">Service-2</a></li>
+          <li><a class="dropdown-item" href="Service-3.html">Service-3</a></li>
+          <li><a class="dropdown-item" href="OurTeam.html">Our Team</a></li>
+          <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+          <li><a class="dropdown-item" href="Pricing-1.html">Pricing-1</a></li>
+          <li><a class="dropdown-item" href="Pricing-2.html">Pricing-2</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-1.html">Contact-Us-1</a></li>
+          <li><a class="dropdown-item" href="Contact-Us-2.html">Contact-Us-2</a></li>
+          <li><a class="dropdown-item" href="AiFeatures.html">Ai Features</a></li>
+          <li><a class="dropdown-item" href="Tools.html">Tools</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Portfolio.html">Portfolio</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="OurWork.html">Our Work</a></li>
+          <li><a class="dropdown-item" href="SingleProject.html"> Single Project</a></li>
+        </ul>
+      </li>
+
+      <!-- Blog -->
+      <li class="nav-item dropdown">
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="Blog.html">Blog</a>
+          <i class="fas fa-chevron-down dropdown-icon ms-1" onclick="toggleDropdown(this)"></i>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Blog-Standard.html">Blog-Standard</a></li>
+          <li><a class="dropdown-item" href="Blog-Grid.html">Blog-Grid</a></li>
+          <li><a class="dropdown-item" href="Withsidebar.html">With Sidebar</a></li>
+          <li><a class="dropdown-item" href="Without-Sidebar.html">Without Sidebar</a></li>
+        </ul>
+      </li>
+
+      <!-- Contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Button -->
+      <li class="nav-item ms-lg-3">
+        <a href="Get-in-Touch.html" class="btn btn-primary">Get in Touch</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="about-hero d-flex align-items-center text-center text-white">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">AI-NETWORK</h1>
+      <p class="breadcrumb-text mt-2">
+        <a href="home.html" class="text-white text-decoration-none">Home</a> /
+        <span class="text-white-50">AI-NETWORK</span>
+      </p>
+    </div>
+  </section>
+<!-- ---------------------------------------- -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <span class="badge-tag">OUR PROCESS</span>
+        <h2 class="section-title mb-4">
+          Artificial Intelligence Is The Power <span class="highlight">Of The Future</span>
+        </h2>
+        <div class="row">
+          <!-- Feature 1 -->
+          <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-box">
+            
+              <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve"><g transform="translate(0 0)">	<g>		<defs>			<rect width="80" height="80"></rect>		</defs>		<clipPath>			<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>		</clipPath>		<g transform="translate(0 0)" class="st0">			<g>				<path d="M45.3,65.9c-3.5,0-6.3-2.8-6.3-6.3s2.8-6.3,6.3-6.3s6.3,2.8,6.3,6.3S48.8,65.9,45.3,65.9z M45.3,55.2     c-2.4,0-4.3,1.9-4.3,4.3s1.9,4.3,4.3,4.3s4.3-1.9,4.3-4.3S47.7,55.2,45.3,55.2z"></path>			</g>			<g>				<path d="M50.7,30.3c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3S57,20.5,57,24C57,27.5,54.2,30.3,50.7,30.3z      M50.7,19.7c-2.4,0-4.3,1.9-4.3,4.3s1.9,4.3,4.3,4.3S55,26.4,55,24S53.1,19.7,50.7,19.7z"></path>			</g>			<g>				<path d="M57.8,48.1c-3.5,0-6.3-2.8-6.3-6.3c0-3.5,2.8-6.3,6.3-6.3s6.3,2.8,6.3,6.3C64.1,45.3,61.3,48.1,57.8,48.1z      M57.8,37.4c-2.4,0-4.3,1.9-4.3,4.3s1.9,4.3,4.3,4.3s4.3-1.9,4.3-4.3S60.2,37.4,57.8,37.4z"></path>			</g>			<g>				<rect x="13.3" y="40.8" width="39.1" height="2"></rect>			</g>			<g>				<polygon points="40.4,35.7 29.3,35.7 29.3,33.7 39.6,33.7 46.4,26.8 47.8,28.3     "></polygon>			</g>			<g>				<path d="M32.9,28.5c-3.5,0-6.3-2.8-6.3-6.3s2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3S36.4,28.5,32.9,28.5z M32.9,17.9     c-2.4,0-4.3,1.9-4.3,4.3s1.9,4.3,4.3,4.3s4.3-1.9,4.3-4.3S35.3,17.9,32.9,17.9z"></path>			</g>			<g>				<polygon points="41.1,56.7 34.3,49.9 16.9,49.9 16.9,47.9 35.1,47.9 42.5,55.3     "></polygon>			</g>			<g>				<polygon points="20.8,35.7 13.3,35.7 13.3,33.7 20,33.7 28.6,25.1 30,26.5     "></polygon>			</g>		</g>		<g class="svg-animate-1">			<path d="M46.7,79.2c-0.3,0-0.7-0.2-0.8-0.5L42.2,73h-4.4l-3.7,5.7c-0.2,0.4-0.7,0.5-1.1,0.4l-6.5-1.9    c-0.4-0.1-0.7-0.5-0.7-0.9l-0.1-7.1L21.9,67l-6.2,3.5c-0.4,0.2-0.9,0.1-1.2-0.2l-4.8-4.8c-0.3-0.3-0.4-0.8-0.2-1.2l3.5-6.2    l-2.2-3.8l-7.1-0.1c-0.4,0-0.8-0.3-0.9-0.7L0.8,47c-0.1-0.4,0-0.9,0.4-1.1L7,42.2v-4.4l-5.7-3.7c-0.4-0.2-0.5-0.7-0.4-1.1    l1.9-6.5c0.1-0.4,0.5-0.7,0.9-0.7l7.1-0.1l2.2-3.8l-3.4-6.2c-0.2-0.4-0.1-0.9,0.2-1.2l4.8-4.8c0.3-0.3,0.8-0.4,1.2-0.2l6.2,3.5    l3.8-2.2l0.1-7.1c0-0.4,0.3-0.8,0.7-0.9L33,0.8c0.4-0.1,0.9,0,1.1,0.4L37.8,7h4.4l3.7-5.7c0.2-0.4,0.7-0.5,1.1-0.4l6.5,1.9    c0.4,0.1,0.7,0.5,0.7,0.9l0.1,7.1l3.8,2.2l6.2-3.5c0.4-0.2,0.9-0.1,1.2,0.2l4.8,4.8c0.3,0.3,0.4,0.8,0.2,1.2L67,21.9l2.2,3.8    l7.1,0.1c0.4,0,0.8,0.3,0.9,0.7l1.9,6.5c0.1,0.4,0,0.9-0.4,1.1L73,37.8v4.4l5.7,3.7c0.4,0.2,0.5,0.7,0.4,1.1l-1.9,6.5    c-0.1,0.4-0.5,0.7-0.9,0.7l-7.1,0.1L67,58.1l3.5,6.2c0.2,0.4,0.1,0.9-0.2,1.2l-4.8,4.8c-0.3,0.3-0.8,0.4-1.2,0.2L58.1,67    l-3.8,2.2l-0.1,7.1c0,0.4-0.3,0.8-0.7,0.9L47,79.2C46.9,79.2,46.8,79.2,46.7,79.2z M27.8,75.6l5.1,1.5l3.6-5.6    c0.2-0.3,0.5-0.5,0.8-0.5h5.5c0.3,0,0.7,0.2,0.8,0.5l3.6,5.6l5.1-1.5l0.1-7c0-0.4,0.2-0.7,0.5-0.8l4.8-2.8c0.3-0.2,0.7-0.2,1,0    l6.1,3.4l3.7-3.7L65,58.6c-0.2-0.3-0.2-0.7,0-1l2.8-4.8c0.2-0.3,0.5-0.5,0.8-0.5l6.9-0.1l1.5-5.1l-5.6-3.6    c-0.3-0.2-0.5-0.5-0.5-0.8v-5.5c0-0.3,0.2-0.7,0.5-0.8l5.6-3.6l-1.5-5.1l-7-0.1c-0.4,0-0.7-0.2-0.8-0.5L65,22.4    c-0.2-0.3-0.2-0.7,0-1l3.4-6.1l-3.7-3.7L58.6,15c-0.3,0.2-0.7,0.2-1,0l-4.8-2.8c-0.3-0.2-0.5-0.5-0.5-0.8l-0.1-6.9l-5.1-1.5    l-3.6,5.6C43.4,8.8,43.1,9,42.7,9h-5.5c-0.3,0-0.7-0.2-0.8-0.5L32.9,3l-5.1,1.5l-0.1,7c0,0.4-0.2,0.7-0.5,0.8L22.4,15    c-0.3,0.2-0.7,0.2-1,0l-6.1-3.4l-3.7,3.7l3.4,6.1c0.2,0.3,0.2,0.7,0,1l-2.8,4.8c-0.2,0.3-0.5,0.5-0.8,0.5l-6.9,0.1l-1.5,5.1    l5.6,3.6C8.8,36.6,9,36.9,9,37.2v5.5c0,0.3-0.2,0.7-0.5,0.8L3,47.1l1.5,5.1l7,0.1c0.4,0,0.7,0.2,0.8,0.5l2.8,4.8    c0.2,0.3,0.2,0.7,0,1l-3.4,6.1l3.7,3.7l6.1-3.4c0.3-0.2,0.7-0.2,1,0l4.8,2.8c0.3,0.2,0.5,0.5,0.5,0.8L27.8,75.6z"></path>		</g>	</g></g></svg>
+              <div class="feature-title">Collecting Data Base</div>
+              <p>Lacus sed viverra tellus in hac habitasse plate</p>
+              <div class="step-number">01</div>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 68.3 80" style="enable-background:new 0 0 68.3 80;" xml:space="preserve"><g>	<g>		<polygon points="27.4,60.7 26,59.3 34,51.3 34,46.7 36,46.7 36,52.1   "></polygon>	</g>	<g>		<polygon points="36,30 34,30 34,26.3 41,19.3 42.4,20.7 36,27.1   "></polygon>	</g>	<g>		<polygon points="27.4,20.7 26,19.3 34,11.3 34,6.7 36,6.7 36,12.1   "></polygon>	</g>	<g>		<polygon points="36,73.3 34,73.3 34,67.9 42.6,59.3 44,60.7 36,68.7   "></polygon>	</g>	<g>		<polygon points="50.7,34 49.3,32.6 57.3,24.6 57.3,18.3 59.3,18.3 59.3,25.4   "></polygon>	</g>	<g>		<polygon points="11,61.7 9,61.7 9,54.6 17.6,46 19,47.4 11,55.4   "></polygon>	</g>	<g>		<g>			<defs>				<rect width="68.3" height="80"></rect>			</defs>			<clipPath>				<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>			</clipPath>			<g>				<g>					<path d="M46.7,22.7c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S50,22.7,46.7,22.7z M46.7,12.7c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S48.9,12.7,46.7,12.7z"></path>				</g>				<g>					<path d="M46.7,42.7c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S50,42.7,46.7,42.7z M46.7,32.7c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S48.9,32.7,46.7,32.7z"></path>				</g>				<g>					<path d="M46.7,62.7c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S50,62.7,46.7,62.7z M46.7,52.7c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S48.9,52.7,46.7,52.7z"></path>				</g>				<g>					<path d="M23.3,29.3c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S26.6,29.3,23.3,29.3z M23.3,19.3c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S25.5,19.3,23.3,19.3z"></path>				</g>				<g>					<path d="M23.3,49.3c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S26.6,49.3,23.3,49.3z M23.3,39.3c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S25.5,39.3,23.3,39.3z"></path>				</g>				<g>					<path d="M23.3,69.3c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S26.6,69.3,23.3,69.3z M23.3,59.3c-2.2,0-4,1.8-4,4      s1.8,4,4,4s4-1.8,4-4S25.5,59.3,23.3,59.3z"></path>				</g>				<g>					<rect x="34" y="33.3" width="2" height="3.3"></rect>				</g>				<g>					<rect x="34" y="40" width="2" height="3.3"></rect>				</g>				<g>					<rect x="57.3" y="11.7" width="2" height="3.3"></rect>				</g>				<g>					<rect x="57.3" y="5" width="2" height="3.3"></rect>				</g>				<g>					<rect x="34" width="2" height="3.3"></rect>				</g>				<g>					<rect x="34" y="76.7" width="2" height="3.3"></rect>				</g>				<g>					<rect x="9" y="71.7" width="2" height="3.3"></rect>				</g>				<g>					<rect x="9" y="65" width="2" height="3.3"></rect>				</g>			</g>		</g>	</g>	<g>		<g class="svg-animate-6">			<path d="M40,72.7v-2c6.9,0,13.3-2.7,18.1-7.5s7.5-11.3,7.5-18.1V0h2v45C67.7,60.3,55.3,72.7,40,72.7z"></path>		</g>		<g class="svg-animate-7">			<path d="M2.7,80h-2V35c0-15.3,12.4-27.7,27.7-27.7H30v2h-1.7c-6.9,0-13.3,2.7-18.1,7.5S2.7,28.1,2.7,35V80z"></path>		</g>	</g></g></svg>
+              <div class="feature-title">Image Generation</div>
+              <p>In fermentum et sollicitudin ac orci</p>
+              <div class="step-number">02</div>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 114 80" style="enable-background:new 0 0 114 80;" xml:space="preserve"><g transform="translate(0 0)">	<g>		<path d="M61.8,47.7c-0.4,0-0.7-0.2-0.9-0.6c-0.2-0.5,0-1.1,0.5-1.3L97,29.2c0.5-0.2,1.1,0,1.3,0.5   c0.2,0.5,0,1.1-0.5,1.3L62.2,47.6C62.1,47.7,61.9,47.7,61.8,47.7z"></path>	</g>	<g>		<path d="M52.3,47.7c-0.1,0-0.3,0-0.4-0.1L16.2,31c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l35.6,16.6   c0.5,0.2,0.7,0.8,0.5,1.3C53,47.5,52.6,47.7,52.3,47.7z"></path>	</g>	<g class="svg-animate-5">		<path d="M57,36l-15.3-7.6v-3.6L57,17.1l15.3,7.6v3.6L57,36z M43.8,27.1L57,33.7l13.3-6.6V26L57,19.4L43.8,26V27.1z"></path>	</g>	<g transform="translate(0 0)">		<g>			<defs>				<rect width="114" height="80"></rect>			</defs>			<clipPath>				<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>			</clipPath>			<g>				<g class="svg-animate-3">					<g>						<path d="M38,78.5c0,0-0.1,0-0.1,0c-3.1-0.1-5.6-2.5-5.6-5.6v-4.8h2v4.7c0,2,1.7,3.6,3.7,3.7       c2,0.1,3.8-1.6,3.8-3.7v-5l4.7-7.3c1-2.2,0-4.7-2.1-5.7l-0.1-0.1c-1-0.5-2.1-0.5-3.2-0.2c-1,0.4-1.9,1.1-2.4,2.1l-1.8-0.9       c0.7-1.5,1.9-2.6,3.5-3.2c1.5-0.5,3.2-0.5,4.7,0.2l0.1,0.1c3.1,1.5,4.5,5.3,3,8.4l-0.1,0.1l-4.4,6.9v4.5c0,1.6-0.7,3-1.8,4.1       C40.9,78,39.5,78.5,38,78.5z"></path>					</g>					<g>						<path d="M28.5,74c-3.1,0-5.7-2.5-5.7-5.6v-5h2v4.9c0,2.1,1.8,3.7,3.8,3.7c1,0,1.9-0.4,2.6-1.2       c0.7-0.7,1.1-1.7,1-2.7v-5.1l4.7-7.3c1-2.2,0-4.7-2.1-5.7L34.7,50c-1-0.5-2.1-0.5-3.2-0.2c-1,0.4-1.9,1.1-2.4,2.1l-1.8-0.9       c0.7-1.5,2-2.6,3.5-3.2c1.6-0.5,3.2-0.5,4.7,0.2l0.2,0.1c3.1,1.5,4.5,5.3,3,8.4l-0.1,0.1l-4.4,6.9v4.5c0,1.5-0.5,3-1.6,4.1       c-1.1,1.1-2.5,1.7-4,1.8C28.6,74,28.5,74,28.5,74z"></path>					</g>					<g>						<path d="M19,69c0,0-0.1,0-0.1,0c-3.1-0.1-5.6-2.5-5.6-5.6v-4.8h2v4.8c0,2,1.7,3.6,3.7,3.7c1,0,2-0.3,2.7-1       c0.7-0.7,1.1-1.6,1.2-2.6v-5l4.7-7.3c1-2.2,0-4.7-2.1-5.7l-0.1-0.1c-1-0.5-2.1-0.5-3.2-0.2c-1,0.4-1.9,1.1-2.4,2.1l-1.8-0.9       c0.7-1.5,2-2.6,3.5-3.2c1.6-0.5,3.2-0.5,4.7,0.2l0.2,0.1c3.1,1.5,4.5,5.3,3,8.4L29.1,52l-4.4,6.9v4.5c0,1.6-0.7,3-1.8,4.1       C21.9,68.5,20.5,69,19,69z"></path>					</g>					<g>						<path d="M9.5,64.5c-1.5,0-2.9-0.6-4-1.6c-1.1-1.1-1.7-2.5-1.8-4c0-0.1,0-0.2,0-0.2l0-9.8l4.6-7.3       c0.7-1.5,1.9-2.6,3.5-3.1c1.5-0.5,3.2-0.5,4.7,0.2l0.1,0.1c3.1,1.5,4.5,5.3,3,8.4l-0.1,0.1l-4.4,6.9v4.5       c0.1,3.1-2.5,5.8-5.6,5.8C9.6,64.5,9.5,64.5,9.5,64.5z M5.8,49.4l0,9.4c0,1,0.4,1.9,1.2,2.6c0.7,0.7,1.7,1.1,2.7,1       c2.1,0,3.7-1.8,3.7-3.8v-5.1l4.7-7.3c1-2.2,0-4.7-2.1-5.7l-0.1-0.1c-1-0.5-2.1-0.5-3.2-0.2c-1,0.4-1.9,1.1-2.4,2.1l-0.1,0.1       L5.8,49.4z"></path>					</g>				</g>				<g>					<path d="M7.2,45.4l-2.5-1.2c-2-1-3.3-3-3.3-5.2v-8.3c0-2.2,1.3-4.2,3.3-5.2L53.5,2.2c2.2-1.1,4.8-1.1,7,0      l48.9,23.4c2,0.9,3.3,3,3.3,5.2v8.2c0,2.2-1.3,4.3-3.3,5.2l-2.5,1.2l-0.8-1.8l2.5-1.2c1.3-0.6,2.2-2,2.2-3.4v-8.2      c0-1.4-0.8-2.8-2.1-3.4L59.7,4c-1.7-0.8-3.6-0.8-5.3,0L5.5,27.3c-1.3,0.6-2.1,1.9-2.1,3.4V39c0,1.4,0.8,2.8,2.1,3.4L8,43.6      L7.2,45.4z"></path>				</g>				<g class="svg-animate-4">					<g>						<path d="M76,78.5c-3.1,0-5.7-2.5-5.7-5.6v-4.5l-4.5-7c-1.4-3.2-0.1-7,3.1-8.4l0.1-0.1c3.1-1.5,6.7-0.2,8.2,2.9       l-1.8,0.9c-0.5-1-1.3-1.8-2.4-2.1c-1-0.4-2.2-0.3-3.2,0.2l-0.1,0c-2.2,1-3.1,3.6-2.2,5.8l4.7,7.3v5c0,2,1.7,3.7,3.7,3.7       c0,0,0.1,0,0.1,0c2,0,3.6-1.7,3.7-3.7v-4.7h2v4.7c-0.1,3.1-2.5,5.6-5.6,5.7C76.1,78.5,76.1,78.5,76,78.5z"></path>					</g>					<g>						<path d="M85.5,74c0,0-0.1,0-0.1,0c-1.5,0-3-0.7-4-1.8c-1.1-1.1-1.6-2.6-1.6-4.1v-4.4l-4.5-7       c-1.5-3.2-0.1-7,3.1-8.4l0.1-0.1c1.5-0.7,3.2-0.8,4.7-0.2c1.5,0.5,2.8,1.7,3.5,3.2l-1.8,0.9c-0.5-1-1.3-1.8-2.4-2.1       c-1-0.4-2.2-0.3-3.2,0.2L79.2,50c-2.1,1-3.1,3.6-2.1,5.7l4.7,7.3v5c0,1,0.3,2,1,2.7c0.7,0.7,1.6,1.1,2.6,1.2       c2,0,3.8-1.6,3.8-3.7v-4.9h2v5C91.2,71.5,88.6,74,85.5,74z"></path>					</g>					<g>						<path d="M95,69c-1.5,0-2.9-0.6-4-1.6c-1.1-1.1-1.7-2.5-1.8-4v-4.5l-4.5-7c-1.5-3.2-0.1-7,3.1-8.4l0.1-0.1       c1.5-0.7,3.1-0.8,4.7-0.2c1.5,0.5,2.8,1.7,3.5,3.2l-1.8,0.9c-0.5-1-1.3-1.8-2.4-2.1c-1-0.4-2.2-0.3-3.2,0.2l-0.1,0.1       c-2.1,1-3.1,3.6-2.1,5.7l4.7,7.3v5c0,1,0.4,1.9,1.2,2.6c0.7,0.7,1.7,1.1,2.7,1c2,0,3.6-1.7,3.7-3.7v-4.7h2v4.8       c-0.1,3.1-2.5,5.6-5.6,5.7C95.1,69,95.1,69,95,69z"></path>					</g>					<g>						<path d="M104.5,64.5c0,0-0.1,0-0.1,0c-3.2-0.1-5.7-2.7-5.6-5.9v-4.4l-4.5-7c-1.5-3.2-0.1-7,3.1-8.4l0.1-0.1       c1.5-0.7,3.2-0.8,4.7-0.2c1.5,0.5,2.8,1.6,3.5,3.1l4.6,7.3v10c0,1.5-0.7,3-1.8,4C107.4,63.9,106,64.5,104.5,64.5z M96.1,46.3       l4.7,7.3v5c0,2.1,1.6,3.8,3.7,3.8c1,0,2-0.3,2.7-1c0.7-0.7,1.1-1.6,1.2-2.6v-9.4l-4.4-7c-0.5-1-1.3-1.8-2.4-2.1       c-1-0.4-2.2-0.3-3.2,0.2l-0.1,0C96.1,41.5,95.2,44.1,96.1,46.3z"></path>					</g>				</g>				<g>					<path d="M57,68.6c-0.8,0-1.7-0.2-2.5-0.6l-8.9-4.3l0.9-1.8l8.9,4.3c1,0.5,2.2,0.5,3.2,0l8.9-4.3l0.9,1.8L59.5,68      C58.7,68.4,57.9,68.6,57,68.6z"></path>				</g>			</g>		</g>	</g></g></svg>
+              <div class="feature-title">Create & Integrate Models</div>
+              <p>Diam quam nulla porttitor massa id neque aliqua</p>
+              <div class="step-number">03</div>
+            </div>
+          </div>
+          <!-- Feature 4 -->
+          <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-box">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 91.4 80" style="enable-background:new 0 0 91.4 80;" xml:space="preserve"><g>	<g>		<rect x="44.7" y="57.1" width="2" height="9.5"></rect>	</g>	<g>		<polygon points="23.9,66.7 21.9,66.7 21.9,60.5 30.1,52.3 34.3,52.3 34.3,54.3 30.9,54.3 23.9,61.4   "></polygon>	</g>	<g>		<polygon points="34.3,37.2 30.1,37.2 18.6,25.8 13.3,25.8 13.3,23.8 19.5,23.8 30.9,35.2 34.3,35.2   "></polygon>	</g>	<g>		<g>			<defs>				<rect width="91.4" height="80"></rect>			</defs>			<clipPath>				<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>			</clipPath>			<g>				<g>					<polygon points="19.5,56.2 13.3,56.2 13.3,54.2 18.6,54.2 30.1,42.8 34.3,42.8 34.3,44.8 30.9,44.8      "></polygon>				</g>				<g>					<rect x="44.7" y="13.3" width="2" height="9.5"></rect>				</g>				<g>					<polygon points="34.3,27.7 30.1,27.7 21.9,19.5 21.9,13.3 23.9,13.3 23.9,18.6 30.9,25.7 34.3,25.7      "></polygon>				</g>				<g>					<polygon points="69.6,66.7 67.6,66.7 67.6,61.4 60.5,54.3 57.1,54.3 57.1,52.3 61.4,52.3 69.6,60.5      "></polygon>				</g>				<g>					<polygon points="61.4,37.2 57.1,37.2 57.1,35.2 60.5,35.2 72,23.8 78.1,23.8 78.1,25.8 72.8,25.8      "></polygon>				</g>				<g>					<polygon points="78.1,56.2 72,56.2 60.5,44.8 57.1,44.8 57.1,42.8 61.4,42.8 72.8,54.2 78.1,54.2      "></polygon>				</g>				<g>					<polygon points="61.4,27.7 57.1,27.7 57.1,25.7 60.5,25.7 67.6,18.6 67.6,13.3 69.6,13.3 69.6,19.5      "></polygon>				</g>				<g>					<path d="M54.3,54.3H37.1V25.7h17.2V54.3z M39.1,52.3h13.2V27.7H39.1V52.3z"></path>				</g>				<g>					<rect y="39" width="24.8" height="2"></rect>				</g>				<g>					<rect x="66.7" y="39" width="24.8" height="2"></rect>				</g>			</g>		</g>		<g class="svg-animate-2">			<g>				<path d="M7.6,31.5c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S11.3,31.5,7.6,31.5z M7.6,20     c-2.6,0-4.7,2.1-4.7,4.7c0,2.6,2.1,4.7,4.7,4.7c2.6,0,4.7-2.1,4.7-4.7C12.3,22.2,10.2,20,7.6,20z"></path>			</g>			<g>				<path d="M7.6,62c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S11.3,62,7.6,62z M7.6,50.5     c-2.6,0-4.7,2.1-4.7,4.7S5,60,7.6,60c2.6,0,4.7-2.1,4.7-4.7S10.2,50.5,7.6,50.5z"></path>			</g>			<g>				<path d="M45.7,79.1c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S49.4,79.1,45.7,79.1z M45.7,67.7     c-2.6,0-4.7,2.1-4.7,4.7s2.1,4.7,4.7,4.7c2.6,0,4.7-2.1,4.7-4.7S48.3,67.7,45.7,67.7z"></path>			</g>			<g>				<path d="M45.7,14.3c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S49.4,14.3,45.7,14.3z M45.7,2.9     C43.1,2.9,41,5,41,7.6c0,2.6,2.1,4.7,4.7,4.7c2.6,0,4.7-2.1,4.7-4.7C50.4,5,48.3,2.9,45.7,2.9z"></path>			</g>			<g>				<path d="M22.9,79.1c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S26.6,79.1,22.9,79.1z M22.9,67.7     c-2.6,0-4.7,2.1-4.7,4.7s2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7S25.5,67.7,22.9,67.7z"></path>			</g>			<g>				<path d="M22.9,14.3c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S26.6,14.3,22.9,14.3z M22.9,2.9     c-2.6,0-4.7,2.1-4.7,4.7c0,2.6,2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7C27.6,5,25.5,2.9,22.9,2.9z"></path>			</g>			<g>				<path d="M83.8,31.5c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S87.5,31.5,83.8,31.5z M83.8,20     c-2.6,0-4.7,2.1-4.7,4.7c0,2.6,2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7C88.5,22.2,86.4,20,83.8,20z"></path>			</g>			<g>				<path d="M83.8,62c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S87.5,62,83.8,62z M83.8,50.5     c-2.6,0-4.7,2.1-4.7,4.7s2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7S86.4,50.5,83.8,50.5z"></path>			</g>			<g>				<path d="M68.6,79.1c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S72.3,79.1,68.6,79.1z M68.6,67.7     c-2.6,0-4.7,2.1-4.7,4.7s2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7S71.2,67.7,68.6,67.7z"></path>			</g>			<g>				<path d="M68.6,14.3c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S72.3,14.3,68.6,14.3z M68.6,2.9     c-2.6,0-4.7,2.1-4.7,4.7c0,2.6,2.1,4.7,4.7,4.7s4.7-2.1,4.7-4.7C73.3,5,71.2,2.9,68.6,2.9z"></path>			</g>		</g>	</g></g></svg>
+              <div class="feature-title">Test & Train Chatbots</div>
+              <p>Pellentesque elit eget gravida cum sociis</p>
+              <div class="step-number">04</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center right-image" data-aos="zoom-in">
+        <img src="https://aimax.wpengine.com/wp-content/uploads/2023/06/mockup-image-2-400x750.webp" alt="AI Phone" class="mockup-img">
+        <!-- Optional animated chat bubbles -->
+        <div class="chat-bubble chat-1" data-aos="fade-left" data-aos-delay="500"><img src="https://aimax.wpengine.com/wp-content/uploads/2023/06/parallax-images-4.webp" alt=""></div>
+        <div class="chat-bubble chat-2" data-aos="fade-up" data-aos-delay="600"><img src="https://aimax.wpengine.com/wp-content/uploads/2023/06/parallax-images-3.webp" alt=""></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------- -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-down">
+      <span class="badge-tag">RECENT UPDATION</span>
+      <h2 class="section-title">AI Related Blogs</h2>
+    </div>
+
+    <div class="row">
+      <!-- Blog 1 -->
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 22, 2023</span>
+            <img src="https://img.freepik.com/free-photo/robot-handshake-human-background-artificial-intelligence-digital-transformation_53876-129769.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 1">
+          </div>
+          <div class="blog-content">
+            <small>1 Comment</small>
+            <h5>Latest Emerging Artificial Intelligence Technology</h5>
+            <p>Velit ut tortor pretium viverra suspendisse potenti nullam ac. Sit amet venenatis lectus. Nibh...</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 22, 2023</span>
+            <img src="https://img.freepik.com/free-photo/technology-human-touch-background-modern-remake-creation-adam_53876-129794.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 2">
+          </div>
+          <div class="blog-content">
+            <small>1 Comment</small>
+            <h5>Make Your Ocean Journey Easier With Artificial</h5>
+            <p>Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 22, 2023</span>
+            <img src="https://img.freepik.com/free-vector/robot-android-realistic-3d-composition-with-artificial-support-agent-cybernetic-anthropomorphous-machine-with-feminine-apperance_1284-28638.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 3" style="height: 400px;">
+          </div>
+          <div class="blog-content" style="color: aliceblue;">
+            <small>1 Comment</small>
+            <h5>New Trending Artificial Intelligence AI Bot</h5>
+            <p>Aliquam id diam maecenas ultricies mi. Auctor neque vitae tempus quam pellentesque Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas......</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-card">
+          <div class="blog-img">
+            <span class="date-badge">June 21, 2023</span>
+            <img src="https://img.freepik.com/free-photo/robot-doing-peace-sign_1048-3527.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Blog 4" style="height: 400px;">
+          </div>
+          <div class="blog-content" style="color: aliceblue;">
+            <small>1 Comment</small>
+            <h5>Application of AI in Car Manufacturing</h5>
+            <p>Neque egestas congue quisque egestas diam. Neque laoreet suspendisse consectetur Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas...Maecenas accumsan lacus vel facilisis volutpat est velit. Amet aliquam id diam maecenas......</p>
+            <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------- -->
+  <section class="partners-section text-center" id="partners">
+    <div class="container partners-content" data-aos="fade-up">
+   
+      <div class="row justify-content-center align-items-center g-4">
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net1.webp" alt="Intel" class="img-fluid partner-logo" />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net2.webp" alt="Netflix" class="img-fluid partner-logo" />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net3.webp" alt="Skrill" class="img-fluid partner-logo" />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net4.webp" alt="Unsplash" class="img-fluid partner-logo" />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net1.webp" alt="Fila" class="img-fluid partner-logo" />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img src="images/net3.webp" alt="Amazon" class="img-fluid partner-logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------/---------- -->
+ <div class="containe py-5">
+  <div class="popup-box" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="https://aimax.wpengine.com/wp-content/uploads/2023/06/video-banner-bg-2.webp" alt="AI-Max Site" class="img-fluid">
+    <div class="play-button">Play</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4" data-aos="fade-up">
+        <div class="brand">SOLUTIONS</div>
+        <p class="mt-3">
+          We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.
+        </p>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h5>IT Services</h5>
+        <a href="#">IT Services</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Managed IT</a>
+        <a href="#">IT Support</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h5>Important Links</h5>
+        <a href="#">About Us</a>
+        <a href="#">Meet Our Team</a>
+        <a href="#">News & Media</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Locations</a>
+      </div>
+      <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5>Get In Touch</h5>
+        <p><strong>Phone:</strong> (01) 123-321-456</p>
+        <p><strong>Email:</strong> Info@Solution.com</p>
+        <p><strong>Office Address:</strong> Collins Street West Victoria 8007 Australia</p>
+        <div class="social-icons mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+      <p>©2020 Teba, All Rights Reserved. With Love by <a href="index.html" target="_blank">solution.com</a></p>
+    </div>
+  </div>
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+</footer>
+
+<!-- JS for dropdown icon toggle (mobile only) -->
+<script>
+  function toggleDropdown(icon) {
+    if (window.innerWidth < 992) {
+      const parentLi = icon.closest('.dropdown');
+      const allDropdowns = document.querySelectorAll('.dropdown');
+
+      allDropdowns.forEach(li => {
+        if (li !== parentLi) {
+          li.classList.remove('open');
+          const i = li.querySelector('.dropdown-icon');
+          if (i) i.classList.remove('rotate');
+        }
+      });
+
+      parentLi.classList.toggle('open');
+      icon.classList.toggle('rotate');
+    }
+  }
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const wrapper = document.querySelector('.testimonial-wrapper');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+  let slideWidth = slides[0].offsetWidth;
+
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }, 3000);
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop();
+  const allLinks = document.querySelectorAll(".navbar a");
+
+  allLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>
