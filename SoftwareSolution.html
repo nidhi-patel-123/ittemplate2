@@ -20,7 +20,293 @@
   <link rel="stylesheet" href="css/softwaresolution.css">
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+  .rotate {
+    animation: rotate 6s linear infinite;
+  }
 
+  @keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+  .side-wiggle {
+    animation: sideWiggle 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes sideWiggle {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(10px);}
+  }
+
+  .section-bg {
+    background-color: #f4f6fb;
+    padding: 80px 0;
+  }
+
+  .highlight-icon {
+    background-color: #d0e3ff;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .experience-card {
+    border: 2px solid #1c1c1c;
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .hero-img {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .emoji {
+    font-size: 2rem;
+    margin: 0 10px;
+  }
+  .sparkle-rotate img {
+  animation: rotate 6s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide below 500px screen width */
+@media (max-width: 800px) {
+  .sparkle-rotate {
+    display: none;
+  }
+}
+/* ----------------------------------------------------------------- */
+ .hexagon {
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
+   /* background-image: url("https://ittech.ditsolution.net/wp-content/uploads/2024/10/Software-Tecnology-2.png"); */
+      /* clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 30px;
+      /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+      position: relative;
+    }
+
+    .hexagon img {
+      max-width:500px;
+      height: 440px;
+    }
+
+    .feature-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .feature-text h5 {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .feature-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+</style>
+ <style>
+    .card-custom {
+      border: none;
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-img-container img {
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .card-img-container::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+
+    .card-img-container:hover::before {
+      opacity: 1;
+    }
+
+    .card-img-container:hover img {
+      transform: scale(1.05);
+    }
+
+    .badge-custom {
+      font-size: 0.75rem;
+      background: #eef1ff;
+      color: #3c4fe0;
+      padding: 4px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .badge-software { background: #ffeae8; color: #f86c5e; }
+    .badge-app { background: #fff4cc; color: #e4a800; }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .author img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author-details {
+      font-size: 14px;
+    }
+
+    .author-details .name {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .author-details .date {
+      color: #999;
+      font-size: 13px;
+    }
+    /* ====================================== */
+      .project-tile {
+      border: none;
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .project-tile:hover {
+      transform: translateY(-6px);
+    }
+
+    .tile-image-box {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tile-image-box img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease;
+    }
+
+    .tile-image-box::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      opacity: 0;
+      transition: 0.3s ease;
+      z-index: 1;
+    }
+
+    .tile-image-box:hover::before {
+      opacity: 1;
+    }
+
+    .tile-image-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .tile-badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      background: #eef1ff;
+      color: #3a46e0;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .tile-badge.software {
+      background: #ffeae8;
+      color: #f76b5e;
+    }
+
+    .tile-badge.app {
+      background: #fff5cc;
+      color: #e3a100;
+    }
+
+    .tile-author-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tile-author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .tile-author-text {
+      font-size: 14px;
+    }
+
+    .tile-author-text .author-name {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .tile-author-text .author-date {
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
 
 </head>
 <body>
@@ -132,51 +418,81 @@
 
 
 <!-- ------------------------------------------- -->
- <section class="py-5 position-relative bg-light">
+<section class="section-bg">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Left Image Column -->
-      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-        <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/software-company-about-img04.png"
-             alt="About Image"
-             class="img-fluid">
-      </div>
-
-      <!-- Right Content Column -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <h5 class=" fw-bold" style="color: #f29111;">Creative Vision</h5>
-        <h2 class="fw-bold mb-4">Confirm superlative support <br>With our technology.</h2>
-        <p class="mb-4">
-          Maecenas euismod viverra purus, volutpat posuere mauris tristique quisokaft. Mauris facilisis consequat dolor,
-          et luctus tortor imperdiet eget. Nulla europe venenatis libero. Proin nec nisi auctor, pulvinar masa at,
-          eleifend nisl. Nullaga facilisi. Aliquam ac nisi sd enim ullamcorper condimentum. Donec et tortor vel lacus
-          placerat pelletesque id et mi. Aenean consequat and interdum tincidunt Donec eget lorem non ligula sodales
-          hendrerit. Donec utrot scelerisque urna. Aenean et feugiat massa.
+      
+      <!-- Left Text Content -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h1 class="fw-bold display-5">
+          ELEVATE <span class="emoji"><img src="https://ittech.ditsolution.net/wp-content/uploads/2024/09/commment-imoge.png" alt=""></span> YOUR IT<br>
+          BUSINESS TO NEXT<br>
+          <span class=""><img src="https://ittech.ditsolution.net/wp-content/uploads/2024/07/star.png" alt=""></span> LEVELS
+        </h1>
+        <p class="mt-4 fs-5 text-muted">
+          Continually formulate B2C partnerships orthogonal maintainable quality through low
         </p>
-        <a href="https://ittech.ditsolution.net/why-choose-us/" class="btn btn-primary">
-          More About Us <i class="ms-2 bi bi-arrow-right"></i>
+        <a href="#" class="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+          Let's Talk With Us →
         </a>
       </div>
+
+      <!-- Right Image & Experience Card -->
+      <div class="col-lg-6 text-center mt-5 mt-lg-0 position-relative">
+        <!-- Top rotating sparkle -->
+       <div class="position-absolute top-0 start-50 translate-middle sparkle-rotate">
+  <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/09/b-star.png" 
+       alt="sparkle" 
+       width="100" 
+       height="100"
+       style="margin-left: -800px;">
+</div>
+
+
+        <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+          <div class="hero-img side-wiggle" data-aos="fade-left">
+            <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/09/single.png" class="img-fluid" alt="Team Image 1" style="height: 400px;">
+          </div>
+          <div class="d-flex flex-column align-items-center gap-3">
+            <div class="experience-card" data-aos="zoom-in">
+              <h3 class="fw-bold display-6">16+</h3>
+              <p class="m-0">Years of<br>Experiences</p>
+            </div>
+            <div class="hero-img side-wiggle" data-aos="fade-left" data-aos-delay="100">
+              <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/07/star.png" class="img-fluid" alt="Team Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- Optional Decorative Shape (absolute) -->
-  <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/1/software-company-about-img03-shape.png"
-       alt="Decorative Shape"
-       class="position-absolute top-0 start-0 d-none d-lg-block"
-       style="max-width: 500px; z-index: -1;"
-       data-aos="zoom-in">
 </section>
+
+
+
+
+
+
+
 <section class="position-relative py-5 bg-light overflow-hidden">
-  <!-- Decorative Background Shape -->
-  <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/08/softwarecompany-about-img03-shape.png"
-       alt="Decorative Shape"
-       class="position-absolute top-0 start-0 d-none d-lg-block"
-       style="z-index: -1; max-width: 600px;"
-       data-aos="fade-in" data-aos-delay="100">
+
 
   <div class="container">
     <div class="row align-items-center">
+            <!-- Image with Video Button -->
+      <div class="col-lg-6 position-relative text-center" data-aos="fade-left">
+        <img src="https://img.freepik.com/premium-photo/happy-business-people-executive-team-working-laptop-using-computer-having-discussion-office-professional-meeting-showing-financial-project-results-consulting-client-investor-workplace_1254992-280913.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740"
+             alt="About Image"
+             class="img-fluid rounded shadow">
+        <a href="https://www.youtube.com/watch?v=BadB1z-V_qU"
+           class="position-absolute top-50 start-50 translate-middle text-white  rounded-circle d-flex align-items-center justify-content-center"
+           style="width: 60px; height: 60px; font-size: 24px;"
+           data-aos="zoom-in"
+           data-aos-delay="200">
+          <i class="fas fa-play" style="color: #f29111;"></i>
+        </a>
+      </div>
       <!-- Text Content -->
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
         <h5 class="fw-bold" style="color: #f29111;">More Creative Vision</h5>
@@ -204,91 +520,154 @@
         </div>
       </div>
 
-      <!-- Image with Video Button -->
-      <div class="col-lg-6 position-relative text-center" data-aos="fade-left">
-        <img src="https://img.freepik.com/premium-photo/happy-business-people-executive-team-working-laptop-using-computer-having-discussion-office-professional-meeting-showing-financial-project-results-consulting-client-investor-workplace_1254992-280913.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_hybrid&w=740"
-             alt="About Image"
-             class="img-fluid rounded shadow">
-        <a href="https://www.youtube.com/watch?v=BadB1z-V_qU"
-           class="position-absolute top-50 start-50 translate-middle text-white  rounded-circle d-flex align-items-center justify-content-center"
-           style="width: 60px; height: 60px; font-size: 24px;"
-           data-aos="zoom-in"
-           data-aos-delay="200">
-          <i class="fas fa-play" style="color: #f29111;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ---------------------------------------------------------------------------- -->
- <section class="py-5 bg-white">
-  <div class="container">
   
-
-    <div class="row g-4">
-      <!-- Service Card 1 -->
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-        <div class="service-card h-100 border">
-          <img src="images/software1.png" alt="Custom Software" class="service-icon">
-          <h5 class="fw-semibold">Custom Software Development</h5>
-          <p class="text-muted">Competently leverage existing top-line maximize cost-effective done.</p>
-          <a href="/service_details" class=" fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Service Card 2 -->
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="service-card h-100 border">
-          <img src="images/software2.png" alt="Web Design" class="service-icon">
-          <h5 class="fw-semibold">Website Design & Development</h5>
-          <p class="text-muted">Design and build modern websites with great UX and performance.</p>
-          <a href="/service_details" class="fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-        </div>
-      </div>
-
-      <!-- Service Card 3 -->
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="service-card h-100 border">
-          <img src="images/software3.png" alt="Cloud Service" class="service-icon">
-          <h5 class="fw-semibold">Cloud Computing & Hosting</h5>
-          <p class="text-muted">Scalable cloud solutions to power your business applications.</p>
-       <a href="/service_details" class=" fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-
-        </div>
-      </div>
-<!-- ---------------------4------------------- -->
-  <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="service-card h-100 border">
-          <img src="images/software4.png" alt="Cloud Service" class="service-icon">
-          <h5 class="fw-semibold">Cloud Computing & Hosting</h5>
-          <p class="text-muted">Scalable cloud solutions to power your business applications.</p>
-        <a href="/service_details" class=" fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-
-        </div>
-      </div>
-      <!-- --------------------5------------------------- -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="service-card h-100 border">
-          <img src="images/software5.png" alt="Cloud Service" class="service-icon">
-          <h5 class="fw-semibold">Cloud Computing & Hosting</h5>
-          <p class="text-muted">Scalable cloud solutions to power your business applications.</p>
-             <a href="/service_details" class=" fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-
-        </div>
-      </div>
-      <!-- ------------------------------6------------------------------ -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="service-card h-100 border">
-          <img src="images/software6.png" alt="Cloud Service" class="service-icon">
-          <h5 class="fw-semibold">Cloud Computing & Hosting</h5>
-          <p class="text-muted">Scalable cloud solutions to power your business applications.</p>
-       <a href="/service_details" class=" fw-semibold text-decoration-none" style="color: #000000;">Learn More →</a>
-        </div>
-      </div>
-      <!-- Add more service cards similarly -->
     </div>
   </div>
 </section>
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="project-tile">
+          <div class="tile-image-box">
+            <img src="https://img.freepik.com/premium-vector/enterprise-development-configuration-management_18660-742.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Web Design">
+          </div>
+          <div class="p-4">
+            <span class="tile-badge">Web Design</span>
+            <h5 class="fw-bold">Dynamically maintain equity invested whereas distrib potentialities</h5>
+            <p>Appropriately empower robust infomediaries via resource maximizing scenarios.</p>
+            <div class="tile-author-info">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="tile-author-avatar" alt="Author">
+              <div class="tile-author-text">
+                <div class="author-name">Danielle M. Reese</div>
+                <div class="author-date">12 December, 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-tile">
+          <div class="tile-image-box">
+            <img src="https://img.freepik.com/premium-vector/enterprise-development-configuration-management_18660-5983.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Software">
+          </div>
+          <div class="p-4">
+            <span class="tile-badge software">Software</span>
+            <h5 class="fw-bold">Dynamically maintain equity invested whereas distrib potentialities</h5>
+            <p>Appropriately empower robust infomediaries via resource maximizing scenarios.</p>
+            <div class="tile-author-info">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="tile-author-avatar" alt="Author">
+              <div class="tile-author-text">
+                <div class="author-name">Danielle M. Reese</div>
+                <div class="author-date">12 December, 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-tile">
+          <div class="tile-image-box">
+            <img src="https://img.freepik.com/premium-vector/man-analyzing-computer-cloud-server-data_999616-2869.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="App Design">
+          </div>
+          <div class="p-4">
+            <span class="tile-badge app">App Design</span>
+            <h5 class="fw-bold">Dynamically maintain equity invested whereas distrib potentialities</h5>
+            <p>Appropriately empower robust infomediaries via resource maximizing scenarios.</p>
+            <div class="tile-author-info">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" class="tile-author-avatar" alt="Author">
+              <div class="tile-author-text">
+                <div class="author-name">Danielle M. Reese</div>
+                <div class="author-date">12 December, 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+<!-- ---------------------------------------------------------------------------- -->
+  <div class="container py-5">
+    <div class="section-title" data-aos="fade-up">
+      <small style="color: #f29111;">MAIN PRINCIPLES</small>
+      <h2>Business Strategy & Solutions</h2>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4 d-flex flex-column gap-4">
+        <div class="feature-box" data-aos="fade-right">
+          <img src="https://cdn-icons-png.freepik.com/256/11192/11192665.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Project Analytics</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="100">
+          <img src="https://cdn-icons-png.freepik.com/256/10498/10498319.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Audience Generate</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="200">
+          <img src="https://cdn-icons-png.freepik.com/256/17388/17388488.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Customer Strategy</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="zoom-in">
+        <div class="hexagon">
+          <img src="https://ittech.ditsolution.net/wp-content/uploads/2024/10/Software-Tecnology-2.png" alt="center illustration">
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex flex-column gap-4">
+        <div class="feature-box" data-aos="fade-left">
+          <img src="https://cdn-icons-png.freepik.com/256/6012/6012596.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Market Research</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+        <div class="feature-box" data-aos="fade-left" data-aos-delay="100">
+          <img src="https://cdn-icons-png.freepik.com/256/14602/14602184.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Competitor Research</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+        <div class="feature-box" data-aos="fade-left" data-aos-delay="200">
+          <img src="https://cdn-icons-png.freepik.com/256/4233/4233351.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" class="feature-icon">
+          <div class="feature-text">
+            <h5>Data Driven Soft</h5>
+            <p>Professionally pursue scalables on market positioning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 <!-- --------------------------------------------------------------- -->
 <section class="container py-5">
   <div class="row justify-content-between align-items-center mb-5">

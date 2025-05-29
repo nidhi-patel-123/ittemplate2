@@ -1,5 +1,5 @@
 /* ------------------------------------------NAVBAR---------------------------- */
-    body {
+    /* body {
       font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
     }
@@ -102,11 +102,11 @@
 }
   .navbar .nav-link.active {
     color: orange !important;
-  }
+  } */
 
 /* --------------------heroooo------------------------- */
 .hero {
-     background: url('https://img.freepik.com/free-photo/black-white-portrait-digital-nomads_23-2151253987.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') center center / cover no-repeat; 
+     background: url('https://img.freepik.com/free-photo/black-white-portrait-digital-nomads_23-2151253987.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') center center / cover no-repeat !important; 
       color: white;
       height: 80vh;
       display: flex;
@@ -432,15 +432,15 @@ color: #eee;
 
 /* Trigger animations on hover */
 .project-card:hover .black-overlay {
-  transform: translateY(0); /* Black comes from bottom to top */
+  transform: translateY(0) !important; /* Black comes from bottom to top */
 }
 
 .project-card:hover .orange-strip {
-  transform: translateX(0); /* Orange comes from left to right */
+  transform: translateX(0) !important; /* Orange comes from left to right */
 }
 
 .project-card:hover .plus-icon {
-  transform: rotate(90deg);
+  /* transform: rotate(90deg) !important; */
 }
 /* -----------------why chose------------------ */
 /* Full width, no container */

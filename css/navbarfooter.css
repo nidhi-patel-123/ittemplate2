@@ -21,7 +21,7 @@
     .logo-dot {
       width: 26px;
       height: 26px;
-      background: linear-gradient(to bottom, #fca311, #f12711);
+      background: linear-gradient(to bottom, #fca311);
       border-radius: 50%;
       margin-right: 10px;
     }
@@ -33,9 +33,9 @@
     }
 
     .nav-link:hover {
-      color: #f25c05 !important;
       background-color: #f8f8f8;
       border-radius: 8px;
+      color: #f29111 !important;
     }
 
     .dropdown-toggle::after {
