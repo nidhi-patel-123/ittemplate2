@@ -17,7 +17,217 @@
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+<style>
 
+    .progress-circle {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+    }
+
+    .progress-circle svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .progress-circle circle {
+      fill: none;
+      stroke-width: 4;
+      r: 70;
+      cx: 75;
+      cy: 75;
+    }
+
+    .progress-circle .bg {
+      stroke: #dcdcdc;
+    }
+
+    .progress-circle .progress {
+      stroke: #f29111;
+      stroke-linecap: round;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      transition: stroke-dashoffset 2s ease;
+    }
+
+    .progress-circle .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+      font-weight: 600;
+      font-family: 'Georgia', serif;
+    }
+
+    .progress-content h5 {
+      font-family: 'Georgia', serif;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .progress-content p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Prevent hover effect */
+    .progress-circle:hover .progress {
+      stroke: #f29111;
+    }
+    /* ---------------------------------------------------- */
+     .benefits-badge {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 6px 15px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000000;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .benefits-badge i {
+      color: #f29111;
+    }
+
+    .section-title {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: #070707;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    .list-checks {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .list-checks li {
+      margin-bottom: 12px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .list-checks i {
+      color: orange;
+      margin-right: 10px;
+    }
+
+    .img-side img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 767.98px) {
+      .section-title {
+        font-size: 36px;
+      }
+    }
+    /* ---------------------------------------------------------------- */
+      .marketing-section {
+      padding: 50px 0;
+    }
+    .marketing-card {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .marketing-card img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .marketing-card img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+    .marketing-card h5 {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    /* --------------------------------------------------------- */
+    .values-section {
+      padding: 60px 0;
+    }
+    .values-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .values-text p {
+      font-size: 1.1rem;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .stats-box {
+      background-color: #f290112c;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+    .stats-box h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .stats-box p {
+      font-size: 0.9rem;
+      color: #000000;
+      margin: 0;
+    }
+    .btn-values {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #f29111;
+      border-radius: 20px;
+      padding: 5px 15px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    .btn-values:hover {
+      background-color: #f29111;
+      color: #1a1a2e;
+    }
+    .illustration-placeholder {
+      width: 100%;
+      height: 300px;
+      /* background-color: #2a2a3e; */
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b0b0b0;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 767px) {
+      .values-text h1 {
+        font-size: 1.8rem;
+      }
+      .values-text p {
+        font-size: 0.9rem;
+      }
+      .stats-box h3 {
+        font-size: 1.5rem;
+      }
+    }
+</style>
 </head>
 <body>
 <!-- -----------------------navbar----------------------------------------- -->
@@ -126,89 +336,156 @@
       </p>
     </div>
   </section>
-  <!-- ------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------------- -->
+
+
 
 <div class="container py-5">
-  <div class="row g-4">
-    
-    <!-- Left Column -->
-    <div class="col-lg-4" data-aos="fade-right">
-      <div class="services-list mb-4">
-        <h6 class="mb-3 fw-bold">• Services List</h6>
-        <ul class="list-group">
-          <li class="list-group-item active">Content Marketing</li>
-          <li class="list-group-item">Analytics & Report</li>
-          <li class="list-group-item">SEO Optimization</li>
-          <li class="list-group-item">Influencer Marketing</li>
-          <li class="list-group-item">Project Planning</li>
+  <div class="row text-center">
+
+    <!-- Circle Template -->
+    <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+      <div class="progress-circle" data-percentage="65">
+        <svg>
+          <circle class="bg" r="70" cx="75" cy="75"></circle>
+          <circle class="progress" r="70" cx="75" cy="75"></circle>
+        </svg>
+        <div class="percentage">65%</div>
+      </div>
+      <div class="progress-content">
+        <h5>Work processes</h5>
+        <p>Et sonet habemus eu, has dicto graece.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="progress-circle" data-percentage="75">
+        <svg>
+          <circle class="bg" r="70" cx="75" cy="75"></circle>
+          <circle class="progress" r="70" cx="75" cy="75"></circle>
+        </svg>
+        <div class="percentage">75%</div>
+      </div>
+      <div class="progress-content">
+        <h5>Design solutions</h5>
+        <p>Et sonet habemus eu, has dicto graece.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="progress-circle" data-percentage="85">
+        <svg>
+          <circle class="bg" r="70" cx="75" cy="75"></circle>
+          <circle class="progress" r="70" cx="75" cy="75"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+      </div>
+      <div class="progress-content">
+        <h5>Winning plan</h5>
+        <p>Et sonet habemus eu, has dicto graece.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="progress-circle" data-percentage="55">
+        <svg>
+          <circle class="bg" r="70" cx="75" cy="75"></circle>
+          <circle class="progress" r="70" cx="75" cy="75"></circle>
+        </svg>
+        <div class="percentage">55%</div>
+      </div>
+      <div class="progress-content">
+        <h5>Innovations</h5>
+        <p>Et sonet habemus eu, has dicto graece.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // IntersectionObserver to animate progress circles
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const circle = entry.target.querySelector('.progress');
+        const percent = entry.target.getAttribute('data-percentage');
+        const offset = 440 - (440 * percent) / 100;
+        circle.style.strokeDashoffset = offset;
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  document.querySelectorAll('.progress-circle').forEach(circle => {
+    observer.observe(circle);
+  });
+</script>
+<!-- ================================================================== -->
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text Column -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="benefits-badge">
+          <i class="bi bi-record-circle-fill"></i> BENEFITS
+        </span>
+        <h2 class="section-title">Expert Team, Proven Methods</h2>
+        <p class="section-subtitle">
+          Empowering brands with innovative designs and tailored strategies to thrive and grow in the ever-evolving digital landscape.
+        </p>
+        <ul class="list-checks">
+          <li><i class="bi bi-check-circle-fill"></i> We focus on strategies that drive real growth</li>
+          <li><i class="bi bi-check-circle-fill"></i> We create custom strategies based on your goals</li>
+          <li><i class="bi bi-check-circle-fill"></i> We optimize every campaign to deliver maximum value</li>
         </ul>
       </div>
 
-      <div class="row g-2 mb-4" data-aos="fade-up">
-        <div class="col-6">
-          <div class="file-card">
-            <div class="file-icon">📄</div>
-            <div class="fw-bold">Business Broucher.doc</div>
-            <small>78 KB</small>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="file-card">
-            <div class="file-icon">📄</div>
-            <div class="fw-bold">Company Flow.pdf</div>
-            <small>58 KB</small>
-          </div>
-        </div>
+      <!-- Image Column -->
+      <div class="col-lg-6 text-center img-side" data-aos="fade-left">
+        <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/main-hero-digibiz-3.webp" alt="Expert Team Illustration" />
       </div>
-
-<div class="container py-4">
-  <div class="d-flex justify-content-center align-items-center text-center text-white w-100"
-       style="background-image: url('./images/MARKETING.jpg'); background-size: cover; background-position: center; border-radius: 8px; padding: 2rem;height: 300px;">
-    <div>
-      <h3 style="font-size: 30px;">Start Your Journey to Success, Updates! Create Valuable Results</h3>
-    
     </div>
   </div>
-</div>
-
-
-    </div>
-
-    <!-- Right Column -->
-    <div class="col-lg-8">
-      <div class="mb-4" data-aos="fade-left">
-        <img src="https://wordpress.zozothemes.com/seoinux/wp-content/uploads/sites/33/2025/01/service-img-4.webp" alt="Main Image" class="rounded-image mb-3">
-        <h3 class="section-heading">Engage and Grow Your Audience</h3>
-        <p>Consistently providing useful information and entertainment encourages people to return and interact with your brand. Social media is a powerful tool for engagement...</p>
-      </div>
-
-      <div class="mb-4" data-aos="fade-up">
-        <h4 class="section-heading">Create Valuable Results</h4>
-        <p>Analyzing audience behavior and feedback helps refine your strategies and provide better experiences...</p>
-      </div>
-
-      <!-- <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-up">
-          <div class="step-boxs">
-            <div class="text-uppercase  small fw-bold mb-2" style="color: #f29111;">Step 01.</div>
-            <h5>Attract Quality Leads</h5>
-            <p class="mb-0 text-muted">Understand your ideal customer profile and target those who are most likely to convert.</p>
-          </div>
-           <div class="step-boxs" style="margin-top: 10px;">
-            <div class="text-uppercase  small fw-bold mb-2" style="color: #f29111;">Step 02.</div>
-            <h5>Attract Quality Leads</h5>
-            <p class="mb-0 text-muted">Understand your ideal customer profile and target those who are most likely to convert.</p>
-          </div>
+  <!-- ----------------------------------------------------------- -->
+   <!-- ********************************************************** -->
+ <section class="marketing-section">
+    <div class="container">
+      <div class="row">
+        <!-- Social Media Marketing -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-3.webp" alt="Social Media Marketing">
+          <h5>Social Media Marketing</h5>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <img src="https://wordpress.zozothemes.com/seoinux/wp-content/uploads/sites/33/elementor/thumbs/service-img-3-qzxkjx99qat9332f6xhxu0nvwr48nsdfi5hzdjsqnw.webp" alt="Team Work" class="rounded-image">
+        <!-- Content Marketing -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-2.webp" alt="Content Marketing">
+          <h5>Content Marketing</h5>
         </div>
-      </div> -->
+        <!-- Pay-Per-Click Advertising -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-6.webp" alt="Pay-Per-Click Advertising">
+          <h5>Pay-Per-Click Advertising</h5>
+        </div>
+        <!-- E-commerce Marketing -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-12.webp" alt="E-commerce Marketing">
+          <h5>E-commerce Marketing</h5>
+        </div>
+        <!-- Influencer Marketing -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-5.webp" alt="Influencer Marketing">
+          <h5>Influencer Marketing</h5>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 marketing-card" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/service-digibiz-7.webp" alt="Influencer Marketing">
+          <h5>Influencer Marketing</h5>
+        </div>
+      </div>
     </div>
-
-  </div>
-</div>
-
+  </section>
 <!-- --------------------------------------------- -->
  <div class="container py-5">
   <div class="row g-4 align-items-stretch">
@@ -258,70 +535,49 @@
   
   </div>
 </div>
+
 <!-- --------------------------------------------- -->
- <div class="marketing-section">
-  <div class="image-container fade-in">
-    <img
-      src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/digital-marketing-digibiz.webp"
-      alt="Digital Marketing"
-      class="service-image"
-      width="100%"
- 
-      loading="lazy"
-      style="height: 500px;
-      object-fit: contain;
-      "
-    />
-  </div>
-
-  <div class="text-section slide-up">
-    <ul class="heading-list">
-      <li>
-        <span class="heading-icon">
-          <svg viewBox="0 0 512 512"><path d="M256 8C119..."/></svg>
-        </span>
-        <span class="heading-text">What we do</span>
-      </li>
-    </ul>
-
-    <div class="accordion-list" role="region" aria-label="Service Features">
-      <details class="accordion-item">
-        <summary class="accordion-title">Graphic Design</summary>
-        <div class="accordion-content">
-          We build user-friendly, mobile-optimized websites. Whether it's a rebranding or a fresh launch, we’ve got you covered.
+ <section class="values-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Illustration Column -->
+        <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+          <div class="illustration-placeholder">
+           <img src="https://live.sociolib.com/digibiz/wp-content/uploads/sites/11/2025/05/digital-marketing-digibiz.webp" alt="" style="height: 600px;">
+          </div>
         </div>
-      </details>
-
-      <details class="accordion-item">
-        <summary class="accordion-title">Interactive Design</summary>
-        <div class="accordion-content">
-          We build user-friendly, mobile-optimized websites. Whether it's a rebranding or a fresh launch, we’ve got you covered.
+        <!-- Text and Stats Column -->
+        <div class="col-md-6">
+          <div class="values-text" data-aos="fade-left" data-aos-duration="1000">
+            <button class="btn-values mb-3" style="color: black;">Our Values</button>
+            <h1>Powered by Passion, Led by Values</h1>
+            <p>Empowering brands with innovative designs and tailored strategies to thrive and grow in the ever-evolving digital landscape.</p>
+          </div>
+          <div class="row">
+            <div class="col-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <div class="stats-box">
+                <h3>250+</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+            <div class="col-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <div class="stats-box">
+                <h3>4.8</h3>
+                <p>Rating</p>
+              </div>
+            </div>
+            <div class="col-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <div class="stats-box">
+                <h3>15</h3>
+                <p>Awards</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </details>
-
-      <details class="accordion-item">
-        <summary class="accordion-title">Web Development</summary>
-        <div class="accordion-content">
-          We build user-friendly, mobile-optimized websites. Whether it's a rebranding or a fresh launch, we’ve got you covered.
-        </div>
-      </details>
-
-      <details class="accordion-item">
-        <summary class="accordion-title">Social Media Marketing</summary>
-        <div class="accordion-content">
-          We build user-friendly, mobile-optimized websites. Whether it's a rebranding or a fresh launch, we’ve got you covered.
-        </div>
-      </details>
-
-      <details class="accordion-item" open>
-        <summary class="accordion-title">Content Marketing</summary>
-        <div class="accordion-content">
-          We build user-friendly, mobile-optimized websites. Whether it's a rebranding or a fresh launch, we’ve got you covered.
-        </div>
-      </details>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
+
 
 
 

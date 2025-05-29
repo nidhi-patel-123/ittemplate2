@@ -285,3 +285,47 @@
     padding: 1rem;
   }
 }
+/* -------------------------------last-------------------------------- */
+ .build-section {
+      background: linear-gradient(to right, #f290119a, #ffffff8c);
+      border-radius: 20px;
+      padding: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .build-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .build-section a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .build-section a:hover {
+      text-decoration: underline;
+    }
+
+    .build-img {
+      max-width: 100%;
+      transition: transform 0.4s ease;
+    }
+
+    .build-img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .build-section {
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .build-img {
+        margin-top: 20px;
+      }
+    }
