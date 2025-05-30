@@ -17,7 +17,81 @@
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+<style>
+     .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
 
+    .filter-buttons .btn {
+      border-radius: 25px;
+      padding: 0.4rem 1.2rem;
+    }
+
+    .card-service {
+      border: none;
+      overflow: hidden;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+      position: relative;
+      display: none; /* Hidden by default */
+    }
+
+    .card-service.show {
+      display: block;
+    }
+
+    .card-service .img-wrapper {
+      overflow: hidden;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      position: relative;
+    }
+
+    .card-service img {
+      width: 100%;
+      transition: transform 0.4s ease;
+    }
+
+    .card-service:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card-service:hover .overlay {
+      opacity: 1;
+    }
+
+    .card-body h6 {
+      margin-bottom: 0.25rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .card-body h5 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .filter-buttons .btn.active-filter {
+  background-color: #f29111 !important;
+  color: white !important;
+  border-color: #f29111 !important;
+}
+
+</style>
 </head>
 <body>
 <!-- -----------------------navbar----------------------------------------- -->
@@ -128,243 +202,126 @@
   </section>
 <!-- ----------------------------------------------------------------------------------- -->
  <div class="container py-5">
-  <div class="row mb-4">
-    <div class="col-12 text-start" data-aos="fade-up">
-      <h6 class="text-uppercase text-muted mb-1">Noseblunt severin impossible</h6>
-      <h2 class="fw-bold">01. Recent Projects</h2>
-    </div>
-  </div>
+    <!-- Filter Buttons -->
+    <div class="filter-buttons mb-4">
+    <button class="btn btn-primary" onclick="filterItems('all')">All</button>
 
-  <!-- Row 1: Two images -->
-  <div class="row g-4">
-    <div class="col-md-6" data-aos="fade-up">
-      <div class="project-item">
-        <img src="https://ittech.ditsolution.net/wp-content/uploads/2025/01/port-3-1.png" alt="Project 1" class="project-img">
-        <div class="overlay">
-          <span class="project-tag">3D RENDERING</span>
-          <div class="project-title">Loft Design</div>
-          <div class="plus-sign">+</div>
-        </div>
-      </div>
+      <button class="btn btn-outline-secondary" onclick="filterItems('branding')">Branding</button>
+      <button class="btn btn-outline-secondary" onclick="filterItems('design')">Design</button>
+      <button class="btn btn-outline-secondary" onclick="filterItems('development')">Development</button>
     </div>
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="project-item">
-        <img src="https://wordpress.zozothemes.com/seoinux/wp-content/uploads/sites/33/2024/11/portfolio-img3.jpg" alt="Project 2" class="project-img">
-        <div class="overlay">
-          <span class="project-tag">3D RENDERING</span>
-          <div class="project-title">Kitchen Minimal</div>
-          <div class="plus-sign">+</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Row 2: Two images -->
-  <div class="row g-4 pt-4">
-    <div class="col-md-6" data-aos="fade-up">
-      <div class="project-item">
-        <img src="https://themes.hibootstrap.com/dicom/wp-content/uploads/2020/07/portfolio-img3-1-1.jpg" alt="Project 3" class="project-img">
-        <div class="overlay">
-          <span class="project-tag">Artwork</span>
-          <div class="project-title">Industrial Art</div>
-          <div class="plus-sign">+</div>
+    <!-- Card Grid -->
+    <div class="row g-4">
+      <!-- 6 cards with categories -->
+      <div class="col-md-4 col-sm-6 card-service branding show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-01-700x600.jpg" alt="SEO Tracking Analysis">
+          <div class="overlay"></div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="project-item">
-        <img src="https://ittech.ditsolution.net/wp-content/uploads/2025/01/port-4.png" alt="Project 4" class="project-img">
-        <div class="overlay">
-          <span class="project-tag">Branding</span>
-          <div class="project-title">Studio Sofa</div>
-          <div class="plus-sign">+</div>
+        <div class="card-body">
+          <h6>Branding</h6>
+          <h5>SEO Tracking Analysis</h5>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Row 3: One full-width image -->
-  <div class="row g-4 pt-4">
-    <div class="col-12" data-aos="fade-up">
-      <div class="project-item" style="height: 400px;width: 100%;">
-        <img src="https://z.commonsupport.com/xoven/wp-content/uploads/2021/07/portfolio-details-3.jpg" alt="Project 5" class="project-img" style="height: 400px;">
-        <div class="overlay">
-          <span class="project-tag">Concept</span>
-          <div class="project-title">Cozy Jamy Grünerløkka</div>
-          <div class="plus-sign">+</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Top Services -->
-  <div class="container services-row">
-    <div class="row text-center">
-      <div class="col-md-4 service-col">
-        <div class="service-icon"><i class="fas fa-cogs"></i></div>
-        <div class="service-title">Copywriting Sourse</div>
-        <div class="service-desc">
-          Work with you to understand your business specifics and your target audience to our marketing fully strategy.
-        </div>
-        <div class="read-more">Read More</div>
-      </div>
-      <div class="col-md-4 service-col">
-        <div class="service-icon"><i class="fas fa-desktop"></i></div>
-        <div class="service-title">Wireframing Platform</div>
-        <div class="service-desc">
-          Birdie casper 900 nosegrind face plant. Tail boneless aerial dude snake. Christ air darkslide.
-        </div>
-        <div class="read-more">Read More</div>
-      </div>
-      <div class="col-md-4 service-col">
-        <div class="service-icon"><i class="fas fa-city"></i></div>
-        <div class="service-title">Business Solutions</div>
-        <div class="service-desc">
-          Hand rail Randy Ruiz frontside pivot wax masonite opposite footed. Slappy drop in manual.
-        </div>
-        <div class="read-more">Read More</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Creative Approach + Image Section -->
-  <div class="container">
-    <div class="row">
-      <!-- Left Side: Creative Box -->
-      <div class="col-md-6 creative-box">
-        <p class="text-uppercase small text-muted">#Norebro street treasure squares</p>
-        <div class="creative-title">Creative Approach</div>
-        <div class="accordion" id="creativeAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" style="background-color: aliceblue;">
-                Story & Concept
-              </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" style="background-color: aliceblue;">
-                Design & Development
-              </button>
-            </h2>
-            <div id="collapse2" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                We build everything using Figma, Framer, and Webflow to match your exact needs and goals.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" style="background-color: aliceblue;">
-                Testing & Support
-              </button>
-            </h2>
-            <div id="collapse3" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Our QA process ensures every element works smoothly before launch.
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn-readmore btn-primary" style="border-radius: 0%;border: none;color: aliceblue;">→ Read More</a>
       </div>
 
-      <!-- Right Side: Image -->
-      <div class="col-md-6 p-0">
-        <div class="image-wrapper h-100">
-          <img src="https://img.freepik.com/premium-photo/robot-artist-collaborating-with-human-live-00494-00_1148322-54931.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" class="img-side" alt="Interior Room">
-          <div class="play-btn">
-            <i class="fas fa-play"></i>
-          </div>
+      <div class="col-md-4 col-sm-6 card-service branding show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-02-700x600.jpg" alt="Email Marketing">
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h6>Branding</h6>
+          <h5>Email Marketing Solution</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 card-service development show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-03-700x600.jpg" alt="Offline SEO">
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h6>Development</h6>
+          <h5>Offline SEO Marketing</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 card-service marketing branding show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-04-700x600.jpg" alt="Article Data Analysis">
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h6>Marketing</h6>
+          <h5>Article Data Analysis</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 card-service marketing development show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-05-700x600.jpg" alt="Online Media Management">
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h6>Marketing</h6>
+          <h5>Online Media Management</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 card-service design show">
+        <div class="img-wrapper">
+          <img src="https://seoland.themeht.com/wp-content/uploads/2024/04/portfolio-06-700x600.jpg" alt="Design System UI Kit">
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h6>Design</h6>
+          <h5>Design System & UI Kit</h5>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- JavaScript -->
+  <script>
+    function filterItems(category) {
+      const cards = document.querySelectorAll('.card-service');
 
-<!-- ------------------------------------------------------- -->
+      cards.forEach(card => {
+        card.classList.remove('show');
+        if (category === 'all') {
+          card.classList.add('show');
+        } else if (card.classList.contains(category)) {
+          card.classList.add('show');
+        }
+      });
+    }
+    function filterItems(category) {
+  const cards = document.querySelectorAll('.card-service');
+  const buttons = document.querySelectorAll('.filter-buttons .btn');
 
-<section class="news-section">
-  <div class="container">
-    <p class="section-subtitle">Darkslide impossible shuffle flush</p>
-    <h2 class="section-title"><strong>03.</strong> Recent News</h2>
-    <div class="row mt-5">
-      
-      <!-- News Block -->
-      <div class="col-md-6 col-lg-6">
-        <div class="news-card">
-          <div class="news-img">
-            <img src="https://themes.hibootstrap.com/dicom/wp-content/uploads/2020/07/portfolio-img1-1-1.jpg" alt="News">
-            <span class="label-tag">Business</span>
-            <span class="hover-icon">✕</span>
-          </div>
-          <div class="news-content">
-            <h5 class="news-title">Powerslide 540 Square</h5>
-            <p class="news-text">Fingerstache microdosing kickstarter, migas occupy sartorial ennui sustainable green juice...</p>
-            <p class="news-meta">Sofia Helin — September 27, 2017</p>
-          </div>
-        </div>
-      </div>
+  // Toggle cards
+  cards.forEach(card => {
+    card.classList.remove('show');
+    if (category === 'all') {
+      card.classList.add('show');
+    } else if (card.classList.contains(category)) {
+      card.classList.add('show');
+    }
+  });
 
-      <!-- News Block -->
-      <div class="col-md-6 col-lg-6">
-        <div class="news-card">
-          <div class="news-img">
-            <img src="https://themes.hibootstrap.com/dicom/wp-content/uploads/2020/07/portfolio-img2-1-1.jpg" alt="News">
-            <span class="label-tag">Business</span>
-            <span class="hover-icon">+</span>
-          </div>
-          <div class="news-content">
-            <h5 class="news-title">Santa Monica Airlines</h5>
-            <p class="news-text">Fingerstache microdosing kickstarter, migas occupy sartorial ennui sustainable green juice...</p>
-            <p class="news-meta">Sofia Helin — September 27, 2017</p>
-          </div>
-        </div>
-      </div>
+  // Toggle active button
+  buttons.forEach(btn => btn.classList.remove('active-filter'));
+  const clickedButton = Array.from(buttons).find(btn => btn.textContent.toLowerCase().includes(category));
+  if (category === 'all') {
+    buttons[0].classList.add('active-filter');
+  } else if (clickedButton) {
+    clickedButton.classList.add('active-filter');
+  }
+}
 
-      <!-- News Block -->
-      <div class="col-md-6 col-lg-6">
-        <div class="news-card">
-          <div class="news-img">
-            <img src="https://themes.hibootstrap.com/dicom/wp-content/uploads/2020/07/portfolio-img3-1-1.jpg" alt="News">
-            <span class="label-tag">Business</span>
-            <span class="hover-icon">✕</span>
-          </div>
-          <div class="news-content">
-            <h5 class="news-title">Misses about Bette</h5>
-            <p class="news-text">Fingerstache microdosing kickstarter, migas occupy sartorial ennui sustainable green juice...</p>
-            <p class="news-meta">Sofia Helin — September 27, 2017</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- News Block -->
-      <div class="col-md-6 col-lg-6">
-        <div class="news-card">
-          <div class="news-img">
-            <img src="https://themes.hibootstrap.com/dicom/wp-content/uploads/2020/07/portfolio-img5-1-1.jpg" alt="News">
-            <span class="label-tag">Business</span>
-            <span class="hover-icon">+</span>
-          </div>
-          <div class="news-content">
-            <h5 class="news-title">Dudesblood Fakie Bruised</h5>
-            <p class="news-text">When, while the lovely valley teems with vapour around me, and the meridian sun strikes...</p>
-            <p class="news-meta">Sofia Helin — September 27, 2017</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+  </script>
+  
 
 
 <!-- AOS -->
