@@ -16,7 +16,65 @@
 <link rel="stylesheet" href="css/Aboutus1.css">
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+    .circle-bg {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+ background-image: url("https://techex.windstripedesign.ro/images/dot-circle.png");
+ object-fit: cover;
+ background-size: cover;
 
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+
+  .image-container {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .icon-box {
+    background: #eef4ff69;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .bottom-cards .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    text-align: left;
+  }
+
+  .bottom-cards .card h5 {
+    font-weight: bold;
+  }
+
+  .text-blue {
+    color: #0050ff;
+  }
+
+  .icon {
+    font-size: 28px;
+    color: #0050ff;
+  }
+</style>
 
 </head>
 <body>
@@ -128,345 +186,459 @@
     </div>
   </section>
   <!-- ------------------about us-----------/-- -->
-<section class="section-wrapper">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Images -->
-      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-        <div class="img-stack-container">
-          <!-- Background Image -->
-          <img src="images/aboutsecondimg.png" alt="Shape Background" class="bg-img img-fluid" data-aos="fade-up">
 
-
-          <!-- Foreground Image -->
-          <img src="images/about1.png" alt="Team Working" class="fg-img img-fluid">
-
-          <!-- Badge -->
-          <div class="project-badge">
-            <i class="bi bi-person-check"></i>
-            283K+<br><small>Complete <br>Project</small>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Content -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <p class=" fw-bold" style="color: #f29111;">IT Support for Business</p>
-        <h2 class="fw-bold">About is Over 291+ Company <br> Business Solution.</h2>
-        <p class="text-muted">
-          Monotonectally synergize granular markets and front markets. Collaboratively visualize strategic infomediaries after multimedia based models. Synergistically task state of the art infrastructures.
-        </p>
-
-        <ul class="list-unstyled feature-list">
-          <li class="d-flex align-items-center mb-2">
-            <i class="bi bi-check-circle-fill"></i> Company and Research
-          </li>
-          <li class="d-flex align-items-center mb-2">
-            <i class="bi bi-check-circle-fill"></i> Business and Research
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center mb-4">
-          <div class="rounded-circle px-3 py-2 fw-bold me-3" style="border: 1px solid #f29111;">
-            45%
-          </div>
-          <div>
-            <strong>Solution Business</strong><br>
-            <small class="text-muted">Level is high</small>
-          </div>
-        </div>
-
-        <div class="testimonial mb-4">
-          “If you are accused of committing a crime, you will the very best criminal defense attorneys.”
-        </div>
-
-        <a href="#" class="btn btn-primary px-4">More About →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ------------------------------teams------------------------------------------ -->
- <div class="container py-5">
-  <div class="row justify-content-center" data-aos="fade-up">
-    <div class="col-md-4 col-lg-3">
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/ateam1.png" alt="John D. Alexon">
-        </div>
-        <div class="team-info">
-          <h5>John D. Alexon</h5>
-          <small>UI Designer</small>
-
-          <!-- Share Icon -->
-          <div class="share-icon">
-            <i class="fas fa-share-alt"></i>
-          </div>
-
-          <!-- SVG Bottom Curve -->
-          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
-            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
-            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
-            <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-4 col-lg-3">
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/ateam2.png" alt="John D. Alexon">
-        </div>
-        <div class="team-info">
-          <h5>John D. Alexon</h5>
-          <small>UI Designer</small>
-
-          <!-- Share Icon -->
-          <div class="share-icon">
-            <i class="fas fa-share-alt"></i>
-          </div>
-
-          <!-- SVG Bottom Curve -->
-          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
-            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
-            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
-     <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-4 col-lg-3">
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/ateam3.png" alt="John D. Alexon">
-        </div>
-        <div class="team-info">
-          <h5>John D. Alexon</h5>
-          <small>UI Designer</small>
-
-          <!-- Share Icon -->
-          <div class="share-icon">
-            <i class="fas fa-share-alt"></i>
-          </div>
-
-          <!-- SVG Bottom Curve -->
-          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
-            <!-- <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#0d6efd"/> -->
-            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
-             <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-      <div class="col-md-4 col-lg-3">
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/ateam4.png" alt="John D. Alexon">
-        </div>
-        <div class="team-info">
-          <h5>John D. Alexon</h5>
-          <small>UI Designer</small>
-
-          <!-- Share Icon -->
-          <div class="share-icon">
-            <i class="fas fa-share-alt"></i>
-          </div>
-
-          <!-- SVG Bottom Curve -->
-          <svg class="team-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
-            <path d="M0,0 Q250,80 500,0 L500,60 L0,60 Z" fill="#f29111"/>
-            <path d="M250,20 a1,1 0 0,1 0,0" fill="#fff"/>
-            <path d="M50,60 Q250,-40 450,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M80,60 Q250,-30 420,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-            <path d="M110,60 Q250,-20 390,60" stroke="#FFFFFFFF" stroke-width="1" fill="none"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- --------------------------start number-------------------------------- -->
- <section class="stats-section">
-  <div class="container stats-container">
-    <div class="row g-4">
-      <div class="col-6 col-md-3" data-aos="fade-up">
-        <div class="stat-block">
-          <h2>10K+</h2>
-          <p>Happy Customers</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="stat-block">
-          <h2>20K+</h2>
-          <p>Works Completed</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="stat-block">
-          <h2>99+</h2>
-          <p>Expert Members</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-block">
-          <h2>100%</h2>
-          <p>Satisfaction Rates</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ------------------------experience--------------------------- -->
- <div class="container py-5">
+<div class="container py-5">
   <div class="row align-items-center">
-    <!-- Left Column -->
-    <div class="col-lg-6 mb-4" data-aos="fade-right">
-      <h2 class="fw-bold mb-3">Preparing for your success,<br> we provide truly prominent IT solutions</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="experience-box">
-            <h1>25</h1>
-            <p class="mb-0">Years of<br>experience</p>
-          </div>
+    <!-- Left Text Column -->
+    <div class="col-lg-6" data-aos="fade-right">
+      <p class="text-uppercase  fw-bold" style="color: #f29111;">About Company</p>
+      <h2 class="fw-bold mb-3">Get’s IT Solutions For <br> Expert Consultants</h2>
+      <p class="text-muted mb-4">Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+
+      <div class="icon-box">
+        <div class="icon"><i class="fas fa-users" aria-hidden="true" style="color: #f29111;"></i></div>
+        <div>
+          <h6 class="fw-bold mb-1">ProfessionaI Consultants</h6>
+          <p class="mb-0 text-muted">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
         </div>
-        <div class="col-md-8">
-          <p class="info-text">
-            Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent for all your software development needs.
-          </p>
-          <a href="#" class="learn-more-link">Learn More About Us →</a>
+      </div>
+
+      <div class="icon-box">
+        <div class="icon"><i class="fas fa-bullseye" aria-hidden="true" style="color: #f29111;"></i></div>
+        <div>
+          <h6 class="fw-bold mb-1">Managed IT Solutions</h6>
+          <p class="mb-0 text-muted">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
         </div>
       </div>
     </div>
 
-    <!-- Right Column -->
-    <div class="col-lg-6" data-aos="fade-left">
-      <div class="mb-4">
-        <div class="progress-label">IT Management</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%;"></div>
-          <div class="progress-tooltip" style="right: 20%;">80%</div>
-        </div>
+    <!-- Right Image Column -->
+    <div class="col-lg-6 position-relative" data-aos="fade-left">
+      <div class="circle-bg"></div>
+      <div class="image-container shadow">
+        <img src="https://techex.windstripedesign.ro/images/home1/about-us.jpg" class="img-fluid" alt="IT Consultants">
       </div>
+    </div>
+  </div>
 
-      <div class="mb-4">
-        <div class="progress-label">Data Security</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 95%;"></div>
-          <div class="progress-tooltip" style="right: 5%;">95%</div>
-        </div>
+  <!-- Bottom Cards -->
+  <div class="row bottom-cards text-center mt-5" data-aos="fade-up">
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/13074/13074490.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>IT Consultancy</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
       </div>
-
-      <div class="mb-4">
-        <div class="progress-label">Information Technology</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%;"></div>
-          <div class="progress-tooltip" style="right: 20%;">80%</div>
-        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/17597/17597076.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Cyber Security</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
       </div>
-
-      <div class="mb-4">
-        <div class="progress-label">Technology Consultant</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%;"></div>
-          <div class="progress-tooltip" style="right: 10%;">90%</div>
-        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/15886/15886895.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Development</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
       </div>
     </div>
   </div>
 </div>
-<!-- ---------------------testimonial------------------------ -->
-<section class="testimonial-section" id="testimonial">
-  <div class="container">
-    <p class="testimonial-title" data-aos="fade-up">Testimonial</p>
-    <h2 class="testimonial-heading" data-aos="fade-up" data-aos-delay="100">20k+ satisfied clients worldwide</h2>
 
-    <div class="row justify-content-center g-5">
-      <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-        <div class="testimonial-card position-relative">
-          <img src="images/aboutlest1.jpg" alt="Client 1" class="avatar">
-          <div class="quote-icon">💬</div>
-          <p class="testimonial-text">Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
-          <p class="testimonial-name">Mike Holder <span class="testimonial-role">/ CEO, Harlond inc</span></p>
-        </div>
+
+<!-- -------------------------carts4----------------------- -->
+<section class="py-5">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h6 style="color: #f29111;">Popular IT Services</h6>
+        <h2>Solutions For IT Business</h2>
       </div>
 
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="testimonial-card position-relative">
-          <img src="https://theme-land.com/digimx/demo/assets/img/about/about_thumb_1.jpg" alt="Client 2" class="avatar">
-          <div class="quote-icon">💬</div>
-          <p class="testimonial-text">Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
-          <p class="testimonial-name">Mike Fermalin <span class="testimonial-role">/ CEO, Harlond inc</span></p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <img src="https://html.rrdevs.net/techex/assets/img/icon/sicon1.png" alt="Manage IT Services" />
+            <h5>Manage IT Services</h5>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="#">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card h-100">
+            <img src="https://html.rrdevs.net/techex/assets/img/icon/sicon2.png" alt="Product Engineering" />
+            <h5>Product Engineering</h5>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="#">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card h-100">
+            <img src="https://html.rrdevs.net/techex/assets/img/icon/sicon3.png" alt="Web Development" />
+            <h5>Web Development</h5>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="#">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card h-100">
+            <img src="https://html.rrdevs.net/techex/assets/img/icon/sicon4.png" alt="Digital Solutions" />
+            <h5>Digital Solutions</h5>
+            <p>Sed perspicias unde omnis natus error volute</p>
+            <a href="#">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Carousel indicators -->
-    <div class="carousel-indicators justify-content-center" data-aos="fade-up" data-aos-delay="400">
-      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+<!-- ------------------------------------- -->
+ <section class="blog-section">
+  <div class="section-title">
+    <h6 style="color: #f29111;">ARTICLES & TYPES</h6>
+    <h2>Get Every Single Updates</h2>
+  </div>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="blog-card">
+          <div class="blog-img overlay-hover-1">
+            <span class="category-badge bg-primary">Technology</span>
+            <img src="https://html.rrdevs.net/techex/assets/img/home5/card_01.png" alt="Technology">
+          </div>
+          <div class="blog-content">
+            <div class="meta-info">
+              <i class="bi bi-calendar3"></i> 18 Jan 2022 &nbsp;
+              <i class="bi bi-chat-dots"></i> 02 Comments
+            </div>
+            <div class="blog-title">Web Development</div>
+            <div class="blog-desc">Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</div>
+            <a href="#" class="read-more">READ MORE <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card">
+          <div class="blog-img overlay-hover-2">
+            <span class="category-badge bg-info text-dark">Idea</span>
+            <img src="https://html.rrdevs.net/techex/assets/img/home5/card_02.png" alt="Idea">
+          </div>
+          <div class="blog-content">
+            <div class="meta-info">
+              <i class="bi bi-calendar3"></i> 18 Jan 2022 &nbsp;
+              <i class="bi bi-chat-dots"></i> 02 Comments
+            </div>
+            <div class="blog-title">Web Development</div>
+            <div class="blog-desc">Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</div>
+            <a href="#" class="read-more">READ MORE <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-card">
+          <div class="blog-img overlay-hover-3">
+            <span class="category-badge bg-primary">Software</span>
+            <img src="https://html.rrdevs.net/techex/assets/img/home5/card_03.png" alt="Software">
+          </div>
+          <div class="blog-content">
+            <div class="meta-info">
+              <i class="bi bi-calendar3"></i> 18 Jan 2022 &nbsp;
+              <i class="bi bi-chat-dots"></i> 02 Comments
+            </div>
+            <div class="blog-title">Web Development</div>
+            <div class="blog-desc">Lorem ipsum dolor sit consectetur adipiscing eiusmod tempor.</div>
+            <a href="#" class="read-more">READ MORE <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
- <!-- Section Title -->
-  <div class="section-title" data-aos="fade-up">
-    <small>From Our Case Studies</small>
-    <h2>We delivered best solution</h2>
-  </div>
-
-  <!-- Carousel -->
-  <div id="caseCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="1"></button>
+<!-- ---------------------------------------------------------------- -->
+ <!-- Experience & Services Section -->
+<!-- ---------/-------------------------------------- -->
+<section class="process-section">
+  <div class="container">
+    <!-- Title -->
+    <div class="section-title" data-aos="fade-up">
+      <p><i class="fas fa-diamond me-1" style="color: #f29111;"></i> OUR WORKING PROCESS</p>
+      <h2>We Follow 3 Steps To Grow<br> Business</h2>
     </div>
 
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row g-3 justify-content-center">
-          <div class="col-md-4">
-            <img src="images/ac1.jpg" class="d-block w-100" alt="Image 1">
+    <!-- Steps -->
+    <div class="step-wrap">
+      <div class="curve-line"></div>
+
+      <div class="row text-center g-4">
+        <!-- Step 1 -->
+        <div class="col-md-3 col-6 step-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-label">STEP-1</div>
+          <div class="step-circle">
+            <i class="fas fa-search"></i>
           </div>
-          <div class="col-md-4">
-            <img src="images/ac2.jpg" class="d-block w-100" alt="Image 2">
+          <h5 class="step-title">Data Analysis</h5>
+          <p class="step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-3 col-6 step-item" data-aos="fade-up" data-aos-delay="200" style="margin-top: -30px;">
+          <div class="step-label">STEP-2</div>
+          <div class="step-circle">
+            <i class="fas fa-lightbulb"></i>
           </div>
-          <div class="col-md-4">
-            <img src="images/ac3.jpg" class="d-block w-100" alt="Image 3">
+          <h5 class="step-title">Make Idea</h5>
+          <p class="step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-3 col-6 step-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-label">STEP-3</div>
+          <div class="step-circle">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h5 class="step-title">Our Mission</h5>
+          <p class="step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-3 col-6 step-item" data-aos="fade-up" data-aos-delay="400" style="margin-top: -30px;">
+          <div class="step-label">STEP-4</div>
+          <div class="step-circle">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h5 class="step-title">Our Values</h5>
+          <p class="step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h6 style="color: #f29111;">Testimonial</h6>
+      <h2>20k+ satisfied clients worldwide</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client 1">
+          </div>
+          <div class="testimonial-icon"><i class="bi bi-chat-quote"></i></div>
+          <p>Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
+          <div class="testimonial-author">Mike Holder <span class="testimonial-role">/ CEO, Harlond Inc</span></div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client 2">
+          </div>
+          <div class="testimonial-icon"><i class="bi bi-chat-quote"></i></div>
+          <p>Accelerate innovation with world-class tech teams. Beyond more stoic this along goodness hey this this wow manatee</p>
+          <div class="testimonial-author">Mike Fermalin <span class="testimonial-role">/ CEO, Harlond Inc</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ---------------------------------faqs---------------------------------------- -->
+<div class="containe faq-section">
+  <div class="faq-image mb-4 mb-md-0">
+    <img src="https://html.rrdevs.net/techex/assets/img/faq_home_2.jpg" alt="FAQ Image">
+  </div>
+
+  <div class="faq-content" style="width: 900px;">
+    <div class="faq-subtitle" style="color: #f29111;">Why Choose Us</div>
+    <h2 class="faq-title" style="color: black;">Innovating Solutions<br>Digital Mindset</h2>
+
+    <div class="accordion mt-4" id="faqAccordion">
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Can I Get Internet In My Area?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we offer services in multiple regions. Please enter your ZIP code on our coverage page.
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row g-3 justify-content-center">
-          <div class="col-md-4">
-            <img src="images/ac1.jpg" class="d-block w-100" alt="Image 4">
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            How Helping Solve Climate Change ?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus dolor at libero ultricies ullamcorper vel ut dui. Maecenas sollicitudin.
           </div>
-          <div class="col-md-4">
-            <img src="images/ac2.jpg" class="d-block w-100" alt="Image 5">
+        </div>
+      </div>
+
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            How To Integrate Social Mobile Web ?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We provide APIs and developer tools to integrate mobile and social web platforms easily.
           </div>
-          <div class="col-md-4">
-            <img src="images/ac3.jpg" class="d-block w-100" alt="Image 6">
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Mobile Emails Increase Conversion ?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! Mobile-optimized emails have been shown to increase user engagement and conversion rates significantly.
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------------------------------- -->
+<div class="container">
+    <div class="section-title">
+      <p style="color: #f29111;">Exclusive Members</p>
+      <h2>Meet Our Experience Team Members</h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Wallace">
+          <h5>Wallace S. Camacho</h5>
+          <p>Business Manager</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Lawrence">
+          <h5>Lawrence Pacheco</h5>
+          <p>Web Developer</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Timothy">
+          <h5>Timothy L. Figueroa</h5>
+          <p>Business Manager</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3">
+        <div class="team-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Michael">
+          <h5>Michael L. Branch</h5>
+          <p>Product Manager</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#caseCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#caseCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); "></span>
-
-    </button>
   </div>
+
+
+<!-- ---------------------------------------------------- -->
+<!-- ----------------------------------------------------------- -->
+<section class="stats-section">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-3 stat-box">
+        <h2>13691<span>+</span></h2>
+        <div class="divider"></div>
+        <p>Project Completed</p>
+      </div>
+      <div class="col-6 col-md-3 stat-box">
+        <h2>336<span>+</span></h2>
+        <div class="divider"></div>
+        <p>Awards Won</p>
+      </div>
+      <div class="col-6 col-md-3 stat-box">
+        <h2>1725<span>+</span></h2>
+        <div class="divider"></div>
+        <p>Satisfied Clients</p>
+      </div>
+      <div class="col-6 col-md-3 stat-box">
+        <h2>984<span>+</span></h2>
+        <div class="divider"></div>
+        <p>Workers Employed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 <footer class="footer text-light">
   <div class="container">
