@@ -17,7 +17,29 @@
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+<style>
+  .contact-section {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
 
+.contact-form {
+  z-index: 2;
+  position: relative;
+}
+
+.map-bg {
+  position: relative;
+  z-index: 0;
+}
+
+.map-bg img {
+  filter: grayscale(100%);
+  opacity: 0.4;
+}
+
+</style>
 </head>
 <body>
 <!-- -----------------------navbar----------------------------------------- -->
@@ -129,104 +151,74 @@
   </section>
 
  <!-- =============================================================================================== -->
-  <section class="contact-section">
+<section class="contact-section py-5">
   <div class="container">
-    <div class="row g-5 align-items-start">
-      <!-- Left Section -->
-      <div class="col-lg-5" data-aos="fade-right">
-        <div class="contact-left">
-          <h6>Common Questions</h6>
-          <h2>Have inquiries?<br>Reach out to us!</h2>
-          <p>We are here to assist you with any questions or concerns you may have. Feel free to reach out to us anytime.</p>
-          <div class="mt-4">
-            <p class="contact-info"><i class="bi bi-geo-alt-fill"></i> 1032 N 9th Ave, Tucson, AZ 85705, USA</p>
-            <p class="contact-info"><i class="bi bi-telephone-fill"></i> +1 840 841 25 69</p>
-            <p class="contact-info"><i class="bi bi-envelope-fill"></i> info@email.com</p>
+    <div class="row text-center mb-5">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="mb-3 fs-2 text-primary">
+          <i class="fa-solid fa-square-phone" style="color: #f29111;"></i>
           </div>
+          <h5 class="fw-bold">Give us a call</h5>
+          <p class="mb-1">(+1) 400 430 123</p>
+          <p>(+2) 500 950 456</p>
         </div>
       </div>
-
-      <!-- Right Section -->
-      <div class="col-lg-7" data-aos="fade-left">
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label">Name <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" placeholder="Enter your name">
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Email <span class="text-danger">*</span></label>
-              <input type="email" class="form-control" placeholder="Enter your email">
-            </div>
-            <div class="col-12">
-              <label class="form-label">Phone</label>
-              <input type="text" class="form-control" placeholder="Enter your number">
-            </div>
-            <div class="col-12">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" placeholder="Enter your message"></textarea>
-            </div>
-            <div class="col-12">
-              <div class="form-check mt-2">
-                <input class="form-check-input" type="checkbox" id="agree">
-                <label class="form-check-label" for="agree">
-                  I agree that my submitted data is being <span class="text-warning">collected and stored</span>.
-                </label>
-              </div>
-            </div>
-            <div class="col-12 mt-3">
-              <button type="submit" class="btn btn-primary ">Send Message</button>
-            </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="mb-3 fs-2">
+          <i class="fa-solid fa-envelope-circle-check" style="color: #f29111;"></i>
           </div>
-        </form>
+          <h5 class="fw-bold">Drop us a line</h5>
+          <p class="mb-1">info@techwixtheme.com</p>
+          <p>mail@techwixtech.com</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="mb-3 fs-2">
+          <i class="fa-solid fa-map-location-dot" style="color: #f29111 ;"></i>
+          </div>
+          <h5 class="fw-bold">Visit our office</h5>
+          <p>New York, 112 W 34th St<br>Caroline, USA</p>
+        </div>
       </div>
     </div>
+
+    <div class="contact-form bg-white p-5 rounded shadow" data-aos="fade-up">
+      <small class="text-uppercase  fw-bold" style="color: #f29111;">Request a Quote</small>
+      <h3 class="fw-bold mt-2 mb-4">How May We Help You!</h3>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <input type="text" class="form-control" placeholder="Name *" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email *" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Subject *" required>
+        </div>
+        <div class="mb-4">
+          <textarea class="form-control" rows="5" placeholder="Write a Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+      </form>
+    </div>
   </div>
+
+  <!-- Background Map Layer -->
+<!-- Embedded Google Map -->
+<div class="map-bg mt-5">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.905667277117!2d-73.99108442403494!3d40.7505049713876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18f3eebb%3A0xc80b8f06e177fe62!2s112%20W%2034th%20St%2C%20New%20York%2C%20NY%2010119%2C%20USA!5e0!3m2!1sen!2sin!4v1717087363964!5m2!1sen!2sin"
+    width="100%" height="400" style="border:0; filter: grayscale(100%) opacity(0.6);" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
 </section>
-<!-- ---------------------------------------------------------------------- -->
 
- <div class="container my-5">
-    <div class="world-map-container position-relative" data-aos="fade-up">
-      <button class="connect-btn btn-primary" style="color: aliceblue;border-radius: 0%;">Connect Us</button>
-      <img src="https://wpriverthemes.com/HTML/synck/assets/imgs/map.svg" class="map-img" alt="World Map" />
-
-      <!-- Pins -->
-      <span class="location-pin pin1"></span>
-      <span class="location-pin pin2"></span>
-      <span class="location-pin pin3"></span>
-      <span class="location-pin pin4"></span>
-      <span class="location-pin pin5"></span>
-      <span class="location-pin pin6"></span>
-    </div>
-
-    <!-- Contact Cards -->
-    <div class="row contact-cards justify-content-center mt-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="col-md-6 col-lg-5 mb-4">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="bi bi-headset"></i>
-          </div>
-          <div class="contact-title">Support</div>
-          <p>Contact our fast support team</p>
-          <div class="contact-info">
-            <a href="mailto:bluebsupport@mail.com">solutionupport@mail.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 mb-4">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="bi bi-telephone"></i>
-          </div>
-          <div class="contact-title">Phone</div>
-          <p>Mon–Fri from 9am to 6pm.</p>
-          <div class="contact-info">
-            <a href="tel:+19387407555">+1-1111 22222</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
