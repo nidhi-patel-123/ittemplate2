@@ -16,7 +16,88 @@
   <link rel="stylesheet" href="css/contact1.css">
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+ <style>
+   
+    .contact-info .icon {
+      background-color: #f29011dc;
+      color: #fff;
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 15px;
+      
+    }
 
+    .contact-info h6 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .contact-info p {
+      margin: 0;
+      color: #777;
+    }
+
+    .contact-info a {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: 500;
+      text-decoration: underline;
+      margin-top: 4px;
+      display: inline-block;
+    }
+
+    .form-control,
+    textarea.form-control {
+      border-radius: 0.25rem;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .form-section label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .submit-btn {
+
+      color: #fff;
+      padding: 14px 28px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+
+    .form-note {
+      font-size: 12px;
+      color: #777;
+    }
+        html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 50vh; /* Full viewport height */
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 
 </head>
 <body>
@@ -128,118 +209,63 @@
     </div>
   </section>
 
-  <div class="container my-5">
-    <div class="world-map-container position-relative" data-aos="fade-up">
-      <button class="connect-btn btn-primary" style="color: aliceblue;border-radius: 0%;">Connect Us</button>
-      <img src="https://wpriverthemes.com/HTML/synck/assets/imgs/map.svg" class="map-img" alt="World Map" />
-
-      <!-- Pins -->
-      <span class="location-pin pin1"></span>
-      <span class="location-pin pin2"></span>
-      <span class="location-pin pin3"></span>
-      <span class="location-pin pin4"></span>
-      <span class="location-pin pin5"></span>
-      <span class="location-pin pin6"></span>
-    </div>
-
-    <!-- Contact Cards -->
-    <div class="row contact-cards justify-content-center mt-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="col-md-6 col-lg-5 mb-4">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="bi bi-headset"></i>
-          </div>
-          <div class="contact-title">Support</div>
-          <p>Contact our fast support team</p>
-          <div class="contact-info">
-            <a href="mailto:bluebsupport@mail.com">solutionupport@mail.com</a>
-          </div>
-        </div>
+<div class="container" style="margin-top: 50px;margin-bottom: 50px;">
+  <!-- Contact Info -->
+  <div class="row text-center text-md-start contact-info mb-5">
+    <div class="col-md-4 d-flex align-items-start mb-4 mb-md-0">
+      <div class="icon"><i class="fas fa-phone-alt"></i></div>
+      <div>
+        <h6>Call Us</h6>
+        <p>+61 383 767 284</p>
       </div>
-      <div class="col-md-6 col-lg-5 mb-4">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <i class="bi bi-telephone"></i>
-          </div>
-          <div class="contact-title">Phone</div>
-          <p>Mon–Fri from 9am to 6pm.</p>
-          <div class="contact-info">
-            <a href="tel:+19387407555">+1-1111 22222</a>
-          </div>
-        </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-start mb-4 mb-md-0">
+      <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <h6>Address</h6>
+        <p>245 Quigley Blvd, Ste K</p>
+        <a href="#">See on the map</a>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-start">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <h6>Email</h6>
+        <p>support@bestlooker.pro</p>
+        <a href="#">Say hello</a>
       </div>
     </div>
   </div>
 
-<!-- ---------------------------------------------------------------------- -->
- <section class="contact-area">
-  <div class="container">
-    <div class="row gy-5">
-
-      <!-- Left Form -->
-      <div class="col-lg-6" data-aos="fade-right">
-        <p class="form-section-subtitle"><i class="bi bi-dot"></i> SEND US AN EMAIL</p>
-        <h3 class="form-section-title mb-4">Feel free to write</h3>
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Phone Number">
-            </div>
-            <div class="col-12">
-              <textarea rows="5" class="form-control" placeholder="Your Message"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="send-btn btn-primary">Send Message</button>
-            </div>
-          </div>
-        </form>
+  <!-- Contact Form -->
+  <form class="form-section">
+    <div class="row mb-3">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
       </div>
-
-      <!-- Right Info -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <p class="info-section-subtitle"><i class="bi bi-dot"></i> CONTACT WITH US</p>
-        <h3 class="info-section-title mb-3">Let's Connect!</h3>
-        <p class="mb-4">We're here to help you achieve your IT and business goals. Reach out to us for inquiries, support, or exciting collaborations!</p>
-
-        <div class="contact-box">
-          <i class="bi bi-telephone-fill"></i>
-          <div>
-            <h6>Call Us Anytime</h6>
-            <p>Free +91 12211 11111</p>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <i class="bi bi-envelope-fill"></i>
-          <div>
-            <h6>Email Us</h6>
-            <a href="">sulution@gmail.in</a>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <i class="bi bi-geo-alt-fill"></i>
-          <div>
-            <h6>Visit Our Office</h6>
-            <p>78 Queen’s Road  
-Manchester, M14 4FR  <br>United Kingdom
-</p>
-          </div>
-        </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
       </div>
-
     </div>
-  </div>
-</section>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+    </div>
+    <p class="form-note mb-3">All the fields are required</p>
+    <button type="submit" class="submit-btn btn-primary">Submit Message</button>
+  </form>
+</div>
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531590484!3d-37.81627974202107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f2f3f3%3A0x5045675218ce6e0!2s245%20Quigley%20Blvd%20Ste%20K!5e0!3m2!1sen!2sau!4v1629218039601!5m2!1sen!2sau" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
 
 
