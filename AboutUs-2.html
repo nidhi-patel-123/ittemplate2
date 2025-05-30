@@ -17,6 +17,176 @@
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+<style>
+  .circle-bg {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://techex.windstripedesign.ro/images/dot-circle.png");
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .image-container {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .icon-box {
+    background: #eef4ff69;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .bottom-cards .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    text-align: left;
+    transition: all 0.35s ease;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  .bottom-cards .card:hover {
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f0f8ff, #e4efff);
+  }
+
+  .bottom-cards .card h5 {
+    font-weight: bold;
+  }
+
+  .icon {
+    font-size: 28px;
+    transition: transform 0.3s ease;
+  }
+
+  .bottom-cards .card:hover .icon {
+    transform: rotate(5deg) scale(1.1);
+ 
+  }
+  /* -------------------------------- */
+   .case-study-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .case-study-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .case-study-img {
+      position: relative;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .case-study-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .case-study-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .case-study-content {
+      padding: 20px;
+    }
+
+    .case-study-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+    }
+
+    .case-study-category {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .read-more {
+      color: #0d6efd;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .filter-btns {
+      margin-bottom: 30px;
+    }
+
+    .filter-btns .btn {
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      margin: 5px;
+    }
+
+    .filter-btns .btn-primary {
+      background-color: #f29111;
+      border-color: #f29111;
+    }
+
+    .filter-btns .btn-outline-secondary:hover {
+      background-color: #f29111;
+      color: #fff;
+      border-color: #f29111;
+    }
+
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+    /* ----------------------------------logos------------------------------ */
+     .logo-strip {
+      padding: 0px 0;
+      border-top: 1px solid #eee;
+        max-height: 40vh;
+    }
+    .logo-strip .logo-item img {
+      max-height: 50px;
+      filter: grayscale(100%);
+      /* opacity: 0.7; */
+      transition: all 0.3s ease-in-out;
+    }
+    .logo-strip .logo-item img:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+</style>
 
 </head>
 <body>
@@ -128,64 +298,88 @@
     </div>
   </section>
   <!-- ------------------about us-----------/-- -->
-<section class="section-wrapper">
-  <div class="containe">
-    <div class="row align-items-center">
-      <!-- Left Images -->
-      <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-        <div class="img-stack-container">
-          <!-- Background Image -->
-          <img src="images/aboutsecondimg.png" alt="Shape Background" class="bg-img img-fluid" data-aos="fade-up">
 
+<div class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Text Column -->
+    <div class="col-lg-6" data-aos="fade-right">
+      <p class="text-uppercase  fw-bold" style="color: #f29111;">About Company</p>
+      <h2 class="fw-bold mb-3">Get’s IT Solutions For <br> Expert Consultants</h2>
+      <p class="text-muted mb-4">Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium totam.</p>
 
-          <!-- Foreground Image -->
-          <img src="images/about1.png" alt="Team Working" class="fg-img img-fluid">
-
-          <!-- Badge -->
-          <div class="project-badge" style="border-radius: 0%;">
-            <i class="bi bi-person-check"></i>
-            283K+<br><small>Complete <br>Project</small>
-          </div>
+      <div class="icon-box">
+        <div class="icon"><i class="fas fa-users" aria-hidden="true" style="color: #f29111;"></i></div>
+        <div>
+          <h6 class="fw-bold mb-1">ProfessionaI Consultants</h6>
+          <p class="mb-0 text-muted">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
         </div>
       </div>
 
-      <!-- Right Content -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <p class=" fw-bold" style="color: #f29111;">IT Support for Business</p>
-        <h2 class="fw-bold">About is Over 291+ Company <br> Business Solution.</h2>
-        <p class="text-muted">
-          Monotonectally synergize granular markets and front markets. Collaboratively visualize strategic infomediaries after multimedia based models. Synergistically task state of the art infrastructures.
-        </p>
-
-        <ul class="list-unstyled feature-list">
-          <li class="d-flex align-items-center mb-2">
-            <i class="bi bi-check-circle-fill"></i> Company and Research
-          </li>
-          <li class="d-flex align-items-center mb-2">
-            <i class="bi bi-check-circle-fill"></i> Business and Research
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center mb-4">
-          <div class="rounded-circle px-3 py-2 fw-bold me-3" style="border: 1px solid #f29111;border-radius: 0%;">
-            45%
-          </div>
-          <div>
-            <strong>Solution Business</strong><br>
-            <small class="text-muted">Level is high</small>
-          </div>
+      <div class="icon-box">
+        <div class="icon"><i class="fas fa-bullseye" aria-hidden="true" style="color: #f29111;"></i></div>
+        <div>
+          <h6 class="fw-bold mb-1">Managed IT Solutions</h6>
+          <p class="mb-0 text-muted">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
         </div>
+      </div>
+    </div>
 
-        <div class="testimonial mb-4">
-          “If you are accused of committing a crime, you will the very best criminal defense attorneys.”
-        </div>
-
-        <a href="#" class="btn btn-primary px-4">More About →</a>
+    <!-- Right Image Column -->
+    <div class="col-lg-6 position-relative" data-aos="fade-left">
+      <div class="circle-bg"></div>
+      <div class="image-container shadow">
+        <img src="https://techex.windstripedesign.ro/images/home1/about-us.jpg" class="img-fluid" alt="IT Consultants">
       </div>
     </div>
   </div>
-</section>
 
+  <!-- Bottom Cards -->
+  <div class="row bottom-cards text-center mt-5" data-aos="fade-up">
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/13074/13074490.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>IT Consultancy</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/17597/17597076.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Cyber Security</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/15886/15886895.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Development</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+     <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/12990/12990939.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>App Development</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+     <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/17109/17109606.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Ui/Ux Design</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+     <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="icon mb-3"><img src="https://cdn-icons-png.freepik.com/256/5847/5847483.png?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_incoming" alt="" style="width: 50px;"></div>
+        <h5>Game devlopemet</h5>
+        <p class="text-muted mb-0">Faster & Smarter Solutions</p>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- ------------------------------teams------------------------------------------ -->
   <div class="container py-5">
     <div class="expertise-title" data-aos="fade-up">
@@ -286,64 +480,7 @@
     </div>
   </div>
 </section>
-<!-- ------------------------experience--------------------------- -->
- <div class="container py-5">
-  <div class="row align-items-center">
-    <!-- Left Column -->
-    <div class="col-lg-6 mb-4" data-aos="fade-right">
-      <h2 class="fw-bold mb-3">Preparing for your success,<br> we provide truly prominent IT solutions</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="experience-box">
-            <h1>25</h1>
-            <p class="mb-0">Years of<br>experience</p>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <p class="info-text">
-            Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team of incredible freelance talent for all your software development needs.
-          </p>
-          <a href="#" class="learn-more-link">Learn More About Us →</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Right Column -->
-    <div class="col-lg-6" data-aos="fade-left">
-      <div class="mb-4">
-        <div class="progress-label">IT Management</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%;"></div>
-          <div class="progress-tooltip" style="right: 20%;">80%</div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <div class="progress-label">Data Security</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 95%;"></div>
-          <div class="progress-tooltip" style="right: 5%;">95%</div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <div class="progress-label">Information Technology</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%;"></div>
-          <div class="progress-tooltip" style="right: 20%;">80%</div>
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <div class="progress-label">Technology Consultant</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%;"></div>
-          <div class="progress-tooltip" style="right: 10%;">90%</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- ---------------------testimonial------------------------ -->
 <section class="testimonial-section" id="testimonial">
   <div class="container">
@@ -370,117 +507,145 @@
       </div>
     </div>
 
-    <!-- Carousel indicators -->
-    <div class="carousel-indicators justify-content-center" data-aos="fade-up" data-aos-delay="400">
-      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#testimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    </div>
-  </div>
+
 </section>
-<!-- ---------------------blog------------------------ -->
-  <div class="container py-5">
+
+  <div class="container">
+    <!-- <p class="text-primary text-uppercase fw-bold small">Our Recent Project</p> -->
+    <h2 class="section-title" style="color: #f29111;">Latest Case Studies</h2>
+
+    <div class="filter-btns">
+      <button class="btn btn-primary">All</button>
+      <button class="btn btn-outline-secondary">Business</button>
+      <button class="btn btn-outline-secondary">Consulting</button>
+      <button class="btn btn-outline-secondary">Product</button>
+      <button class="btn btn-outline-secondary">Engineering</button>
+    </div>
+
     <div class="row g-4">
-
-      <div class="col-md-6 col-lg-3" data-aos="fade-up">
-        <div class="blog-box">
-          <div class="blog-img">
-            <img src="images/db1.jpg" alt="Blog Image 1">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/1.jpg" alt="Business Knowledge" />
           </div>
-          <div class="blog-category">Digital Marketing</div>
-          <div class="blog-title">Innovative technology trends shaping the digital agency landscape</div>
-          <div class="blog-meta">Apr 27, 2025 • No Comments</div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Business Knowledge</h5>
+            <p class="case-study-category">IT Consultation</p>
+            <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-box">
-          <div class="blog-img">
-            <img src="images/db2.jpg" alt="Blog Image 2">
+      <!-- Repeat for other cards with different images and titles -->
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/2.jpg" alt="Business Knowledge" />
           </div>
-          <div class="blog-category">Digital Marketing</div>
-          <div class="blog-title">Creating effective marketing campaigns with digital agencies</div>
-          <div class="blog-meta">Apr 24, 2025 • No Comments</div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Business Knowledge</h5>
+            <p class="case-study-category">IT Consultation</p>
+             <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="blog-box">
-          <div class="blog-img">
-            <img src="images/db3.jpg" alt="Blog Image 3">
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/3.jpg" alt="Relationship Buildup" />
           </div>
-          <div class="blog-category">Digital Marketing</div>
-          <div class="blog-title">Navigating the future of IT services and digital transformations</div>
-          <div class="blog-meta">Apr 27, 2025 • 2 Comments</div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Relationship Buildup</h5>
+            <p class="case-study-category">IT Consultation</p>
+              <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="blog-box">
-          <div class="blog-img">
-            <img src="images/db4.jpg" alt="Blog Image 4">
+      <!-- Row 2 -->
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/4.jpg" alt="Financial Investment" />
           </div>
-          <div class="blog-category">Digital Marketing</div>
-          <div class="blog-title">Crafting a winning digital strategy for your business</div>
-          <div class="blog-meta">Apr 24, 2025 • No Comments</div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Financial Investment</h5>
+            <p class="case-study-category">IT Consultation</p>
+               <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/5.jpg" alt="Market Plan" />
+          </div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Research & Market Plan</h5>
+            <p class="case-study-category">IT Consultation</p>
+             <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="case-study-card">
+          <div class="case-study-img">
+            <img src="https://html.rrdevs.net/techex/assets/img/case/6.jpg" alt="Business Knowledge" />
+          </div>
+          <div class="case-study-content">
+            <h5 class="case-study-title">Business Knowledge</h5>
+            <p class="case-study-category">IT Consultation</p>
+           <a href="#" class="read-more" style="color: #f29111;">READ MORE →</a>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
- <!-- Section Title -->
-  <div class="section-title" data-aos="fade-up">
-    <small>From Our Case Studies</small>
-    <h2>We delivered best solution</h2>
-  </div>
 
-  <!-- Carousel -->
-  <div id="caseCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#caseCarousel" data-bs-slide-to="1"></button>
-    </div>
+<div class="container-fluid logo-strip" data-aos="fade-up">
+    <div class="row justify-content-center align-items-center g-4">
+      
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/3.png" alt="Business to Business" class="img-fluid">
+      </div>
 
-  <div class="carousel-inner">
-  <!-- Slide 1 -->
-  <div class="carousel-item active">
-    <div class="row g-3 justify-content-center">
-      <div class="col-md-4">
-        <img src="images/ac1.jpg" class="d-block w-100" alt="Image 1" style="filter: brightness(1);">
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/4.png" alt="Ageno" class="img-fluid">
       </div>
-      <div class="col-md-4">
-        <img src="images/ac2.jpg" class="d-block w-100" alt="Image 2" style="filter: brightness(1);">
-      </div>
-      <div class="col-md-4">
-        <img src="images/ac3.jpg" class="d-block w-100" alt="Image 3" style="filter: brightness(1);">
-      </div>
-    </div>
-  </div>
 
-  <!-- Slide 2 -->
-  <div class="carousel-item">
-    <div class="row g-3 justify-content-center">
-      <div class="col-md-4">
-        <img src="images/ac1.jpg" class="d-block w-100" alt="Image 4" style="filter: brightness(1);">
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/b4.png" alt="Turbologo" class="img-fluid">
       </div>
-      <div class="col-md-4">
-        <img src="images/ac2.jpg" class="d-block w-100" alt="Image 5" style="filter: brightness(1);">
+
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/1.png" alt="Business Web" class="img-fluid">
       </div>
-      <div class="col-md-4">
-        <img src="images/ac3.jpg" class="d-block w-100" alt="Image 6" style="filter: brightness(1);">
+
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/2.png" alt="Boss Design" class="img-fluid">
       </div>
+      
+      <div class="col-6 col-sm-4 col-md-2 text-center logo-item">
+        <img src="https://html.rrdevs.net/techex/assets/img/brand/1.png" alt="Boss Design" class="img-fluid">
+      </div>
+      
+
     </div>
   </div>
-</div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#caseCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#caseCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" style="background-color: #f29111; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); "></span>
 
-    </button>
-  </div>
+
+
+
+
+
+
+
 
 <footer class="footer text-light">
   <div class="container">
