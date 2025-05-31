@@ -12,17 +12,67 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/navbarfooter.css">
   <link rel="stylesheet" href="css/aifeatures.css">
   <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/navbarfooter.css">
+<style>
+   .video-container video {
+      width: 100%;
+      /* max-width: 1000px; */
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 50px;
+    }
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    .section-content {
+      padding: 50px 20px;
+    }
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    .text-col p {
+      color: #292929;
+      margin-bottom: 20px;
+    }
 
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .checklist-icon {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(200deg, #f29111, #d8d8d8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .checklist-icon::before {
+      content: "✔";
+      color: white;
+      font-weight: bold;
+    }
+
+    .checklist-text {
+      color: #111111;
+      font-weight: 500;
+    }
+</style>
 </head>
 <body>
 <!-- -----------------------navbar----------------------------------------- -->
@@ -132,185 +182,178 @@
       </p>
     </div>
   </section>
+<!-- ---------------------------------------------------- -->
 
-<!-- ----------------------------------------------------- -->
-
-<!-- Features Section -->
-<section class="features-section py-5 position-relative text-white" style="background: url('https://img.freepik.com/free-photo/robot-handshake-human-background-artificial-intelligence-digital-transformation_53876-129769.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740') no-repeat center center/cover;">
-  <div class="container">
-    <div class="mb-4">
-      <span class="badge bg-purple text-black mb-2">Features</span>
-      <h2 class="display-5 fw-bold" style="color: black;"><span class="text-purple">Accessible AI</span> Features With <br> Great Power</h2>
-    </div>
-
+<div class="container py-5">
     <div class="row g-4">
+
       <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up">
-        <div class="feature-card p-4 h-100  text-white rounded-4" style="background-color: rgba(0, 0, 0, 0.733);">
-          <div class="mb-3">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">	<style type="text/css">	.icb03{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;}	.icb04{fill:none;stroke:currentColor;stroke-width:2;}	</style>	<g>		<line class="icb03" x1="84.9" y1="41.5" x2="54.1" y2="55.8"></line>		<line class="icb03" x1="15.1" y1="41.5" x2="45.9" y2="55.8"></line>		<path class="icb04" d="M50,31.2l12.3,6.2v2.1L50,45.6l-12.3-6.2v-2.1L50,31.2z"></path>		<g transform="translate(0 0)">			<g>				<g>					<path class="icb04" d="M33.3,64c1.1-2.2,3.7-3.2,5.9-2.1c0,0,0.1,0,0.1,0.1c2.3,1.1,3.3,3.8,2.2,6.2l-3.9,6.2v4.1     c0,2.3-1.9,4.1-4.2,4c-2.2,0-4-1.8-4-4v-4.1"></path>					<path class="icb04" d="M25.1,59.9c1.1-2.2,3.7-3.2,5.9-2.1c0,0,0.1,0,0.1,0.1c2.3,1.1,3.3,3.8,2.2,6.2l-3.9,6.2v4.1     c0,2.3-1.8,4.1-4,4.2s-4.1-1.8-4.2-4c0-0.1,0-0.1,0-0.2v-4.1"></path>					<path class="icb04" d="M16.9,55.8c1.1-2.2,3.7-3.2,5.9-2.1c0,0,0.1,0,0.1,0.1c2.3,1.1,3.3,3.8,2.2,6.2l-3.9,6.2v4.1     c0,2.3-1.9,4.1-4.2,4c-2.2,0-4-1.8-4-4v-4.1"></path>					<path class="icb04" d="M8.7,51.7c1.1-2.2,3.7-3.2,5.9-2.1c0,0,0.1,0,0.1,0.1c2.3,1.1,3.3,3.8,2.2,6.2L13.1,62v4.1     c0,2.3-1.8,4.1-4,4.2s-4.1-1.8-4.2-4c0-0.1,0-0.1,0-0.2v-8.2L8.7,51.7z"></path>					<path class="icb04" d="M92.7,53.8l2.1-1c1.4-0.7,2.4-2.1,2.4-3.7V42c0-1.6-0.9-3-2.3-3.7L52.7,18.1     c-1.7-0.8-3.6-0.8-5.3,0L5.1,38.3C3.7,39,2.8,40.4,2.8,42v7.1c0,1.6,0.9,3,2.3,3.7l2.2,1"></path>					<path class="icb04" d="M66.7,64c-1.1-2.2-3.7-3.2-5.9-2.1c0,0-0.1,0-0.1,0.1c-2.3,1.1-3.3,3.8-2.2,6.2l3.9,6.2v4.1     c0,2.3,1.9,4.1,4.2,4c2.2,0,4-1.8,4-4v-4.1"></path>					<path class="icb04" d="M74.9,59.9c-1.1-2.2-3.7-3.2-5.9-2.1c0,0-0.1,0-0.1,0c-2.3,1.1-3.3,3.8-2.2,6.2l3.9,6.2v4.1     c0,2.3,1.8,4.1,4,4.2s4.1-1.8,4.2-4c0-0.1,0-0.1,0-0.2v-4.1"></path>					<path class="icb04" d="M83.1,55.8c-1.1-2.2-3.7-3.2-5.9-2.1c0,0-0.1,0-0.1,0c-2.3,1.1-3.3,3.8-2.2,6.2l3.9,6.2v4.1     c0,2.3,1.9,4.1,4.2,4c2.2,0,4-1.8,4-4v-4.1"></path>					<path class="icb04" d="M91.3,51.7c-1.1-2.2-3.7-3.2-5.9-2.1c0,0-0.1,0-0.1,0.1c-2.3,1.1-3.3,3.8-2.2,6.2l3.9,6.2v4.1     c0,2.3,1.8,4.1,4,4.2s4.1-1.8,4.2-4c0-0.1,0-0.1,0-0.2v-8.2L91.3,51.7z"></path>					<path class="icb04" d="M59.5,69.8l-7.7,3.7c-1.1,0.5-2.4,0.5-3.5,0l-7.7-3.7"></path>				</g>			</g>		</g>	</g></svg>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="service-card h-100">
+          <div class="service-img">
+            <img src="https://up2client.com/envato/geralt-ai/html/main/image/assets/images/home-page/possiblity-img5.jpg" alt="Chatbot">
           </div>
-          <h5>Machine learning framework for data cloud server service</h5>
-          <p class=" small" style="color: aliceblue;">Cras vehicula odio posuere pulvinar vehicula. Nunc cursus fermentum nisi nec sollicitudin.</p>
+          <div class="service-content">
+            <h3 class="service-title">Chatbot</h3>
+            <p class="service-text">One of the most amazing things about food delivery robots is they’re able to avoid obstacles like traffic, curbs, and potholes.</p>
+          </div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-    <div class="feature-card p-4 h-100  text-white rounded-4" style="background-color: rgba(0, 0, 0, 0.733);">
-          <div class="mb-3">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">	<style type="text/css">	.icb02{fill:none;stroke:currentColor;stroke-width:2;}	</style>	<g>		<circle class="icb02" cx="9.3" cy="33.7" r="6.1"></circle>		<path class="icb02" d="M15.4,66.3h6.1l12.2-12.2h4.1"></path>		<circle class="icb02" cx="9.3" cy="66.3" r="6.1"></circle>		<circle class="icb02" cx="50" cy="84.6" r="6.1"></circle>		<line class="icb02" x1="50" y1="21.5" x2="50" y2="31.7"></line>		<circle class="icb02" cx="50" cy="15.4" r="6.1"></circle>		<circle class="icb02" cx="25.6" cy="84.6" r="6.1"></circle>		<path class="icb02" d="M25.6,21.5v6.1l8.1,8.1h4.1"></path>		<circle class="icb02" cx="25.6" cy="15.4" r="6.1"></circle>		<path class="icb02" d="M74.4,78.5v-6.1l-8.1-8.1h-4.1"></path>		<path class="icb02" d="M84.6,33.7h-6.1L66.3,45.9h-4.1"></path>		<circle class="icb02" cx="90.7" cy="33.7" r="6.1"></circle>		<path class="icb02" d="M84.6,66.3h-6.1L66.3,54.1h-4.1"></path>		<circle class="icb02" cx="90.7" cy="66.3" r="6.1"></circle>		<circle class="icb02" cx="74.4" cy="84.6" r="6.1"></circle>		<path class="icb02" d="M74.4,21.5v6.1l-8.1,8.1h-4.1"></path>		<circle class="icb02" cx="74.4" cy="15.4" r="6.1"></circle>		<rect x="41.9" y="35.8" class="icb02" width="16.3" height="28.5"></rect>		<line class="icb02" x1="27.6" y1="50" x2="1.2" y2="50"></line>		<line class="icb02" x1="98.8" y1="50" x2="72.4" y2="50"></line>	</g></svg>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card h-100">
+          <div class="service-img">
+            <img src="https://aiglobe.wpengine.com/wp-content/uploads/2024/02/image-masnory-3-1.jpg " alt="E-commerce">
           </div>
-          <h5>AI cures complex genetic diseases effectively.</h5>
-          <p class="text-white small">Arcu odio ut sem nulla pharetra cursus risus blandit. Nunc cursus fermentum nisi nec sollicitudin.</p>
+          <div class="service-content">
+            <h3 class="service-title">E-commerce</h3>
+            <p class="service-text">We help our clients achieve maximum efficiency in their operations by concept at technology and information systems.</p>
+          </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
- <div class="feature-card p-4 h-100  text-white rounded-4" style="background-color: rgba(0, 0, 0, 0.733);">
-          <div class="mb-3">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">	<style type="text/css">	.icbox-01{fill:none;stroke:currentcolor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}	</style>	<g transform="translate(-465.002 7102)">		<path class="icbox-01" d="M536.2-7021.2c0-16.8,13.3-20.3,14.2-43.4c0.7-18.2-13.3-34-31.5-34  c-17.5,0-31.7,14.1-31.7,31.5c0,0,0,0.1,0,0.1v4.7l-7,14.1c-1.2,2.3-0.2,5.2,2.1,6.4c0.2,0.1,0.4,0.2,0.6,0.3l4.3,1.4v11.9  c0,4.4,3.5,7.9,7.9,7.9c0.2,0,0.5,0,0.7,0l8.8-0.8v15.8"></path>		<line class="icbox-01" x1="536.2" y1="-7005.3" x2="536.2" y2="-7021.2"></line>		<path class="icbox-01" d="M518.8-7079.7c-7,0-12.7,5.7-12.7,12.7l0,0c0,7,6.3,14.2,6.3,19h6.3"></path>		<path class="icbox-01" d="M518.8-7079.7c7,0,12.7,5.7,12.7,12.7l0,0c0,7-6.3,14.2-6.3,19h-6.3"></path>		<line class="icbox-01" x1="525.1" y1="-7041.7" x2="512.5" y2="-7041.7"></line>		<line class="icbox-01" x1="518.8" y1="-7089.2" x2="518.8" y2="-7086"></line>		<line class="icbox-01" x1="529.9" y1="-7086.2" x2="528.3" y2="-7083.5"></line>		<line class="icbox-01" x1="538" y1="-7078.1" x2="535.2" y2="-7076.5"></line>		<line class="icbox-01" x1="540.9" y1="-7067" x2="537.8" y2="-7067"></line>		<line class="icbox-01" x1="538" y1="-7056" x2="535.2" y2="-7057.5"></line>		<line class="icbox-01" x1="507.7" y1="-7086.2" x2="509.3" y2="-7083.5"></line>		<line class="icbox-01" x1="499.6" y1="-7078.1" x2="502.3" y2="-7076.5"></line>		<line class="icbox-01" x1="496.6" y1="-7067" x2="499.8" y2="-7067"></line>		<line class="icbox-01" x1="499.6" y1="-7056" x2="502.3" y2="-7057.5"></line>		<line class="icbox-01" x1="518.8" y1="-7029.1" x2="518.8" y2="-7005.3"></line>		<line class="icbox-01" x1="514.4" y1="-7034.8" x2="523" y2="-7034.8"></line>	</g></svg>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card h-100">
+          <div class="service-img">
+            <img src="https://up2client.com/envato/ciri-ai/html/main/MultiPage-CiriAI/assets/images/home-page/slider1-img5.jpg" alt="Fintech">
           </div>
-          <h5>Rescue systems collect sensitive data efficiently.</h5>
-          <p class="text-white small">Dui vivamus arcu felis bibendum ut. Suscipit tellus mauris a diam nec sollicitudin.</p>
+          <div class="service-content">
+            <h3 class="service-title">Fintech</h3>
+            <p class="service-text">Our fleet of robots can deliver multiple packages at airports, malls, simultaneously to the customers on 24/7 basis.</p>
+          </div>
         </div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-       <div class="feature-card p-4 h-100  text-white rounded-4" style="background-color: rgba(0, 0, 0, 0.733);">
-          <div class="mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">	<style type="text/css">	.icv05{fill:none;stroke:currentColor;stroke-width:2;}	</style>	<g>		<path class="icv05" d="M89.9,0.9v55.2c0,18.1-14.6,32.7-32.7,32.7c0,0,0,0,0,0"></path>		<path class="icv05" d="M10.1,99.1V43.9c0-18.1,14.6-32.7,32.7-32.7c0,0,0,0,0,0h2"></path>		<circle class="icv05" cx="65.3" cy="21.4" r="6.1"></circle>		<circle class="icv05" cx="65.3" cy="45.9" r="6.1"></circle>		<circle class="icv05" cx="65.3" cy="70.4" r="6.1"></circle>		<circle class="icv05" cx="36.7" cy="29.6" r="6.1"></circle>		<circle class="icv05" cx="36.7" cy="54.1" r="6.1"></circle>		<circle class="icv05" cx="36.7" cy="78.6" r="6.1"></circle>		<line class="icv05" x1="51" y1="41.8" x2="51" y2="45.9"></line>		<line class="icv05" x1="51" y1="50" x2="51" y2="54.1"></line>		<line class="icv05" x1="79.6" y1="15.2" x2="79.6" y2="19.3"></line>		<line class="icv05" x1="79.6" y1="7.1" x2="79.6" y2="11.1"></line>		<line class="icv05" x1="51" y1="0.9" x2="51" y2="5"></line>		<line class="icv05" x1="51" y1="95" x2="51" y2="99.1"></line>		<line class="icv05" x1="20.4" y1="88.9" x2="20.4" y2="92.9"></line>		<line class="icv05" x1="20.4" y1="80.7" x2="20.4" y2="84.8"></line>	</g></svg>
+    </div>
+  </div>
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+<section class="section-container container">
+  <div class="row align-items-center">
+    <!-- Left Column -->
+    <div class="col-lg-6" data-aos="fade-right">
+      <button class="btn btn-purple mb-3">Get In Touch</button>
+      <div class="heading mb-4">
+        <h1>
+          <span>We</span> <span>Solve</span> Your Image<br/>Problems
+        </h1>
+      </div>
+      <div class="video-wrapper">
+        <img src="https://aiglobe.wpengine.com/wp-content/uploads/2023/12/video-banner-img03.jpg" alt="Video Thumbnail">
+        <div class="play-button"></div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-6 mt-5 mt-lg-0">
+      <div class="d-flex flex-column gap-3" data-aos="fade-left">
+        <div class="feature-box d-flex align-items-start">
+          <i class="bi bi-cpu-fill"></i>
+          <div>
+            <h5>AI Development</h5>
+            <p>Felis imperdiet proin fermentum leo vel. Ornare lectus sit amet est placerat.</p>
           </div>
-          <h5>Quantum aids energy optimization, diversifies usage.</h5>
-          <p class="text-white small">Vitae ultricies leo integer malesuada nunc vel. In fermentum et sollicitudin.</p>
+        </div>
+
+        <div class="feature-box d-flex align-items-start">
+          <i class="bi bi-palette-fill"></i>
+          <div>
+            <h5>AI RGB</h5>
+            <p>Risus feugiat in ante metus dictum. Ac ut consequat semper.</p>
+          </div>
+        </div>
+
+        <div class="feature-box d-flex align-items-start">
+          <i class="bi bi-stars"></i>
+          <div>
+            <h5>AI Image Modifier</h5>
+            <p>Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique.</p>
+          </div>
+        </div>
+
+        <div class="feature-box d-flex align-items-start">
+          <i class="bi bi-cloud-check-fill"></i>
+          <div>
+            <h5>Cloud Technology</h5>
+            <p>Sit amet nulla facilisi morbi tempus iaculis urna id volutpat.</p>
+          </div>
+        </div>
+
+        <div class="feature-box d-flex align-items-start">
+          <i class="bi bi-bar-chart-line-fill"></i>
+          <div>
+            <h5>Data Collection</h5>
+            <p>Amet consectetur adipiscing elit ut. Augue mauris augue gravida in fermentum.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
+<!-- ------------------------------------------------------ -->
+ <!-- Video Section -->
+  <div class="video-container container" data-aos="fade-up">
+    <video autoplay loop muted playsinline>
+      <source src="https://up2client.com/envato/ciri-ai/html/main/MultiPage-CiriAI/assets/video/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-<!-- ----------------------------------------------------------------------------- -->
- <section class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Content -->
-      <div class="col-lg-6" data-aos="fade-right">
-        <h2 class="section-title"><span class="highlight">AI Problem-Solving</span><br> Smart Designs.</h2>
-        <p class="subtitle">
-          Egestas dui id ornare arcu odio. Euismod lacinia at quis risus sed vulputate odio. tortor vel odio. Vivamus eget malesuada lacus. Cras bibendum ligula at rutrum ornare. Donec malesuada eros et enim volutpat, id tempus nibh malesuada.
+  <!-- Content Section -->
+  <div class="container section-content">
+    <div class="row">
+      <!-- Left Text Column -->
+      <div class="col-lg-6 text-col" data-aos="fade-right">
+        <p>
+          Sit dui ligula viverra eget volutpat mauris. Nibh sagittis viverra et rhoncus bibendum luctus. Tristique interdum cursus dictum gravida sed feugiat morbi. Id est sed urna maecenas est placerat aliquam et quis. Feugiat vitae justo mi justo nunc senectus sapien non.
         </p>
-        <div class="row mt-4 features">
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-face-smile"></i>
-            <h6>Hassel-Free<br>Support</h6>
-          </div>
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-comments"></i>
-            <h6>Conversation<br>Chat Box</h6>
-          </div>
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-thumbs-up"></i>
-            <h6>Live Chat<br>Dashboard</h6>
-          </div>
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-globe"></i>
-            <h6>International<br>Shipping</h6>
-          </div>
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-piggy-bank"></i>
-            <h6>Cost<br>Saving</h6>
-          </div>
-          <div class="col-6 col-md-4 mb-3 text-center">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h6>Frequent<br>Delivery</h6>
-          </div>
-        </div>
-        <button class="btn  mt-3 btn-primary">Know More Details</button>
+        <p>
+          Sit dui ligula viverra eget volutpat mauris. Nibh sagittis viverra et rhoncus bibendum luctus. Tristique interdum cursus dictum gravida sed feugiat morbi. Id est sed urna maecenas est placerat aliquam et quis. Feugiat vitae justo mi justo nunc senectus sapien non. Tristique tellus ac proin integer. Vitae elementum vitae sem arcu. Lorem aliquam.
+        </p>
       </div>
 
-      <!-- Right Content -->
-     <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
-  <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
-    <!-- Chat Box -->
-  
-
-    <!-- Robot Image -->
-    <div>
-      <img src="images/aichat.avif" alt="Robot" style="width: 100%; max-width: 600px; height: auto;">
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="py-5">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <span>AI Information</span>
-      <h2>Our Latest <span class="highlight">News & Blog</span></h2>
-    </div>
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-card">
-          <div class="blog-img">
-            <img src="https://aiglobe.wpengine.com/wp-content/uploads/2024/02/blog-1.jpg" alt="AI Image 1">
-          </div>
-          <div class="blog-content">
-            <div class="blog-date">Feb 02, 2024</div>
-            <div class="blog-title">Explore Artificial Intelligence And Get The Best Out Of It</div>
-            <div class="read-more">Read More</div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="blog-card">
-          <div class="blog-img">
-            <img src="https://aiglobe.wpengine.com/wp-content/uploads/2024/02/blog-2.jpg" alt="AI Image 2">
-          </div>
-          <div class="blog-content">
-            <div class="blog-date">Feb 02, 2024</div>
-            <div class="blog-title">Latest Emerging Artificial Intelligence Technology</div>
-            <div class="read-more">Read More</div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="blog-card">
-          <div class="blog-img">
-            <img src="https://aiglobe.wpengine.com/wp-content/uploads/2024/02/blog-3.jpg" alt="AI Image 3">
-          </div>
-          <div class="blog-content">
-            <div class="blog-date">Feb 02, 2024</div>
-            <div class="blog-title">Face Recognition App With Deep Machine Learning</div>
-            <div class="read-more">Read More</div>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-        <div class="blog-card">
-          <div class="blog-img">
-            <img src="https://aiglobe.wpengine.com/wp-content/uploads/2024/02/blog-4.jpg" alt="AI Image 4">
-          </div>
-          <div class="blog-content">
-            <div class="blog-date">Feb 02, 2024</div>
-            <div class="blog-title">Make Your Ocean Journey Easier With Artificial</div>
-            <div class="read-more">Read More</div>
-          </div>
-        </div>
+      <!-- Right Checklist Column -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <ul class="checklist">
+          <li>
+            <div class="checklist-icon"></div>
+            <div class="checklist-text">Quis sit in id egestas turpis vitae tristique senectus</div>
+          </li>
+          <li>
+            <div class="checklist-icon"></div>
+            <div class="checklist-text">Neque eleifend amet ut vel fusce facilisis nulla</div>
+          </li>
+          <li>
+            <div class="checklist-icon"></div>
+            <div class="checklist-text">Nulla at diam cursus lorem nunc facilisis non phasellus</div>
+          </li>
+          <li>
+            <div class="checklist-icon"></div>
+            <div class="checklist-text">Nullam faucibus facilisis nunc turpis adipiscing</div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="containr">
   <div class="swiper mySwiper">
