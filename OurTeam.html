@@ -17,7 +17,59 @@
    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+  .team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f29111;
+  transform: scale(1.2);
+}
+
+</style>
 
 </head>
 <body>
@@ -148,47 +200,167 @@
     </div>
   </section>
 <!-- ----------------------------------------------------------------------------- -->
-<section class="team-section container text-center">
-  <div data-aos="fade-up">
-    <h1>Empower businesses with technology.</h1>
-    <h2>Creating stunning websites with ease<br>to enhance online presence</h2>
-    <p class="mx-auto mt-3">
-      Algenix is dedicated to empowering businesses with innovative, customizable digital solutions, ensuring our services are not only effective but also tailored to meet unique needs.
-    </p>
-  </div>
+<section class="team-section py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-01.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
+      </div>
 
-  <div class="row mt-5 justify-content-center gy-4">
-    <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
-      <div class="team-card text-start">
-        <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-105-copyright.jpg" alt="Stiven Dowson">
-        <h5>Stiven Dowson</h5>
-        <span>CEO</span>
+  <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-05.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-      <div class="team-card text-start">
-        <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-106-copyright.jpg" alt="Mark Lee">
-        <h5>Mark Lee</h5>
-        <span>Creative Director</span>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-02.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-      <div class="team-card text-start">
-        <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-107-copyright.jpg" alt="Adam King">
-        <h5>Adam King</h5>
-        <span>Developer</span>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-04.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
-      <div class="team-card text-start">
-        <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-108-copyright.jpg" alt="Anna Smith">
-        <h5>Anna Smith</h5>
-        <span>Sales Director</span>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-06.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
       </div>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://dreamsrent.dreamstechnologies.com/html/template/assets/img/our-team/team-03.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
+      </div>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://kitpro.site/credixo/wp-content/uploads/sites/385/2025/05/27-2-800x960.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
+      </div>
+        <!-- Team Member -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <div class="image-wrapper">
+            <img src="https://kitpro.site/credixo/wp-content/uploads/sites/385/2025/05/29-1-800x960.jpg" alt="Amr Gamal Sadeq" class="img-fluid" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="caption text-center mt-3">
+            <h5 class="mb-1">Amr Gamal Sadeq</h5>
+            <small class="text-muted">Design Expert</small>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
-
 
 
 
