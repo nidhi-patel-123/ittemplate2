@@ -72,98 +72,72 @@
   }
 }
 
-    .category-badge {
-      background-color: #f29111;
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.4rem 0.75rem;
-      border-radius: 0.375rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      display: inline-block;
-      margin-bottom: 1rem;
+ /* ---------------------------------------------------------- */
+       .section-subtitle {
+      font-style: italic;
+      color: #6c757d;
+      margin-bottom: 40px;
     }
 
-    .blog-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 0.75rem;
+    .post-image {
+      overflow: hidden;
     }
 
-    .blog-meta {
-      font-size: 0.9rem;
-      color: #6b7280;
-      margin-bottom: 1.5rem;
-    }
-
-    .blog-image {
+    .post-image img {
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .search-input {
-      border-radius: 10px;
-      padding: 0.6rem 1rem;
-      border: 1px solid #ddd;
-    }
-
-    .sidebar h5 {
-      margin-top: 2rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .sidebar ul {
-      padding-left: 1rem;
-    }
-
-    .sidebar ul li {
-      margin-bottom: 0.5rem;
-      color: #374151;
-      font-size: 0.95rem;
-    }
-
-    .recent-post img {
-      width: 60px;
-      height: 60px;
       object-fit: cover;
-      border-radius: 0.5rem;
+      transition: transform 0.4s ease;
     }
 
-    .recent-post {
-      margin-bottom: 1rem;
+    .post-image:hover img {
+      transform: scale(1.05);
     }
 
-    .recent-post-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      line-height: 1.3;
+    .post-meta {
+      color: #999;
+      font-size: 0.9rem;
+      margin-top: 10px;
     }
 
-    @media (max-width: 767.98px) {
-      .blog-title {
-        font-size: 1.8rem;
-      }
+    .post-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 10px 0;
+      transition: all 0.3s ease;
     }
-    /* Ensure the container allows sticky positioning */
-.sidebar {
-  position: sticky;
-  top: 100px; /* Adjust top spacing as per your header height */
-  align-self: start; /* Ensures it doesn't stretch full height */
-}
 
-/* Optional: control height if needed */
-@media (min-width: 992px) {
-  .sidebar {
-    max-height: calc(100vh - 120px); /* Adjust if needed */
-    overflow-y: auto;
-  }
-}
+    .post-title:hover {
+      color: #cc3366;
+      text-decoration: underline;
+    }
 
+    .post-excerpt {
+      font-size: 1rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    .read-more-btn {
+      border: 1px solid #ccc;
+      background: transparent;
+      font-size: 0.9rem;
+      padding: 8px 20px;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .read-more-btn:hover {
+      background-color: #000;
+      color: #fff;
+      border-color: #000;
+    }
+
+    .post-card {
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+    }
   </style>
 
 </head>
@@ -279,54 +253,143 @@
 
 <!-- ------------------------------------------- -->
 
+ <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+    <h2 class="section-heading" style="margin-top: 30px;font-weight: bolder;">BLOG-1</h2>
+    <hr>
+    <p class="section-subtitle">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
 
-<div class="container" style="margin-top: 100px;">
-  <div class="row g-5">
-    <!-- Left Column - Main Blog -->
-    <div class="col-lg-12" >
-      <span class="category-badge">Digital Marketing</span>
-      <h1 class="blog-title">Navigating the future of IT services and digital transformations</h1>
-      <p class="blog-meta">John Doe • Apr 27, 2025 • 2 Comments</p>
-      <img src="https://wordpress.zozothemes.com/seoinux/wp-content/uploads/sites/33/2024/11/blog-image3-1170x694.jpg" alt="Blog Image" class="blog-image mt-3">
-      <p style="color: gray;font-family: serif;">SEO, on the other hand, ensures that this content is optimized for search engines, making it easier for users to discover. When content is strategically crafted with target keywords, it aligns with what users are searching for, helping the content rank higher on search engine results pages (SERPs). On-page SEO elements like title tags, meta descriptions, and headers, alongside internal linking, help search engines understand and index content effectively. By creating evergreen content—content that remains relevant over time—businesses can continue to attract traffic long after it’s published. Link-building sheets as part of content marketing boosts domain authority and contributes to higher rankings.</p>
-      <h2>Quisque at tortor</h2>
-            <p style="color: gray;font-family: serif;">SEO, on the other hand, ensures that this content is optimized for search engines, making it easier for users to discover. When content is strategically crafted with target keywords, it aligns with what users are searching for, helping the content rank higher on search engine results pages (SERPs). On-page SEO elements like title tags, meta descriptions, and headers, alongside internal linking, help search engines understand and index content effectively. By creating evergreen content—content that remains relevant over time—businesses can continue to attract traffic long after it’s published. Link-building sheets as part of content marketing boosts domain authority and contributes to higher rankings.</p>
-      <div>
-        <h2 style="color: black;font-weight: bolder;font-family: serif;">“In digital marketing, everything is measurable, everything is trackable, and everything can be optimized”</h2>
-        <p style="color: #F29111;">Digital Marketing Expert</p>
+    <!-- Post Card -->
+    <div class="post-card">
+      <div class="post-image" data-aos="zoom-in">
+        <img src="https://img.freepik.com/free-photo/male-consultant-presents-business-analytics_482257-121129.jpg?ga=GA1.1.1068734637.1747390429&semt=ais_items_boosted&w=740" alt="Food Post" style="height: 400px;object-fit: cover;">
       </div>
-      <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-124-copyright.jpg" alt="Blog Image" class="blog-image mt-3">
-      <h2 style="font-family: serif; font-weight: bolder;">Vivamus pharetra lacus id</h2>
-  <p style="color: gray;font-family: serif;">SEO, on the other hand, ensures that this content is optimized for search engines, making it easier for users to discover. When content is strategically crafted with target keywords, it aligns with what users are searching for, helping the content rank higher on search engine results pages (SERPs). On-page SEO elements like title tags, meta descriptions, and headers, alongside internal linking, help search engines understand and index content effectively. By creating evergreen content—content that remains relevant over time—businesses can continue to attract traffic long after it’s published. Link-building sheets as part of content marketing boosts domain authority and contributes to higher rankings.</p>
-<div class="container">
-  <div class="row">
-    <h3 style="font-family: serif;font-weight: bold;">YOU MAKE ALSO LIKE</h3>
-    <!-- Left Image -->
-
-    <div class="col-lg-6">
-      <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-31-copyright-924x520.jpg" alt="" class="img-fluid">
-      <h6>digital marketing</h6>
-      <h2 style="font-family: serif;">Creating effective marketing campaigns with digital agencies</h2>
-    </div>
-
-    <!-- Right Image -->
-    <div class="col-lg-6">
-      <img src="https://algenix.axiomthemes.com/wp-content/uploads/2025/04/custom-img-142-copyright-924x520.jpg" alt="" class="img-fluid">
-      <h6>digital marketing</h6>
-      <h2 style="font-family: serif;">Creating effective marketing campaigns with digital agencies</h2>
+      <div class="post-body mt-4">
+        <div class="post-meta text-muted">Food, Lifestyle, Stories</div>
+        <h3 class="post-title">The Complete Guide To Understanding Stories</h3>
+        <div class="post-meta">
+          July 13, 2017 · Leave a comment · <i class="bi bi-heart"></i> 12
+        </div>
+        <p class="post-excerpt">
+          It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want...
+        </p>
+        <button class="read-more-btn">Read More +</button>
+      </div>
     </div>
   </div>
-</div>
 
+
+ <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+  <h2 class="section-heading" style="margin-top: 30px;font-weight: bolder;">BLOG-2</h2>
+    <hr>
+    <p class="section-subtitle">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
+
+    <!-- Post Card -->
+    <div class="post-card">
+      <div class="post-image" data-aos="zoom-in">
+        <img src="https://img.freepik.com/free-photo/still-life-business-roles-with-various-mechanism-pieces_23-2149352652.jpg?ga=GA1.1.1068734637.1747390429&semt=ais_items_boosted&w=740" alt="Food Post" style="height: 500px;object-fit: cover;">
+      </div>
+      <div class="post-body mt-4">
+        <div class="post-meta text-muted">Food, Lifestyle, Stories</div>
+        <h3 class="post-title">The Complete Guide To Understanding Stories</h3>
+        <div class="post-meta">
+          July 13, 2017 · Leave a comment · <i class="bi bi-heart"></i> 12
+        </div>
+        <p class="post-excerpt">
+          It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want...
+        </p>
+        <button class="read-more-btn">Read More +</button>
+      </div>
     </div>
-    
-
-
   </div>
-</div>
+
+   <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+  <h2 class="section-heading" style="margin-top: 30px;font-weight: bolder;">BLOG-3</h2>
+    <hr>
+    <p class="section-subtitle">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
+
+    <!-- Post Card -->
+    <div class="post-card">
+      <div class="post-image" data-aos="zoom-in">
+        <img src="https://img.freepik.com/free-photo/people-working-as-team-company_23-2149136895.jpg?ga=GA1.1.1068734637.1747390429&semt=ais_items_boosted&w=740" alt="Food Post" style="height: 500px;object-fit: cover;">
+      </div>
+      <div class="post-body mt-4">
+        <div class="post-meta text-muted">Food, Lifestyle, Stories</div>
+        <h3 class="post-title">The Complete Guide To Understanding Stories</h3>
+        <div class="post-meta">
+          July 13, 2017 · Leave a comment · <i class="bi bi-heart"></i> 12
+        </div>
+        <p class="post-excerpt">
+          It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want...
+        </p>
+        <button class="read-more-btn">Read More +</button>
+      </div>
+    </div>
+  </div>
 
 
+   <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+   <h2 class="section-heading" style="margin-top: 30px;font-weight: bolder;">BLOG-4</h2>
+    <hr>
+    <p class="section-subtitle">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
 
+    <!-- Post Card -->
+    <div class="post-card">
+      <div class="post-image" data-aos="zoom-in">
+        <img src="https://img.freepik.com/free-photo/spreadsheet-document-financal-report-concept_53876-132323.jpg?ga=GA1.1.1068734637.1747390429&semt=ais_items_boosted&w=740" alt="Food Post" style="height: 500px;object-fit: cover;">
+      </div>
+      <div class="post-body mt-4">
+        <div class="post-meta text-muted">Food, Lifestyle, Stories</div>
+        <h3 class="post-title">The Complete Guide To Understanding Stories</h3>
+        <div class="post-meta">
+          July 13, 2017 · Leave a comment · <i class="bi bi-heart"></i> 12
+        </div>
+        <p class="post-excerpt">
+          It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want...
+        </p>
+        <button class="read-more-btn">Read More +</button>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="container" data-aos="fade-up">
+    <!-- Section Title -->
+  <h2 class="section-heading" style="margin-top: 30px;font-weight: bolder;">BLOG-5</h2>
+    <hr>
+    <p class="section-subtitle">
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
+
+    <!-- Post Card -->
+    <div class="post-card">
+      <div class="post-image" data-aos="zoom-in">
+        <img src="https://img.freepik.com/free-photo/businessmen-businesswomen-meeting-brainstorming-ideas_7861-3065.jpg?ga=GA1.1.1068734637.1747390429&semt=ais_items_boosted&w=740" alt="Food Post" style="height: 500px;object-fit: cover;">
+      </div>
+      <div class="post-body mt-4">
+        <div class="post-meta text-muted">Food, Lifestyle, Stories</div>
+        <h3 class="post-title">The Complete Guide To Understanding Stories</h3>
+        <div class="post-meta">
+          July 13, 2017 · Leave a comment · <i class="bi bi-heart"></i> 12
+        </div>
+        <p class="post-excerpt">
+          It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want...
+        </p>
+        <button class="read-more-btn">Read More +</button>
+      </div>
+    </div>
+  </div>
 
 
 
