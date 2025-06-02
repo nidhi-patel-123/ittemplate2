@@ -51,217 +51,278 @@
     transform: rotate(45deg);
   }
 }
-
-/* -------------------------servie------------------- */
- .section-title {
-      font-weight: 700;
-      font-size: 2.5rem;
+/* ---------------------------------------------------------------------------------- */
+ .services-title {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .highlight {
-      color: #0d0b24;
+    .services-title small {
+      color: #f29111;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 5px;
     }
 
-    .service-box {
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s ease;
-      background-color: transparent;
-    }
-
-    .service-box:hover {
-      transform: translateY(-5px);
-    }
-
-    .icon-circle {
-      background-color: #f1d3aa79;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .icon-circle img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .read-more {
-      opacity: 0;
-      transform: translateY(10px);
-      transition: 0.3s ease;
-      display: inline-block;
-      color: #0d0b24;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .service-box:hover .read-more {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .subtitle {
-      color: #7c7d98;
-      font-size: 15px;
-    }
-    /* -------------------------------------------- */
-  
-    .consulting-section {
-      padding: 80px 0;
-      background-color: #fff;
-    }
-    .consulting-text h6 {
-      color: #3f3d56;
-      font-size: 14px;
-      letter-spacing: 1px;
-      font-weight: 600;
+    .services-title h2 {
+      font-weight: 800;
       text-transform: uppercase;
     }
-    .consulting-text h2 {
-      font-weight: 700;
-      font-size: 2.5rem;
+
+    .service-card {
+      background-color: #fff;
+      padding: 80px 20px;
+
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.04);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-icon img {
+      max-height: 60px;
       margin-bottom: 20px;
-      color: #1b1a36;
     }
-    .consulting-text p {
-      color: #6c757d;
-      font-size: 16px;
-      line-height: 1.8;
+
+    .service-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 15px;
+      margin-bottom: 10px;
     }
-    .consulting-text ul {
-      padding: 0;
-      list-style: none;
+
+    .service-title.orange {
+      /* color: #f9a825; */
+    }
+
+    .divider {
+      width: 15px;
+      height: 4px;
+      background-color: #f29111;
+      margin: 0 auto 15px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      color: #555;
+    }
+/* ----------------------------------------------------------------------------------- */
+ .expert-section {
+      padding: 80px 0;
+    }
+
+    .expert-image img {
+      max-width: 100%;
+    }
+
+    .expert-content small {
+      color: #f29111;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .expert-content h2 {
+      font-weight: 800;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .expert-content h5 {
+      color: #f29111;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .expert-content p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      display: flex;
+      align-items: center;
       margin-top: 30px;
     }
-    .consulting-text ul li {
-      font-weight: 600;
-      font-size: 16px;
-      margin-bottom: 15px;
-      position: relative;
-      padding-left: 25px;
-      color: #1b1a36;
-    }
-    .consulting-text ul li::before {
-      content: "\2713";
-      position: absolute;
-      left: 0;
-      color: #3e2dd1;
-      font-weight: bold;
-    }
-    .consulting-images {
-      position: relative;
-    }
-    .consulting-images img {
-      border-radius: 12px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    }
-    .img-front {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      width: 60%;
-    }
-    .img-back-left {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 50%;
-    }
-    .img-back-right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      width: 45%;
+
+    .info-box img {
+      width: 50px;
+      margin-right: 15px;
     }
 
-    @media (max-width: 768px) {
-      .consulting-images {
-        margin-top: 50px;
-      }
-      .img-front,
-      .img-back-left,
-      .img-back-right {
-        position: static;
-        transform: none;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-  .digital-wrapper {
-      padding: 80px 0;
-      background: #faf9f7;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-    }
-
-    .digital-wrapper h2 {
-      font-size: 42px;
+    .info-box strong {
       font-weight: 700;
-      margin-bottom: 50px;
-      color: #222;
+      font-size: 16px;
+      color: #1c1232;
     }
 
-    .custom-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 24px;
-      background-color: #f7f5f2;
-      padding: 20px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-      transition: box-shadow 0.4s ease;
-      height: 100%;
-      cursor: pointer;
+    .learn-btn {
+      margin-top: 30px;
     }
 
-   .custom-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-  transition: filter 0.4s ease;
-}
+    .btn-learn {
+   
+      color: #fff;
+      padding: 12px 28px;
+      font-weight: 600;
+   
 
-/* Hover effect: turn image black and white */
-.custom-card:hover img {
-  filter: grayscale(100%);
-}
-
-
-
-  
-
-    .custom-card .content {
-      position: relative;
-      z-index: 3;
+      transition: all 0.3s ease;
     }
-
-    .custom-card h5 {
-      margin: 15px 0 5px;
-      color: #333;
-    }
-
-    .custom-card p {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .learn-more {
+/* ------------------------------------------------------------------------------------------ */
+ .section-title {
+      color: #f29111;
       font-weight: bold;
-      color: #ff5722;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .main-heading {
+      font-size: 32px;
+      font-weight: 800;
+    }
+    .img-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+      z-index: 2;
+    }
+    .years-badge {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      background: transparent;
+      font-weight: bold;
+      font-size: 20px;
+      color: #111;
+    }
+    .curved-line {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 5px solid #f29111;
+      border-radius: 80% 0;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+    .testimonial-block {
+      background: transparent;
+      padding: 20px;
+    }
+    .testimonial-quote {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+    }
+    .testimonial-text {
+      color: #666;
+      font-size: 15px;
+    }
+    .author-info img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+    .author-name {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .author-role {
+      font-size: 13px;
+      color: gray;
+    }
+    /* --------------------------------------------------------- */
+    /* -------------------------------------------------------------- */
+ .card-overlay-section {
+      padding: 80px 0;
+      background: #f4f7fa;
     }
 
+    .overlay-card {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .overlay-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .overlay-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .card-content h5 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+      color: #ccc;
+    }
+  /* ----------------------------------------- */
+      .stats-section {
+      background: url('https://media.istockphoto.com/id/1970247987/photo/customer-service-management-digital-transformation-technology-strategy-optimize-and-automate.webp?a=1&b=1&s=612x612&w=0&k=20&c=LNsrgMouN81_laZPZvf5koUlXKTJwx-gkmfYa3j5h30=') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 60px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats-section::before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+    }
+
+    .stat-box h2 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .stat-box h2 span {
+      color: #f29111; /* Yellow color for + */
+    }
+
+    .stat-box .divider {
+      width: 50px;
+      height: 3px;
+      background-color: #f29111;
+      margin: 10px auto;
+    }
+
+    .stat-box p {
+      margin: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
     /* =====================last======================================= */
      .business-consulting-section {
       position: relative;

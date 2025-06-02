@@ -53,244 +53,243 @@
 }
 /* ----------------------------serivcdsdc---------------------------- */
 
+   
     .section-title {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 50px;
     }
 
-    .section-subtitle {
-      color: #ff6b6b;
-      font-weight: 600;
-      letter-spacing: 1px;
-      font-size: 0.875rem;
+    .section-title small {
+      color: #f29111;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #fff5e5;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
     }
 
-    .section-heading {
+    .section-title h2 {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 28px;
+      margin-top: 15px;
     }
 
     .service-card {
       background: #fff;
       border: none;
-      border-radius: 1rem;
-      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.05);
-      padding: 2rem;
-      height: 100%;
-      transition: 0.3s ease;
+
+      padding: 70px 40px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
       position: relative;
+      overflow: hidden;
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     }
 
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .read-more {
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
-      font-weight: 600;
-      color: #f29111;
-      margin-top: 1rem;
-      display: inline-block;
-    }
-
-    .service-card:hover .read-more {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .bottom-text {
-      text-align: center;
-      margin-top: 2rem;
-      font-weight: 600;
-    }
-
-    .bottom-text span {
-      color: #f29111;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    @media (min-width: 992px) {
-      .section-heading {
-        font-size: 2.5rem;
-      }
-    }
-     .icon-circle {
-      background-color: #f1d3aa79;
+    .service-card .icon {
+      background-color: #fff7ea;
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
     }
 
-    .icon-circle img {
-      width: 40px;
-      height: 40px;
+    .service-card .icon img {
+      max-width: 30px;
     }
-  /* -------------------------------------------- */
-  
-    .consulting-section {
-      padding: 80px 0;
-      background-color: #fff;
-    }
-    .consulting-text h6 {
-      color: #3f3d56;
-      font-size: 14px;
-      letter-spacing: 1px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    .consulting-text h2 {
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #1b1a36;
-    }
-    .consulting-text p {
-      color: #6c757d;
+
+    .service-card h5 {
       font-size: 16px;
-      line-height: 1.8;
-    }
-    .consulting-text ul {
-      padding: 0;
-      list-style: none;
-      margin-top: 30px;
-    }
-    .consulting-text ul li {
-      font-weight: 600;
-      font-size: 16px;
-      margin-bottom: 15px;
-      position: relative;
-      padding-left: 25px;
-      color: #1b1a36;
-    }
-    .consulting-text ul li::before {
-      content: "\2713";
-      position: absolute;
-      left: 0;
-      color: #3e2dd1;
-      font-weight: bold;
-    }
-    .consulting-images {
-      position: relative;
-    }
-    .consulting-images img {
-      border-radius: 12px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    }
-    .img-front {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      width: 60%;
-    }
-    .img-back-left {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 50%;
-    }
-    .img-back-right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-      width: 45%;
-    }
-
-    @media (max-width: 768px) {
-      .consulting-images {
-        margin-top: 50px;
-      }
-      .img-front,
-      .img-back-left,
-      .img-back-right {
-        position: static;
-        transform: none;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-    }
-  .digital-wrapper {
-      padding: 80px 0;
-      background: #faf9f7;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-    }
-
-    .digital-wrapper h2 {
-      font-size: 42px;
       font-weight: 700;
-      margin-bottom: 50px;
-      color: #222;
-    }
-
-    .custom-card {
+      margin-bottom: 10px;
       position: relative;
-      overflow: hidden;
-      border-radius: 24px;
-      background-color: #f7f5f2;
-      padding: 20px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-      transition: box-shadow 0.4s ease;
-      height: 100%;
-      cursor: pointer;
+      display: inline-block;
     }
 
-   .custom-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-  transition: filter 0.4s ease;
-}
-
-/* Hover effect: turn image black and white */
-.custom-card:hover img {
-  filter: grayscale(100%);
-}
-
-
-
-  
-
-    .custom-card .content {
-      position: relative;
-      z-index: 3;
-    }
-
-    .custom-card h5 {
-      margin: 15px 0 5px;
-      color: #333;
-    }
-
-    .custom-card p {
+    .service-card p {
       font-size: 14px;
       color: #666;
+      margin-bottom: 0;
     }
 
-    .learn-more {
-      font-weight: bold;
-      color: #ff5722;
-      text-decoration: none;
+    /* Animated underline effect */
+    .service-card h5::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0%;
+      height: 3px;
+      background-color: #f29111;
+      transition: width 0.4s ease-in-out;
+    }
+
+    .service-card:hover h5::after {
+      width: 100%;
+    }
+    /* ----------------------------------------------------------------------------------- */
+ .expert-section {
+      padding: 80px 0;
+    }
+
+    .expert-image img {
+      max-width: 100%;
+    }
+
+    .expert-content small {
+      color: #f29111;
+      font-weight: 600;
+      text-transform: uppercase;
       display: inline-block;
-      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
+    .expert-content h2 {
+      font-weight: 800;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .expert-content h5 {
+      color: #f29111;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .expert-content p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .info-box img {
+      width: 50px;
+      margin-right: 15px;
+    }
+
+    .info-box strong {
+      font-weight: 700;
+      font-size: 16px;
+      color: #1c1232;
+    }
+
+    .learn-btn {
+      margin-top: 30px;
+    }
+
+    .btn-learn {
+   
+      color: #fff;
+      padding: 12px 28px;
+      font-weight: 600;
+   
+
+      transition: all 0.3s ease;
+    }
+/* --------------------------------------------------------------------------- */
+  .feature-area {
+      padding: 80px 20px;
+    }
+
+    .feature-card {
+      background: #fff;
+    
+      padding: 30px 25px;
+      transition: all 0.4s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+      transform: translateY(-5px);
+ 
+    }
+
+    .feature-card:hover .card-highlight-bar {
+      left: 0;
+    }
+
+    .feature-icon {
+      font-size: 36px;
+      color: #f08b1d;
+      margin-bottom: 15px;
+    }
+
+    .feature-number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 72px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .feature-description {
+      font-size: 15px;
+      color: #555;
+      margin: 10px 0 20px;
+    }
+
+    .feature-btn {
+      color: #ffffff;
+      font-weight: 600;
+ 
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .feature-btn:hover {
+      background-color: #f08b1d;
+      color: #fff;
+    }
+
+    .feature-image {
+      width: 100%;
+ 
+      margin-top: 20px;
+    }
+
+    .card-highlight-bar {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 4px;
+      background-color: #f08b1d;
+      transition: 0.4s ease;
+    }
     /* =====================last======================================= */
      .business-consulting-section {
       position: relative;
